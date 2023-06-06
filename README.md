@@ -131,12 +131,14 @@ ChatGPT 的效果固然是不错的，起初选择了 ChatGLM-6B 和 ChatRWKV �
 
 「『時間よ流れ去れ、あなたはどれだけ残酷なのか...』」
 
+这是两端不同的音频，可以很明显听出差别。
+
 [ATRI原声](https://github.com/ERR0RPR0MPT/WaifuStream/raw/main/assets/atri.mp3)
 [AI-ATRI](https://github.com/ERR0RPR0MPT/WaifuStream/raw/main/assets/aiatri.wav)
 
-
 原声接近于一种哀叹，但是生成的语句却很“欢乐”，这是一个很大的问题。
-后面要重新训练 VITS 模型，尽量让各种情感都能被训练，推理怎么看语境感情再想办法。
+虽然让亚托莉保持“喜悦”是一方面，但是我们要还原的是最真实的亚托莉。
+所以后面要重新训练 VITS 模型，尽量让各种情感都能被训练，推理怎么看语境感情再想办法。
 还有一个是生成的速度的问题，这个问题应该可以尝试换 PyTorch 的版本来支持GPU以解决。
 
 ### 结语

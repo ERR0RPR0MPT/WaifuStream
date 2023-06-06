@@ -1,6 +1,6 @@
 # WaifuStream
 
-![Alt text](./assets/0.jpg)
+![Alt text](https://raw.githubusercontent.com/ERR0RPR0MPT/WaifuStream/main/assets/0.jpg)
 
 一则关于模拟二次元相关人物性格和行为，用以在直播场合中娱乐观众的项目之提议，无疑是一番匠心独运的构思。如若将此美妙构想转化为现实，则需伊始着手于打造一款能够予人耳目一新、咏叹不已的模拟器。
 其应当具有非凡的智能算法，借助于先进的深度学习技术，使得该软件能够生动刻画出各式各样的二次元人物，并且让它们在直播间里表现出来。
@@ -16,7 +16,7 @@
 
 ## ATRI -My Dear Moments- (アトリ)
 
-![Alt text](./assets/1.jpg)
+![Alt text](https://raw.githubusercontent.com/ERR0RPR0MPT/WaifuStream/main/assets/1.jpg)
 
 *时间停止吧，你是多么的美丽—*
 

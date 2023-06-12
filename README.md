@@ -69,7 +69,7 @@ TODO
 
 ### 音理 -《星空列车与白的旅行》 (20230612)
 
-![YinLi](https://raw.githubusercontent.com/ERR0RPR0MPT/WaifuStream/main/assets/yinli1.jpg)
+![YinLi](https://raw.githubusercontent.com/ERR0RPR0MPT/WaifuStream/main/assets/yinli1.png)
 
 音理你带我走吧音理😭😭😭
 

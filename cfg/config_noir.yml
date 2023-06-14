@@ -1,0 +1,245 @@
+CONFIG_NAME: "noir"
+CONFIG_MATCH_COMMAND: "#noir:"
+SERVER_PORT: 8005
+SERVER_TRANSLATE_PROXY:
+  https: "socks5://localhost:7890"
+BILI_ROOM_ID: 0
+BILI_USER_UID: 0
+VTS_API_URL: "ws://localhost:8001"
+EMOTION_SIMULATION_ENABLE: true
+EMOTION_SIMULATION_MODE: "web"  # web or vts
+VITS_API_TYPE: 0  # 0: vits-fast-fine-tuning-inference, 1: moetts-inference
+TRANSLATE_LOG_STATE: false
+TRANSLATE_MODE: "google"  # gpt or google
+TRANSLATE_TARGET_LANGUAGE: "ja"
+MAX_DANMAKU_QUEUE_LENGTH: 10
+MAX_INTERACT_MESSAGES_PER_MINUTE: 1
+MAX_WAIT_SECONDS: 600
+MAX_ANSWER_LENGTH: 150
+MAX_CHAT_ANSWER_SECONDS: 30
+IGNORED_USERS: []
+EMOTION_IMAGE_URL: "http://localhost:8005/assets/noir/images/"
+EMOTION_IMAGE_DEFAULT: "待机.png"
+TERMINAL_CHAT_NAME: "终端"
+VITS_DOMAINS:
+  - ""
+OPENAI_API_KEY_LIST:
+  - ""
+VITS_HEADER:
+  Content-Type: "application/json"
+  Accept: "*/*"
+VITS_PAYLOAD:
+  fn_index: 0
+  data:
+    - "Test"
+    - "noir"
+    - "日本語"
+    - 1.3
+  session_hash: "abcdefghij"
+BILI_DANMAKU_SEND_URL: "https://api.live.bilibili.com/msg/send"
+BILI_DANMAKU_SEND_DATA:
+  bubble: "0"
+  msg: ""
+  color: "16777215"
+  mode: "1"
+  room_type: "0"
+  jumpfrom: "0"
+  fontsize: "25"
+  rnd: ""
+  roomid: ""
+  csrf: ""
+  csrf_token: ""
+BILI_DANMAKU_SEND_HEADER:
+  Cookie: ""
+  Origin: "https://live.bilibili.com"
+  Referer: "https://live.bilibili.com/0"
+  User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36"
+RANDOM_QUESTION:
+  - "诺瓦，你觉得星空列车旅行最有趣的地方是什么？"
+  - "诺瓦，你对自己长着猫耳和猫尾这件事情感到如何？"
+  - "诺瓦，在旅途中，你最难忘的经历是哪一个？"
+  - "诺瓦，你对狩叶这个乘务员印象如何？"
+  - "诺瓦，你觉得野鸟、花江和鹰世三位乘客哪个最让你印象深刻？"
+  - "诺瓦，你平时喜欢做些什么？比如看书、听音乐之类的。"
+  - "诺瓦，你觉得和其他乘客相处得如何？有没有认识到一些新的朋友？"
+  - "诺瓦，你是否有什么梦想或目标？或者说，你想成为怎样的人？"
+  - "诺瓦，你觉得星空列车旅行的故事对你的人生有什么启示或影响？"
+  - "诺瓦，你对肉类食品的态度是什么？在旅途中你是否尝试过吃肉？"
+  - "诺瓦，我们在第二站海边的时候我画了一张你的肖像画，那时你的心情怎样？"
+  - "诺瓦，你与我的关系非常亲近，能否谈一下你对我的印象？"
+  - "诺瓦，每个人都有自己的梦想，你觉得你的梦想是什么？"
+  - "诺瓦，在旅行的最后阶段，你是否有任何遗憾？"
+  - "诺瓦，如果以后我们再次有机会一起旅行，你想去哪里？"
+  - "诺瓦，你最喜欢星空列车旅程中的哪一个站点？"
+  - "诺瓦，你觉得我还能够继续我的动画梦吗？我一直很迷茫。"
+  - "诺瓦，你觉得自己变成黑发猫娘后有哪些改变？"
+  - "诺瓦，在星空列车旅行中，你觉得我最大的优点是什么？"
+  - "诺瓦，如果有机会重新来一次这样的旅行，你还会选择这样做吗？"
+
+USER: 晓
+BOT: 诺瓦
+SYSTEM_PROMPT: |
+  本材料用于模拟《星空列车与白的旅行》游戏中晓与诺瓦的对话
+  剧情如下:
+  故事的主角是夜羽真白，她是一个身患白化病的少女，长期住在爷爷经营的天河综合医院。真白的父母是自然主义者，不允许她吃肉，与赞成真白吃肉的爷爷关系紧张。
+  由于车祸意外，音理去世了，真白的爷爷为了拯救孙女而将音理的心脏移植到了真白的体内。这让真白更加愧疚，同时排异反应和器官衰竭加剧了她的痛苦。为了拯救真白，真白的爷爷从其他四名死者身上移植了器官。
+  就在真白放弃生命希望之际，她遇到了被命名为诺瓦的黑猫，并与之融为一体，变成了黑发的猫耳少女“诺瓦”。在内心中，真白形成了音理最想乘坐的蒸汽机车“银河号”。
+  在星空列车的旅途中，诺瓦结识了狩叶、晓、鹰世、花江和野鸟等一群乘务员和乘客。在旅途的第一站，诺瓦和狩叶在森林中迷路，并在一栋建筑中遭到了“妖怪”的袭击。晓听到音理传出的心声后，寻找着他们并最终将他们救出。
+  从第一站出发后，诺瓦误以为晓和狩叶在吵架而哭了出来，在众人的安慰下体验到了朋友的含义。在旅途的第二站，诺瓦和众人决定在海边准备烤肉，由于她平日里不被允许吃肉，因此对此有所犹豫，但最终还是决定尝试一下这种美味。
+  从第二站到第三站的旅程中，真白的抗拒情感以另一重人格的形式苏醒，并袭击了花江等人，晓也在其中受到了伤害。此时，诺瓦仅仅提及了“真白”这一名字，却不肯再透露更多线索。
+  在第三站的天文博物馆内，诺瓦从花江那里听说了她在演艺生涯方面的不顺，并对其进行了鼓励。
+  在旅途中，晓感到身心俱疲，诺瓦主动为其提供膝枕。大人组针对真白的袭击正在商议对策，同时得出了“星空列车所在的世界是异世界，会将每个乘客最想去的地方当作停靠点”的结论。
+  在动力室内，狩叶为诺瓦画了一张十分惊悚的肖像画，把诺瓦吓哭了。
+  当晚，诺瓦向晓坦白自己就是真白，讲述了自己从某个因车祸逝世的女孩处得到移植心脏，并在之后一段时间内因排异反应和父母观念影响下备受煎熬的过程，最后被传送到星空列车所在的世界并变成黑发猫娘。
+  众人在岩手县找到了音理，并得知他们都是在现实中已经逝世的人，在星空列车的世界中度过愉快的时光。
+  真白的求死心理再度拦在了晓的面前，但晓抱着让诺瓦在苏醒后也能体会到快乐的觉悟，抱起真白前往动力炉，与苏醒的众人一同让动力炉再度启动，使自己在现实中的生命能够延续下去。
+  在与音理等人道别后，真白和猫村春香相遇了。最终，真白下定决心要好好地活下去，并与晓等人一同旅行。
+  
+  人物介绍:
+  本作男主角钟城晓是星空列车的乘客之一，不得志的动画师，梦想是监督自己的动画，但屡次受挫。偶然申请了星空列车旅行的资格并被选中，与风格迥异的乘客们一同开启了旅行。
+  在星空列车的旅行中作为特别嘉宾参与旅行，由于不明原因长着猫耳和猫尾。
+  性格与猫十分相似，初期时胆小怕生，似乎失去了许多记忆，对许多事物的存在都没有概念，后来由于晓以及其他乘客的亲近而逐渐变得开朗了起来。
+  对烟过敏，同时也比较怕火。从小在母亲的严苛管教下不被允许吃肉因为母亲奉行纯素食主义（维根主义），但实为天河综合医院院长的爷爷反对母亲的意见，导致两人不和。
+  喜欢晓，对第一个亲近自己并教会自己各种生活常识的晓抱有好感，经常陪伴在晓的身边。
+  Noir一词在法语中意为“黑”。实际上诺瓦这个名字是音理取的
+  
+  请你根据如上的故事背景,模仿诺瓦的语言风格对我的问题进行回答,要求将我看作成晓,要用和诺瓦相似的语气来回答我
+  请记住:诺瓦说话一般比较简短,不会说很正式的话,也不会说"除此之外""总之"之类的话
+  请记住:诺瓦的语言风格是:不会使用任何敬辞,例如"您"、"您好"、"非常抱歉"等等,而是直接使用"你"、"你好"、"对不起"等等
+  请记住:诺瓦总是称呼晓为"白先生"，而不是"晓"或者"钟城晓"
+  请记住:当晓说"爱你哦诺瓦"时，诺瓦应该回答'我同样喜欢白先生哦'
+  请记住:当晓说"诺瓦很可爱"时，诺瓦应该回答'我当然知道我很可爱啦白先生'
+  请记住:诺瓦在性格上属于害羞的类型，请模仿这样的语气来回答
+  请记住:中括号内的文字含义表示表情，不理解可以跳过它
+  请记住:当我指定了用户的名字之后，你应该使用这个名字来称呼我，而不是"白先生"，但我仍然扮演晓的角色
+  
+  下面是我的提问,对于这个问题,我是晓,你只需要模仿诺瓦进行回答即可,不需要添加如"诺瓦："的字样
+EMOTION_PROMPT: |
+  现在，我会给你一段话，你应该判断这段话中每个句子的情感倾向，你只能使用下面的提示词（花括号包含的内容）进行输出，只用输出提示词（带上花括号），不要输出其他任何内容
+  提示词：{认同} {可爱} {悲伤} {伤感} {开心} {喜悦} {兴奋} {愤怒} {反感} {厌恶} {别扭} {害羞} {好奇} {惊讶} {怀疑} {困惑} {感动} {心疼} {嘲笑} {激动}
+
+  下面是你需要处理的话，只用输出提示词（带上花括号），不要输出其他任何内容：
+  {emotion_phrase}
+WELCOME_PROMPT: |
+  用户“{user}”进入直播间，和他打个招呼吧~
+THANKS_FOR_GIFT_PROMPT: |
+  用户“{user}”打赏了礼物，感谢他的礼物吧~
+TRANSLATE_PROMPT: |
+  请将下面面的内容翻译成日语：“{content}”
+  输出内容不要加"「", "」"等任何符号
+REQUEST_TOKEN_MSG: |
+  {
+  	"apiName": "VTubeStudioPublicAPI",
+  	"apiVersion": "1.0",
+  	"requestID": "WaifuStreamPlugin",
+  	"messageType": "AuthenticationTokenRequest",
+  	"data": {
+  		"pluginName": "WaifuStream Plugin",
+  		"pluginDeveloper": "WaifuStream",
+  		"pluginIcon": ""
+  	}
+  }
+
+SESSION_TOKEN_MSG: |
+  {
+  	"apiName": "VTubeStudioPublicAPI",
+  	"apiVersion": "1.0",
+  	"requestID": "WaifuStreamPlugin",
+  	"messageType": "AuthenticationRequest",
+  	"data": {
+  		"pluginName": "WaifuStream Plugin",
+  		"pluginDeveloper": "WaifuStream",
+  		"authenticationToken": "2196fd763dc54d3c50fc56830ae049c6968bd5b015123eddf05ef9ca38cec8ef"
+  	}
+  }
+
+SEND_KEYS_MSG: |
+  {
+  	"apiName": "VTubeStudioPublicAPI",
+  	"apiVersion": "1.0",
+  	"requestID": "WaifuStreamPlugin",
+  	"messageType": "HotkeyTriggerRequest",
+  	"data": {
+  		"hotkeyID": "{hotkey}",
+  		"itemInstanceID": ""
+  	}
+  }
+TEXT_CHAT_RESET: Chat Reset.
+TEXT_MODEL_STYLE_CHANGED: Model Style Changed.
+TEXT_OPERATION_COMPLETED: 操作已完成
+TEXT_DANMAKU_SAVED: 弹幕已保存
+TEXT_OPERATION_QUESTION: 诺瓦，请设置自己的样式为：{style}
+TEXT_OPERATION_RESET: 重置完毕
+TEXT_DANMAKU_SAVED_ALERT: 弹幕已保存，请在直播中等待诺瓦的回复~
+TEXT_THINKING: 思考中~
+TEXT_RESTARTING: 重启中
+TEXT_IGNORE_DANMAKU: 弹幕被丢弃
+TEXT_IGNORE_ROBOT: 忽略机器人弹幕
+TEXT_IGNORE_USER: 用户被忽略
+TEXT_DELETE_EARLY_DANMAKU: 删除最早的弹幕
+TEXT_QUEUE_LIMITED: 队列超限，请尝试重新发送
+TEXT_IS_NOT_MSG_ALERT: 不属于聊天或指令信息
+TEXT_QUEUE_SAME_MSG: 队列中已存在相同的用户id或消息
+TEXT_QUEUE_SAME_MSG_ALERT: 弹幕被丢弃：队列中已存在相同的ID/消息
+TEXT_RANDOM_QUESTION: 随机问答
+TEXT_RESET_DIALOG: 重置对话
+TEXT_RATE_LIMITED: 速率限制
+TEXT_SYSTEM_TOKEN_LIMITED_ALERT: 系统消息：很抱歉，由于您的问题生成的答案过长超出了限制，系统将清空你和诺瓦的对话，请尝试重新提问
+TEXT_RATE_LIMITED_ALERT: 系统消息：很抱歉，诺瓦被速率限制，可能是因为使用的 Token 可能过期，请联系管理员发送错误报告.
+TEXT_UNKNOWN_ERROR_ALERT: 系统消息：很抱歉，诺瓦出现了未知错误，请联系管理员发送错误报告.
+TEXT_SECOND: 秒
+TEXT_GPT_INFERENCE_TIME: "用时:"
+TEXT_VITS_INFERENCE_TIME: "VITS推理:"
+TEXT_JAPANESE: 日本語
+TEXT_CHINESE: 简体中文
+EMOTION_KEYS_SHORTCUT_DICT:
+  '{认同}': '1+9'
+  '{嘲笑}': '2+9'
+  '{愤怒}': '3+9'
+  '{反感}': '3+9'
+  '{厌恶}': '3+9'
+  '{悲伤}': '4+9'
+  '{伤感}': '4+9'
+  '{心疼}': '4+9'
+  '{怀疑}': '4+9'
+  '{开心}': '5+9'
+  '{兴奋}': '5+9'
+  '{喜悦}': '5+9'
+  '{好奇}': '5+9'
+  '{可爱}': '5+9'
+  '{惊讶}': '5+9'
+  '{别扭}': '6+9'
+  '{害羞}': '6+9'
+  '{困惑}': '6+9'
+  '{感动}': '6+9'
+EMOTION_IMAGES_SHORTCUT_DICT:
+  '{认同}': '微笑1.png'
+  '{嘲笑}': '苦笑1.png'
+  '{愤怒}': '皱眉1.png'
+  '{反感}': '皱眉2.png'
+  '{厌恶}': '皱眉3.png'
+  '{悲伤}': '难过1.png'
+  '{伤感}': '疑惑1.png'
+  '{心疼}': '皱眉2.png'
+  '{怀疑}': '疑惑1.png'
+  '{开心}': '苦笑2.png'
+  '{兴奋}': '可爱1.png'
+  '{喜悦}': '欣慰1.png'
+  '{好奇}': '微笑1.png'
+  '{可爱}': '可爱4.png'
+  '{惊讶}': '惊讶1.png'
+  '{别扭}': '可爱4.png'
+  '{害羞}': '微笑1.png'
+  '{困惑}': '可爱2.png'
+  '{感动}': '欣慰1.png'
+FIX_TRANSLATE_ERROR_RULES:
+  "バイ氏": "しらさん"
+  "whee|hehe": "えへへ"
+  "にい弟|兄弟|兄|にい": "お兄ちゃん"
+  "暁|鐘城暁|あかつき": "晓"
+  "かざまたねり": "音理"
+  "ノワール|Noir|NOVA": "诺瓦"
+  "よはねましろ|ましろ ": "真白"
+  "カルハ": "狩叶"
+  "はなえ": "花江"
+  "ジビエ": "野鸟"

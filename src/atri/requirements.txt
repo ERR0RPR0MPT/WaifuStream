@@ -1,7 +1,0 @@
-blive==0.2.5
-googletrans==4.0.0rc1
-openai==0.27.2
-playsound==1.2.2
-PyAutoGUI==0.9.53
-requests==2.31.0
-websocket_client==1.5.3

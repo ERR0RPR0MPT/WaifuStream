@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>OBS Page</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            width: 100%;
+        }
+
+        #img-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+            width: 100%;
+        }
+
+        #fullscreen-img {
+            max-height: 100%;
+            max-width: 100%;
+        }
+
+    </style>
+
+    <script>
+    function updateImage() {
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "/update_image_data/");
+        xhr.responseType = "json";
+        xhr.onload = function() {
+            if (xhr.status === 200) {
+                document.querySelector("#fullscreen-img").src = xhr.response.image_url;
+            } else {
+                console.log("Error: " + xhr.status);
+            }
+        };
+        xhr.send();
+    }
+    setInterval(updateImage, 250);
+
+    </script>
+</head>
+<body>
+<div id="img-container">
+    <img id="fullscreen-img" src="{image_url}" alt="">
+</div>
+</body>
+</html>

@@ -30,8 +30,7 @@ A: **使用现今普通人能接触到的AI技术、致力于提供模拟 ACGN �
 
 ### 说明
 
-1. main.py - 主程序脚本，提供各种模型的数据交流并最终返回文字和音频。
-2. config.py - 里面进行主程序的一些配置，并且提供人物调参使用的prompt。
+20230615 更新: 重构了项目，现在总算比之前的史山好一点了
 
 ### 项目相关资源
 
@@ -51,7 +50,9 @@ pip install -r requirements.txt
 ### 运行
 
 1. 在 `config.py` 中配置好各种参数，具体参考配置章节。
-2. 双击 `start.bat` 运行。
+2. 将 `cfg` 目录下的 `config_exp.yml` 复制到 `config.yml`。
+3. 修改配置文件。
+4. 使用 `python .\main.py .\cfg\config.yml` 运行。
 
 ### 配置
 
@@ -69,7 +70,7 @@ TODO
 
 ### 音理 -《星空列车与白的旅行》 (20230612)
 
-![YinLi](https://raw.githubusercontent.com/ERR0RPR0MPT/WaifuStream/main/assets/yinli1.png)
+![YinLi](https://raw.githubusercontent.com/ERR0RPR0MPT/WaifuStream/main/static/yinli1.png)
 
 音理你带我走吧音理😭😭😭
 
@@ -118,7 +119,7 @@ Epoch: 238 ，使用方法请参考原项目。
 
 ### ATRI -My Dear Moments- (アトリ) (20230607)
 
-![ATRI](https://raw.githubusercontent.com/ERR0RPR0MPT/WaifuStream/main/assets/1.jpg)
+![ATRI](https://raw.githubusercontent.com/ERR0RPR0MPT/WaifuStream/main/static/1.jpg)
 
 *时间停止吧，你是多么的美丽—*
 
@@ -133,9 +134,9 @@ Epoch: 238 ，使用方法请参考原项目。
 
 详细对话请[参考这里](https://github.com/ERR0RPR0MPT/atri-dialog)
 
-![Q](https://raw.githubusercontent.com/ERR0RPR0MPT/WaifuStream/main/assets/stream_question.jpg)
+![Q](https://raw.githubusercontent.com/ERR0RPR0MPT/WaifuStream/main/static/stream_question.jpg)
 
-![A](https://raw.githubusercontent.com/ERR0RPR0MPT/WaifuStream/main/assets/stream_answer.jpg)
+![A](https://raw.githubusercontent.com/ERR0RPR0MPT/WaifuStream/main/static/stream_answer.jpg)
 
 <details>
   <summary>展开对话</summary>

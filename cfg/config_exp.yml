@@ -1,0 +1,147 @@
+CONFIG_NAME: "{test}"
+CONFIG_MATCH_COMMAND: "#{test}:"
+SERVER_PORT: 8005
+SERVER_TRANSLATE_PROXY:
+  https: "socks5://localhost:7890"
+BILI_ROOM_ID: 0
+BILI_USER_UID: 0
+VTS_API_URL: "ws://localhost:8001"
+EMOTION_SIMULATION_ENABLE: false
+EMOTION_SIMULATION_MODE: "web"  # web or vts
+VITS_API_TYPE: 0  # 0: vits-fast-fine-tuning-inference, 1: moetts-inference
+TRANSLATE_LOG_STATE: false
+TRANSLATE_MODE: "google"  # gpt or google
+TRANSLATE_TARGET_LANGUAGE: "ja"
+MAX_DANMAKU_QUEUE_LENGTH: 10
+MAX_INTERACT_MESSAGES_PER_MINUTE: 1
+MAX_WAIT_SECONDS: 600
+MAX_ANSWER_LENGTH: 150
+MAX_CHAT_ANSWER_SECONDS: 30
+IGNORED_USERS: []
+EMOTION_IMAGE_URL: "http://localhost:8005/assets/{test}/images/"
+EMOTION_IMAGE_DEFAULT: "待机.png"
+TERMINAL_CHAT_NAME: "终端"
+VITS_DOMAINS:
+  - ""
+OPENAI_API_KEY_LIST:
+  - ""
+VITS_HEADER:
+  Content-Type: "application/json"
+  Accept: "*/*"
+VITS_PAYLOAD:
+  fn_index: 0
+  data:
+    - "Test"
+    - "{test}"
+    - "日本語"
+    - 1
+  session_hash: "abcdefghij"
+BILI_DANMAKU_SEND_URL: "https://api.live.bilibili.com/msg/send"
+BILI_DANMAKU_SEND_DATA:
+  bubble: "0"
+  msg: ""
+  color: "16777215"
+  mode: "1"
+  room_type: "0"
+  jumpfrom: "0"
+  fontsize: "25"
+  rnd: ""
+  roomid: ""
+  csrf: ""
+  csrf_token: ""
+BILI_DANMAKU_SEND_HEADER:
+  Cookie: ""
+  Origin: "https://live.bilibili.com"
+  Referer: "https://live.bilibili.com/0"
+  User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36"
+RANDOM_QUESTION:
+  - ""
+
+USER: user
+BOT: bot
+SYSTEM_PROMPT: |
+  {test}
+EMOTION_PROMPT: |
+  现在，我会给你一段话，你应该判断这段话中每个句子的情感倾向，你只能使用下面的提示词（花括号包含的内容）进行输出，只用输出提示词（带上花括号），不要输出其他任何内容
+  提示词：{认同} {可爱} {悲伤} {伤感} {开心} {喜悦} {兴奋} {愤怒} {反感} {厌恶} {别扭} {害羞} {好奇} {惊讶} {怀疑} {困惑} {感动} {心疼} {嘲笑} {激动}
+
+  下面是你需要处理的话，只用输出提示词（带上花括号），不要输出其他任何内容：
+  {emotion_phrase}
+WELCOME_PROMPT: |
+  用户“{user}”进入直播间，和他打个招呼吧~
+THANKS_FOR_GIFT_PROMPT: |
+  用户“{user}”打赏了礼物，感谢他的礼物吧~
+TRANSLATE_PROMPT: |
+  请将下面面的内容翻译成日语：“{content}”
+  输出内容不要加"「", "」"等任何符号
+REQUEST_TOKEN_MSG: |
+  {
+  	"apiName": "VTubeStudioPublicAPI",
+  	"apiVersion": "1.0",
+  	"requestID": "WaifuStreamPlugin",
+  	"messageType": "AuthenticationTokenRequest",
+  	"data": {
+  		"pluginName": "WaifuStream Plugin",
+  		"pluginDeveloper": "WaifuStream",
+  		"pluginIcon": ""
+  	}
+  }
+
+SESSION_TOKEN_MSG: |
+  {
+  	"apiName": "VTubeStudioPublicAPI",
+  	"apiVersion": "1.0",
+  	"requestID": "WaifuStreamPlugin",
+  	"messageType": "AuthenticationRequest",
+  	"data": {
+  		"pluginName": "WaifuStream Plugin",
+  		"pluginDeveloper": "WaifuStream",
+  		"authenticationToken": ""
+  	}
+  }
+
+SEND_KEYS_MSG: |
+  {
+  	"apiName": "VTubeStudioPublicAPI",
+  	"apiVersion": "1.0",
+  	"requestID": "WaifuStreamPlugin",
+  	"messageType": "HotkeyTriggerRequest",
+  	"data": {
+  		"hotkeyID": "{hotkey}",
+  		"itemInstanceID": ""
+  	}
+  }
+TEXT_CHAT_RESET: Chat Reset.
+TEXT_MODEL_STYLE_CHANGED: Model Style Changed.
+TEXT_OPERATION_COMPLETED: 操作已完成
+TEXT_DANMAKU_SAVED: 弹幕已保存
+TEXT_OPERATION_QUESTION: {test}，请设置自己的样式为：{style}
+TEXT_OPERATION_RESET: 重置完毕
+TEXT_DANMAKU_SAVED_ALERT: 弹幕已保存，请在直播中等待{test}的回复~
+TEXT_THINKING: 思考中~
+TEXT_RESTARTING: 重启中
+TEXT_IGNORE_DANMAKU: 弹幕被丢弃
+TEXT_IGNORE_ROBOT: 忽略机器人弹幕
+TEXT_IGNORE_USER: 用户被忽略
+TEXT_DELETE_EARLY_DANMAKU: 删除最早的弹幕
+TEXT_QUEUE_LIMITED: 队列超限，请尝试重新发送
+TEXT_IS_NOT_MSG_ALERT: 不属于聊天或指令信息
+TEXT_QUEUE_SAME_MSG: 队列中已存在相同的用户id或消息
+TEXT_QUEUE_SAME_MSG_ALERT: 弹幕被丢弃：队列中已存在相同的ID/消息
+TEXT_RANDOM_QUESTION: 随机问答
+TEXT_RESET_DIALOG: 重置对话
+TEXT_RATE_LIMITED: 速率限制
+TEXT_SYSTEM_TOKEN_LIMITED_ALERT: 系统消息：很抱歉，由于您的问题生成的答案过长超出了限制，系统将清空你和{test}的对话，请尝试重新提问
+TEXT_RATE_LIMITED_ALERT: 系统消息：很抱歉，{test}被速率限制，可能是因为使用的 Token 可能过期，请联系管理员发送错误报告.
+TEXT_UNKNOWN_ERROR_ALERT: 系统消息：很抱歉，{test}出现了未知错误，请联系管理员发送错误报告.
+TEXT_SECOND: 秒
+TEXT_GPT_INFERENCE_TIME: "用时:"
+TEXT_VITS_INFERENCE_TIME: "VITS推理:"
+TEXT_JAPANESE: 日本語
+TEXT_CHINESE: 简体中文
+EMOTION_KEYS_SHORTCUT_DICT:
+  "{test}": "{test}"
+EMOTION_IMAGES_SHORTCUT_DICT:
+  "{test}": "{test}"
+FIX_TRANSLATE_ERROR_RULES:
+  "{test}": "{test}"

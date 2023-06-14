@@ -1,7 +1,7 @@
-blive==0.2.5
-googletrans==4.0.0rc1
+bilibili_api_python==15.4.4
 openai==0.27.2
 playsound==1.2.2
-PyAutoGUI==0.9.53
+pygtrans==1.5.2
+PyYAML==6.0
 requests==2.31.0
 websocket_client==1.5.3

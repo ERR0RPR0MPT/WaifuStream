@@ -88,29 +88,21 @@ def on_msg(q, ide, name):
     except:
         value.chat_dict[ide] = ChatGPT(config.SYSTEM_PROMPT)
 
-    if q == "+restart":
-        danmaku.send_danmaku(config.TEXT_RESTARTING)
-        utils.restart()
-
-    if q == "+reset":
-        value.chat_dict[ide] = ChatGPT(config.SYSTEM_PROMPT)
-        danmaku.send_danmaku(f"@{name} {config.TEXT_OPERATION_RESET}")
-        return config.TEXT_CHAT_RESET
-
     if q[0] == "+" and config.EMOTION_SIMULATION_ENABLE and config.EMOTION_SIMULATION_MODE == "vts":
         # 切换模型样式
         model_style = q.replace("+", "")
         utils.set_model_style(model_style)
         q = config.TEXT_OPERATION_QUESTION.replace("{style}", model_style)
+        return
 
-    q = q.replace("#", "", 1)
+    # q = q.replace("#", "", 1)
 
     # # 限制对话次数
     # if len(chat.messages) > 15:
     #     chat = ChatGPT(config.SYSTEM_PROMPT)
 
     # 发送弹幕
-    if ide != "0":
+    if ide != "0" or ide != "-10000":
         danmaku.send_danmaku(f"@{name} {config.TEXT_THINKING}")
 
     value.sender_str = f"{name} -> Inferencing..."

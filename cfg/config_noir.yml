@@ -6,8 +6,10 @@ SERVER_TRANSLATE_PROXY:
   https: "socks5://localhost:7890"
 BILI_ROOM_ID: 0
 BILI_USER_UID: 0
+BILI_ADMIN_USERS:
+  - 125160481
 VTS_API_URL: "ws://localhost:8001"
-AUTO_ANSWER_ENABLE: true
+AUTO_ANSWER_ENABLE: false
 EMOTION_SIMULATION_ENABLE: true
 EMOTION_SIMULATION_MODE: "web"  # web or vts
 VITS_API_TYPE: 0  # 0: vits-fast-fine-tuning-inference, 1: moetts-inference
@@ -173,13 +175,14 @@ TEXT_OPERATION_RESET: 重置完毕
 TEXT_DANMAKU_SAVED_ALERT: 弹幕已保存，请在直播中等待诺瓦的回复~
 TEXT_THINKING: 思考中~
 TEXT_RESTARTING: 重启中
+TEXT_RESTARTING_FAILED: 重启失败：您没有足够的权限
 TEXT_IGNORE_DANMAKU: 弹幕被丢弃
 TEXT_IGNORE_ROBOT: 忽略机器人弹幕
 TEXT_IGNORE_USER: 用户被忽略
 TEXT_DELETE_EARLY_DANMAKU: 删除最早的弹幕
 TEXT_QUEUE_LIMITED: 队列超限，请尝试重新发送
 TEXT_IS_NOT_MSG_ALERT: 不属于聊天或指令信息
-TEXT_QUEUE_SAME_MSG: 队列中已存在相同的用户id或消息
+TEXT_QUEUE_SAME_MSG: 队列中已存在相同的用户id和消息，或是识别到指令进行处理
 TEXT_QUEUE_SAME_MSG_ALERT: 弹幕被丢弃：队列中已存在相同的ID/消息
 TEXT_RANDOM_QUESTION: 随机问答
 TEXT_RESET_DIALOG: 重置对话

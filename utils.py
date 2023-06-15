@@ -5,6 +5,8 @@ import sys
 import time
 
 import config
+import danmaku
+import nlp
 import utils
 import value
 import re
@@ -21,7 +23,8 @@ def fix_emotion_keys(text):
 def fix_emotion_images(text):
     shortcut_pattern = r'\{.*?\}'
     shortcuts = re.findall(shortcut_pattern, text)
-    shortcut_keys = [config.EMOTION_IMAGES_SHORTCUT_DICT[s] for s in shortcuts if s in config.EMOTION_IMAGES_SHORTCUT_DICT]
+    shortcut_keys = [config.EMOTION_IMAGES_SHORTCUT_DICT[s] for s in shortcuts if
+                     s in config.EMOTION_IMAGES_SHORTCUT_DICT]
     return shortcut_keys
 
 
@@ -42,6 +45,7 @@ def restart():
     python = sys.executable
     os.execl(python, python, *sys.argv)
 
+
 def get_dialog_today():
     return f"{config.CONFIG_NAME}_" + datetime.today().strftime('%Y%m%d') + '.txt'
 
@@ -57,6 +61,7 @@ def get_vits_link():
     value.vits_domain_index += 1
     return vd, f"https://{vd}/run/predict/", f"https://{vd}/file="
 
+
 def is_valid_msg(msg):
     # 队列中同一用户id的消息数目不超过1条
     # if any(m["id"] == msg["id"] for m in msg_queue):
@@ -64,10 +69,30 @@ def is_valid_msg(msg):
     # 队列中含有相同的文字内容就不加入队列中
     # if any(m["text"] == msg["text"] for m in msg_queue):
     #     return False
+    # 去除前缀进行检查
+    msg_del_starts = msg["text"].replace(config.CONFIG_MATCH_COMMAND, "", 1)
+    # 重启指令的管理员检测
+    if msg["text"] == "+restart" or msg_del_starts == "+restart":
+        if msg["id"] in config.BILI_ADMIN_USERS:
+            danmaku.send_danmaku(config.TEXT_RESTARTING)
+            utils.restart()
+            return False
+        else:
+            danmaku.send_danmaku(config.TEXT_RESTARTING_FAILED)
+            return False
+    # 检查是否为重置对话指令
+    if msg["text"] == "+reset" or msg_del_starts == "+reset":
+        value.chat_dict[msg["id"]] = nlp.ChatGPT(config.SYSTEM_PROMPT)
+        danmaku.send_danmaku("@" + msg["name"] + f" {config.TEXT_OPERATION_RESET}")
+        return False
+    # 检查对话开头是否匹配
+    if not msg["text"].startswith(config.CONFIG_MATCH_COMMAND):
+        return False
     # 如果队列中已经存在同一用户ID和相同消息内容的消息，则返回False。如果不存在，则返回True
     if any(m["id"] == msg["id"] and m["text"] == msg["text"] for m in value.msg_queue):
         return False
     return True
+
 
 def save_short_dialog(msg):
     if not os.path.exists(os.path.join(os.getcwd(), "assets", config.CONFIG_NAME, "dialog")):
@@ -154,5 +179,3 @@ def init_ws():
 
 def clear_console():
     os.system('cls' if os.name == 'nt' else 'clear')
-
-

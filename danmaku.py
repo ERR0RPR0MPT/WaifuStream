@@ -101,6 +101,8 @@ async def on_danmaku(event):
 
     # 弹幕是否合法
     if utils.is_valid_msg(danmu_dict):
+        # 去除前缀
+        danmu_dict["text"] = danmu_dict["text"].replace(config.CONFIG_MATCH_COMMAND, "", 1)
         while len(value.msg_queue) >= config.MAX_DANMAKU_QUEUE_LENGTH and time.time() - float(value.msg_queue[0]["timestamp"]) > 60.0:
             msg_temp = value.msg_queue.pop(0)
             print(config.TEXT_IGNORE_DANMAKU + "(" + config.TEXT_DELETE_EARLY_DANMAKU + "): text=" + msg_temp["text"] + " id=" +

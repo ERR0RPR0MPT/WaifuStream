@@ -17,10 +17,6 @@ def execute():
     while True:
         try:
             choice_flag = 0
-            msg = ""
-            ide = ""
-            name = ""
-            timestamp = ""
             while True:
                 if choice_flag <= config.MAX_WAIT_SECONDS:
                     if len(value.msg_queue) <= 0:

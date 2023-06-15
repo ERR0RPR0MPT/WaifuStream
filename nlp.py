@@ -93,7 +93,6 @@ def on_msg(q, ide, name):
         model_style = q.replace("+", "")
         utils.set_model_style(model_style)
         q = config.TEXT_OPERATION_QUESTION.replace("{style}", model_style)
-        return
 
     # q = q.replace("#", "", 1)
 

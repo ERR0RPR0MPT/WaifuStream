@@ -3,11 +3,9 @@ import os
 import random
 import sys
 import time
-
 import config
 import danmaku
 import nlp
-import utils
 import value
 import re
 import websocket
@@ -75,7 +73,7 @@ def is_valid_msg(msg):
     if msg["text"] == "+restart" or msg_del_starts == "+restart":
         if msg["id"] in config.BILI_ADMIN_USERS:
             danmaku.send_danmaku(config.TEXT_RESTARTING)
-            utils.restart()
+            restart()
             return False
         else:
             danmaku.send_danmaku(config.TEXT_RESTARTING_FAILED)
@@ -157,10 +155,10 @@ def send_images(lista):
     while True:
         for i in lista:
             if value.stop_event:
-                utils.set_trans_image_url(config.EMOTION_IMAGE_URL + config.EMOTION_IMAGE_DEFAULT)
+                set_trans_image_url(config.EMOTION_IMAGE_URL + config.EMOTION_IMAGE_DEFAULT)
                 return
             # print("Send Images: " + i)
-            utils.set_trans_image_url(config.EMOTION_IMAGE_URL + i)
+            set_trans_image_url(config.EMOTION_IMAGE_URL + i)
             time.sleep(random.randint(6000, 10000) / 1000)
 
 

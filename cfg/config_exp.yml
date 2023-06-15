@@ -1,5 +1,6 @@
 CONFIG_NAME: "{test}"
 CONFIG_MATCH_COMMAND: "#{test}:"
+SHELL_TITLE: "example"
 SERVER_PORT: 8005
 SERVER_TRANSLATE_PROXY:
   https: "socks5://localhost:7890"

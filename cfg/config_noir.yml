@@ -1,5 +1,6 @@
 CONFIG_NAME: "noir"
 CONFIG_MATCH_COMMAND: "#noir:"
+SHELL_TITLE: "诺瓦"
 SERVER_PORT: 8005
 SERVER_TRANSLATE_PROXY:
   https: "socks5://localhost:7890"

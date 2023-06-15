@@ -14,6 +14,7 @@ with open(sys.argv[1], 'r', encoding='utf-8') as stream:
 
 CONFIG_NAME = config['CONFIG_NAME']
 CONFIG_MATCH_COMMAND = config['CONFIG_MATCH_COMMAND']
+SHELL_TITLE = config['SHELL_TITLE']
 SERVER_PORT = config['SERVER_PORT']
 SERVER_TRANSLATE_PROXY = config['SERVER_TRANSLATE_PROXY']
 BILI_ROOM_ID = config['BILI_ROOM_ID']

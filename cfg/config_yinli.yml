@@ -1,5 +1,6 @@
 CONFIG_NAME: "yinli"
 CONFIG_MATCH_COMMAND: "#yinli:"
+SHELL_TITLE: "音理"
 SERVER_PORT: 8006
 SERVER_TRANSLATE_PROXY:
   https: "socks5://localhost:7890"

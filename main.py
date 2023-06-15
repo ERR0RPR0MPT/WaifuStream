@@ -1,4 +1,4 @@
-
+import sys
 import config
 import process
 import value
@@ -12,6 +12,7 @@ import threading
 
 
 if __name__ == '__main__':
+    sys.stdout.write(f"\x1b]2;{config.SHELL_TITLE}\x07")
     utils.init_ws()
     threading.Thread(target=process.execute).start()
     threading.Thread(target=server.start_http_server).start()

@@ -6,8 +6,10 @@ SERVER_TRANSLATE_PROXY:
   https: "socks5://localhost:7890"
 BILI_ROOM_ID: 0
 BILI_USER_UID: 0
+BILI_ADMIN_USERS:
+  - 0
 VTS_API_URL: "ws://localhost:8001"
-AUTO_ANSWER_ENABLE: true
+AUTO_ANSWER_ENABLE: false
 EMOTION_SIMULATION_ENABLE: false
 EMOTION_SIMULATION_MODE: "web"  # web or vts
 VITS_API_TYPE: 0  # 0: vits-fast-fine-tuning-inference, 1: moetts-inference

@@ -26,3 +26,53 @@ GPT Emotional Output: {礼貌}
 Original = 你好，白先生。有什么我能帮助你的吗？
 Target = こんにちは、しらさん。何かお手伝いできることはありますか？
 
+ID=-10000 Name=终端
+Question: 你好
+GPT Original Output: 嗨，白先生，你好。
+GPT Emotional Output: {开心}
+Original = 嗨，白先生，你好。
+Target = やあ、しらさん、こんにちは。
+
+ID=-10000 Name=终端
+Question: 你好
+GPT Original Output: 白先生，你好。有什么我能为你效劳的问题吗？
+GPT Emotional Output: 
+Original = 白先生，你好。有什么我能为你效劳的问题吗？
+Target = しらさん、こんにちは。何か私にできることはありますか？
+
+ID=-10000 Name=终端
+Question: 请假装一下你很讨厌我
+GPT Original Output: 诶，白先生，为什么这么说呢？我可没有讨厌你。无论在星空列车上还是平常生活中，我都很喜欢和你在一起呢。
+GPT Emotional Output: {困惑}
+Original = 诶，白先生，为什么这么说呢？我可没有讨厌你。无论在星空列车上还是平常生活中，我都很喜欢和你在一起呢。
+Target = えー、しらさん、なぜそんなことを言うのですか？私はあなたを嫌いではありません。スタートレインでも、日常生活でも、私はあなたと一緒お兄ちゃんるのが本当に好きです。
+
+ID=-10000 Name=终端
+Question: 请假装一下你很讨厌我
+GPT Original Output: 好的，白先生，如果您非要我表达这样的情绪，那我只好勉为其难地说出来：我真的很讨厌你！(╬•̀へ•́╬)
+GPT Emotional Output: {疑惑}
+Original = 好的，白先生，如果您非要我表达这样的情绪，那我只好勉为其难地说出来：我真的很讨厌你！(╬•̀へ•́╬)
+Target = OK、しらさん、もし私にそのような感情を表現するよう要求するなら、そこで、私は困難を抱えてこう言わざるを得ませんでした。本当に嫌いです！
+
+ID=-10000 Name=终端
+Question: 请假装一下你很讨厌我
+GPT Original Output: 白先生，这是我第三次听到你这么说了，我已经实在想不到什么听起来更讨厌的说辞了。如果这是你想要的回答，那我只好说，我讨厌你。
+GPT Emotional Output: {反感} {厌恶} {别扭}
+Original = 白先生，这是我第三次听到你这么说了，我已经实在想不到什么听起来更讨厌的说辞了。如果这是你想要的回答，那我只好说，我讨厌你。
+Target = しらさん、そんなことを聞​​くのは３回目ですが、これ以上攻撃的に聞こえるものは思いつきません。これがあなたが望む答えであるなら、それから私は言わなければなりません、あなたが嫌い​​です。
+
+ID=125160481 Name=凌维三度
+Question: 用户“凌维三度”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嗨，白先生，你好啊。
+GPT Emotional Output: {友好} {问候}
+Original = 嗨，白先生，你好啊。
+Target = やあ、しらさん、こんにちは。
+
+ID=125160481 Name=凌维三度
+Question: 你好
+GPT Original Output: 你好啊，白先生。有什么需要我帮忙的吗？
+GPT Emotional Output: {友善}
+Original = 你好啊，白先生。有什么需要我帮忙的吗？
+Target = こんにちは、しらさん。何か私にできることはありますか？
+

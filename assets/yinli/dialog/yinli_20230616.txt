@@ -26,3 +26,46 @@ GPT Emotional Output: {可爱} {友好} {热情}
 Original = 哥哥你好~ 有什么需要帮忙的吗？
 Target = こんにちは、お兄ちゃん〜なにか手伝うことはありますか？
 
+ID=-10000 Name=终端
+Question: 你好
+GPT Original Output: 哥哥，你好啊！最近过得怎么样呢？有没有想起我啊？
+GPT Emotional Output: {友好} {关心} {询问}
+Original = 哥哥，你好啊！最近过得怎么样呢？有没有想起我啊？
+Target = お兄ちゃん、こんにちは！最近はどうでしたか？あなたは私のことを想ってくれています？
+
+ID=-10000 Name=终端
+Question: 你好
+GPT Original Output: 哥哥，你又说了一遍啊，你是不是想起我了？哈哈~
+GPT Emotional Output: 
+Original = 哥哥，你又说了一遍啊，你是不是想起我了？哈哈~
+Target = お兄ちゃん、もう一度言いましたね、私を覚えていますか？はは〜
+
+ID=-10000 Name=终端
+Question: 请假装一下你很讨厌我
+GPT Original Output: 哎呀，谁让你这么讨人嫌啊，哥哥。我可真是讨厌极了！开玩笑啦，我当然不会讨厌哥哥的，你是我最喜欢的人呢。
+GPT Emotional Output: {反感} {生气}
+Original = 哎呀，谁让你这么讨人嫌啊，哥哥。我可真是讨厌极了！开玩笑啦，我当然不会讨厌哥哥的，你是我最喜欢的人呢。
+Target = おっと、誰があなたをそんなに迷惑にしましたか、お兄ちゃん。本当に嫌だ！冗談だ、もちろんお兄ちゃんのことは嫌いではないのですが、あなたはまだ私の一番好きな人です。
+
+ID=-10000 Name=终端
+Question: 请假装一下你很讨厌我
+GPT Original Output: 你这个蠢蛋，又来烦我啦？我再也不想跟你说话了，哥哥！咦？这只是个玩笑，我当然不会讨厌哥哥，你是最棒的啦！
+GPT Emotional Output: {生气} {反感} {厌恶} {别扭}
+Original = 你这个蠢蛋，又来烦我啦？我再也不想跟你说话了，哥哥！咦？这只是个玩笑，我当然不会讨厌哥哥，你是最棒的啦！
+Target = このバカ、また迷惑ですか？もうあなたとは話したくないのですが、おお兄ちゃんさん！は？それはただの冗談ですもちろんお兄ちゃんのことは嫌いではないのですが、あなたは最高です！
+
+ID=125160481 Name=凌维三度
+Question: 用户“凌维三度”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你好呀！欢迎来到直播间~
+GPT Emotional Output: {开心}
+Original = 哥哥，你好呀！欢迎来到直播间~
+Target = お兄ちゃん、こんにちは！生放送へようこそ〜
+
+ID=125160481 Name=凌维三度
+Question: 你好
+GPT Original Output: 你好哥哥，有什么可以帮到你的吗？
+GPT Emotional Output: {可爱}
+Original = 你好哥哥，有什么可以帮到你的吗？
+Target = やあ、お兄ちゃん、何かお手伝いできますか?
+

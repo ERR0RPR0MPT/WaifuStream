@@ -51,9 +51,7 @@ if __name__ == '__main__':
                 value.msg_queue.append(danmu_dict)
             elif inp.startswith("image:"):
                 print("Set image: " + inp[6:])
-                trans_image_url = config.EMOTION_IMAGE_URL + inp[6:]
-            elif inp.startswith("test"):
-                print(config.EMOTION_PROMPT)
+                utils.set_trans_image_url(config.EMOTION_IMAGE_URL + inp[6:])
             else:
                 print("Unknown command. Please try again.")
                 continue

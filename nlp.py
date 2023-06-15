@@ -16,9 +16,9 @@ class ChatGPT:
     GPT-3.5 Turbo 模型交互
     """
 
-    def __init__(self):
+    def __init__(self, system_prompt):
         self.user = config.USER
-        self.messages = [{"role": "system", "content": config.SYSTEM_PROMPT}]
+        self.messages = [{"role": "system", "content": system_prompt}]
 
     def ask_gpt(self):
         """
@@ -30,8 +30,6 @@ class ChatGPT:
             messages=self.messages,
             stream=True
         )
-        # return rsp.get("choices")[0]["message"]["content"]
-        # 流式输出
         return rsp
 
     def ask_gpt_get(self):
@@ -46,15 +44,35 @@ class ChatGPT:
         return rsp.get("choices")[0]["message"]["content"]
 
 
-def get_random_key():
+def set_available_openai_key():
     """
-    随机获取一个 OpenAI API Key
+    随机获取一个 OpenAI API Key，并检查可用性
     :return:
     """
+    i = 0
     while True:
+        i += 1
+        if len(config.OPENAI_API_KEY_LIST) == 0:
+            raise Exception("You have set nothing for OpenAI API Key, Please set one key first.")
+        if i >= 20:
+            raise Exception("Sorry, no available OpenAI KEY.")
         new_key = random.choice(config.OPENAI_API_KEY_LIST)
         if new_key != openai.api_key or len(config.OPENAI_API_KEY_LIST) == 1:
-            return new_key
+            # 检查可用性
+            origin_key = openai.api_key
+            openai.api_key = new_key
+            try:
+                c = ChatGPT("test")
+                c.messages.append({"role": "user", "content": "test"})
+                c.ask_gpt_get()
+            except:
+                traceback.print_exc()
+                openai.api_key = origin_key
+                config.OPENAI_API_KEY_LIST.remove(new_key)
+                print(f"OpenAI API Key: {utils.hide_openai_api_key(new_key)} is not available. Check for another one...")
+                continue
+            openai.api_key = new_key
+            return
 
 
 def on_msg(q, ide, name):
@@ -68,14 +86,14 @@ def on_msg(q, ide, name):
     try:
         value.chat_dict[ide]
     except:
-        value.chat_dict[ide] = ChatGPT()
+        value.chat_dict[ide] = ChatGPT(config.SYSTEM_PROMPT)
 
     if q == "+restart":
         danmaku.send_danmaku(config.TEXT_RESTARTING)
         utils.restart()
 
     if q == "+reset":
-        value.chat_dict[ide] = ChatGPT()
+        value.chat_dict[ide] = ChatGPT(config.SYSTEM_PROMPT)
         danmaku.send_danmaku(f"@{name} {config.TEXT_OPERATION_RESET}")
         return config.TEXT_CHAT_RESET
 
@@ -89,13 +107,13 @@ def on_msg(q, ide, name):
 
     # # 限制对话次数
     # if len(chat.messages) > 15:
-    #     chat = ChatGPT()##
+    #     chat = ChatGPT(config.SYSTEM_PROMPT)
 
     # 发送弹幕
     if ide != "0":
         danmaku.send_danmaku(f"@{name} {config.TEXT_THINKING}")
 
-    value.sender_str = f"{name}: {q} -> Inferencing..."
+    value.sender_str = f"{name} -> Inferencing..."
     value.stop_event = False
 
     # 提问-回答-记录
@@ -143,7 +161,7 @@ def on_msg(q, ide, name):
                     trans_text = ""
                     if config.TRANSLATE_MODE == "gpt":
                         print(f"Using GPT to translate...{partial_answer}")
-                        trans_chat = ChatGPT()
+                        trans_chat = ChatGPT(config.TRANSLATE_PROMPT)
                         trans_chat.messages.append(
                             {"role": "user", "content": config.TRANSLATE_PROMPT.replace("{content}", partial_answer)})
                         trans_text = trans_chat.ask_gpt_get()
@@ -194,7 +212,7 @@ def on_msg(q, ide, name):
     print(f"Original = {value.trans_origin_str}\nTarget = {value.trans_target_str}")
     utils.save_dialog(f"Original = {value.trans_origin_str}\nTarget = {value.trans_target_str}\n")
     utils.save_short_dialog(f"A: {value.trans_origin_str}\n\n")
-    value.sender_str = f"{name}: {q} -> Playing"
+    value.sender_str = f"{name} -> Playing"
 
     # 等待模型音频完毕
     try:
@@ -204,8 +222,7 @@ def on_msg(q, ide, name):
         t1.join(config.MAX_CHAT_ANSWER_SECONDS)
         if t1.is_alive():
             value.is_play_audio_timeout = True
-            print("Play Audio Thread execution timed out. Wait 3s to stop the thread...")
-            time.sleep(3)
+            print("Play Audio Thread execution timed out. Stop the audio thread...")
     except:
         print("Error: May be shutdown by long tokens.")
 
@@ -213,8 +230,7 @@ def on_msg(q, ide, name):
     value.audio_queue = {}
     value.audio_threads_queue = {}
     value.chat_dict[ide].messages.append({"role": "assistant", "content": answer})
-
-    value.sender_str = f"{name}: {q} -> Finished"
+    value.sender_str = f"{name} -> Finished"
     return answer
 
 
@@ -224,8 +240,8 @@ def emotion_analysis(msg):
     :param msg: 消息(string)
     :return: 情感分析结果(string)
     """
-    emotion_temp = ChatGPT()
-    emotion_temp.messages.append({"role": "user", "content": config.EMOTION_PROMPT.replace("{emotion_phrase}", msg)})
+    emotion_temp = ChatGPT(config.EMOTION_PROMPT)
+    emotion_temp.messages.append({"role": "user", "content": msg})
     emotion_data = emotion_temp.ask_gpt_get()
     return emotion_data
 
@@ -248,5 +264,4 @@ def emotion_analysis_init(answer):
         threading.Thread(target=utils.send_images, args=(emotion_images,)).start()
 
 
-value.openai_api_current_key = get_random_key()
-openai.api_key = value.openai_api_current_key
+set_available_openai_key()

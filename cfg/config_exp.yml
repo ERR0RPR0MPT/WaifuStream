@@ -6,6 +6,7 @@ SERVER_TRANSLATE_PROXY:
 BILI_ROOM_ID: 0
 BILI_USER_UID: 0
 VTS_API_URL: "ws://localhost:8001"
+AUTO_ANSWER_ENABLE: true
 EMOTION_SIMULATION_ENABLE: false
 EMOTION_SIMULATION_MODE: "web"  # web or vts
 VITS_API_TYPE: 0  # 0: vits-fast-fine-tuning-inference, 1: moetts-inference
@@ -56,17 +57,14 @@ BILI_DANMAKU_SEND_HEADER:
   User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36"
 RANDOM_QUESTION:
   - ""
-
 USER: user
 BOT: bot
 SYSTEM_PROMPT: |
   {test}
 EMOTION_PROMPT: |
   现在，我会给你一段话，你应该判断这段话中每个句子的情感倾向，你只能使用下面的提示词（花括号包含的内容）进行输出，只用输出提示词（带上花括号），不要输出其他任何内容
-  提示词：{认同} {可爱} {悲伤} {伤感} {开心} {喜悦} {兴奋} {愤怒} {反感} {厌恶} {别扭} {害羞} {好奇} {惊讶} {怀疑} {困惑} {感动} {心疼} {嘲笑} {激动}
-
-  下面是你需要处理的话，只用输出提示词（带上花括号），不要输出其他任何内容：
-  {emotion_phrase}
+  提示词：{认同} {可爱} {悲伤} {伤感} {开心} {兴奋} {愤怒} {骄傲} {生气} {反感} {厌恶} {别扭} {害羞} {好奇} {惊讶} {怀疑} {困惑} {感动} {疑惑} {嘲笑} {激动}
+  下面是你需要处理的话，只用输出提示词（带上花括号），不要输出其他任何内容
 WELCOME_PROMPT: |
   用户“{user}”进入直播间，和他打个招呼吧~
 THANKS_FOR_GIFT_PROMPT: |

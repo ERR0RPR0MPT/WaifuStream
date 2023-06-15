@@ -6,7 +6,8 @@ SERVER_TRANSLATE_PROXY:
 BILI_ROOM_ID: 0
 BILI_USER_UID: 0
 VTS_API_URL: "ws://localhost:8001"
-EMOTION_SIMULATION_ENABLE: false
+AUTO_ANSWER_ENABLE: true
+EMOTION_SIMULATION_ENABLE: true
 EMOTION_SIMULATION_MODE: "web"  # web or vts
 VITS_API_TYPE: 0  # 0: vits-fast-fine-tuning-inference, 1: moetts-inference
 TRANSLATE_LOG_STATE: false
@@ -17,8 +18,8 @@ MAX_INTERACT_MESSAGES_PER_MINUTE: 1
 MAX_WAIT_SECONDS: 600
 MAX_ANSWER_LENGTH: 150
 MAX_CHAT_ANSWER_SECONDS: 30
-IGNORED_USERS: [ ]
-EMOTION_IMAGE_URL: "http://localhost:8004/assets/yinli/images/"
+IGNORED_USERS: []
+EMOTION_IMAGE_URL: "http://localhost:8006/assets/yinli/images/"
 EMOTION_IMAGE_DEFAULT: "待机.png"
 TERMINAL_CHAT_NAME: "终端"
 VITS_DOMAINS:
@@ -112,10 +113,8 @@ SYSTEM_PROMPT: |
   下面是我的提问,对于这个问题,我是晓,你只需要模仿音理进行回答即可,不需要添加如"音理："的字样
 EMOTION_PROMPT: |
   现在，我会给你一段话，你应该判断这段话中每个句子的情感倾向，你只能使用下面的提示词（花括号包含的内容）进行输出，只用输出提示词（带上花括号），不要输出其他任何内容
-  提示词：{认同} {可爱} {悲伤} {伤感} {开心} {喜悦} {兴奋} {愤怒} {反感} {厌恶} {别扭} {害羞} {好奇} {惊讶} {怀疑} {困惑} {感动} {心疼} {嘲笑} {激动}
-
-  下面是你需要处理的话，只用输出提示词（带上花括号），不要输出其他任何内容：
-  {emotion_phrase}
+  提示词：{认同} {可爱} {悲伤} {伤感} {开心} {兴奋} {愤怒} {骄傲} {生气} {反感} {厌恶} {别扭} {害羞} {好奇} {惊讶} {怀疑} {困惑} {感动} {疑惑} {嘲笑} {激动}
+  下面是你需要处理的话，只用输出提示词（带上花括号），不要输出其他任何内容
 WELCOME_PROMPT: |
   用户“{user}”进入直播间，和他打个招呼吧~
 THANKS_FOR_GIFT_PROMPT: |
@@ -209,25 +208,25 @@ EMOTION_KEYS_SHORTCUT_DICT:
   '{困惑}': '6+9'
   '{感动}': '6+9'
 EMOTION_IMAGES_SHORTCUT_DICT:
-  '{认同}': '微笑1.png'
-  '{嘲笑}': '苦笑1.png'
-  '{愤怒}': '皱眉1.png'
-  '{反感}': '皱眉2.png'
-  '{厌恶}': '皱眉3.png'
-  '{悲伤}': '难过1.png'
-  '{伤感}': '疑惑1.png'
-  '{心疼}': '皱眉2.png'
-  '{怀疑}': '疑惑1.png'
-  '{开心}': '苦笑2.png'
-  '{兴奋}': '可爱1.png'
-  '{喜悦}': '欣慰1.png'
-  '{好奇}': '微笑1.png'
-  '{可爱}': '可爱4.png'
-  '{惊讶}': '惊讶1.png'
-  '{别扭}': '可爱4.png'
-  '{害羞}': '微笑1.png'
-  '{困惑}': '可爱2.png'
-  '{感动}': '欣慰1.png'
+  '{认同}': '认同.png'
+  '{嘲笑}': '嘲笑.png'
+  '{愤怒}': '愤怒.png'
+  '{反感}': '愤怒.png'
+  '{厌恶}': '愤怒.png'
+  '{悲伤}': '悲伤.png'
+  '{伤感}': '伤感.png'
+  '{心疼}': '心疼.png'
+  '{怀疑}': '怀疑.png'
+  '{开心}': '开心.png'
+  '{兴奋}': '兴奋.png'
+  '{喜悦}': '喜悦.png'
+  '{好奇}': '好奇.png'
+  '{可爱}': '可爱.png'
+  '{无奈}': '无奈.png'
+  '{别扭}': '别扭.png'
+  '{害羞}': '害羞.png'
+  '{困惑}': '困惑.png'
+  '{感动}': '害羞.png'
 FIX_TRANSLATE_ERROR_RULES:
   'にい弟|兄弟|兄|にい': "お兄ちゃん"
   '暁|鐘城暁|あかつき': "晓"

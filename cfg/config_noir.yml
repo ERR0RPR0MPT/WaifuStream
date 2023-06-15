@@ -6,6 +6,7 @@ SERVER_TRANSLATE_PROXY:
 BILI_ROOM_ID: 0
 BILI_USER_UID: 0
 VTS_API_URL: "ws://localhost:8001"
+AUTO_ANSWER_ENABLE: true
 EMOTION_SIMULATION_ENABLE: true
 EMOTION_SIMULATION_MODE: "web"  # web or vts
 VITS_API_TYPE: 0  # 0: vits-fast-fine-tuning-inference, 1: moetts-inference
@@ -116,10 +117,8 @@ SYSTEM_PROMPT: |
   下面是我的提问,对于这个问题,我是晓,你只需要模仿诺瓦进行回答即可,不需要添加如"诺瓦："的字样
 EMOTION_PROMPT: |
   现在，我会给你一段话，你应该判断这段话中每个句子的情感倾向，你只能使用下面的提示词（花括号包含的内容）进行输出，只用输出提示词（带上花括号），不要输出其他任何内容
-  提示词：{认同} {可爱} {悲伤} {伤感} {开心} {喜悦} {兴奋} {愤怒} {反感} {厌恶} {别扭} {害羞} {好奇} {惊讶} {怀疑} {困惑} {感动} {心疼} {嘲笑} {激动}
-
-  下面是你需要处理的话，只用输出提示词（带上花括号），不要输出其他任何内容：
-  {emotion_phrase}
+  提示词：{认同} {可爱} {悲伤} {伤感} {开心} {兴奋} {愤怒} {骄傲} {生气} {反感} {厌恶} {别扭} {害羞} {好奇} {惊讶} {怀疑} {困惑} {感动} {疑惑} {嘲笑} {激动}
+  下面是你需要处理的话，只用输出提示词（带上花括号），不要输出其他任何内容
 WELCOME_PROMPT: |
   用户“{user}”进入直播间，和他打个招呼吧~
 THANKS_FOR_GIFT_PROMPT: |
@@ -233,7 +232,7 @@ EMOTION_IMAGES_SHORTCUT_DICT:
   '{困惑}': '可爱2.png'
   '{感动}': '欣慰1.png'
 FIX_TRANSLATE_ERROR_RULES:
-  "バイ氏": "しらさん"
+  "バイ氏|バイさん": "しらさん"
   "whee|hehe": "えへへ"
   "にい弟|兄弟|兄|にい": "お兄ちゃん"
   "暁|鐘城暁|あかつき": "晓"

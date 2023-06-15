@@ -6,8 +6,9 @@ SERVER_TRANSLATE_PROXY:
 BILI_ROOM_ID: 27941749
 BILI_USER_UID: 125160481
 VTS_API_URL: "ws://localhost:8001"
+AUTO_ANSWER_ENABLE: true
 EMOTION_SIMULATION_ENABLE: true
-EMOTION_SIMULATION_MODE: "vts"  # web or vts
+EMOTION_SIMULATION_MODE: "web"  # web or vts
 VITS_API_TYPE: 1  # 0: vits-fast-fine-tuning-inference, 1: moetts-inference
 TRANSLATE_LOG_STATE: false
 TRANSLATE_MODE: "google"  # gpt or google
@@ -140,16 +141,12 @@ SYSTEM_PROMPT: |
   下面是我的提问,对于这个问题,你只需要模仿亚托莉进行回答即可,不需要添加如"亚托莉："的字样
 EMOTION_PROMPT: |
   现在，我会给你一段话，你应该判断这段话中每个句子的情感倾向，你只能使用下面的提示词（花括号包含的内容）进行输出，只用输出提示词（带上花括号），不要输出其他任何内容
-  提示词：{认同} {可爱} {悲伤} {伤感} {开心} {喜悦} {兴奋} {愤怒} {反感} {厌恶} {别扭} {害羞} {好奇} {惊讶} {怀疑} {困惑} {感动} {心疼} {嘲笑} {激动}
-
-  下面是你需要处理的话，只用输出提示词（带上花括号），不要输出其他任何内容：
-  {emotion_phrase}
+  提示词：{认同} {可爱} {悲伤} {伤感} {开心} {兴奋} {愤怒} {骄傲} {生气} {反感} {厌恶} {别扭} {害羞} {好奇} {惊讶} {怀疑} {困惑} {感动} {疑惑} {嘲笑} {激动}
+  下面是你需要处理的话，只用输出提示词（带上花括号），不要输出其他任何内容
 WELCOME_PROMPT: |
   用户“{user}”进入直播间，和他打个招呼吧~
-
 THANKS_FOR_GIFT_PROMPT: |
   用户“{user}”打赏了礼物，感谢他的礼物吧~
-
 TRANSLATE_PROMPT: |
   请将下面面的内容翻译成日语：“{content}”
   输出内容不要加"「", "」"等任何符号
@@ -239,27 +236,27 @@ EMOTION_KEYS_SHORTCUT_DICT:
   '{困惑}': '6+9'
   '{感动}': '6+9'
 EMOTION_IMAGES_SHORTCUT_DICT:
-  '{认同}': '微笑1.png'
-  '{嘲笑}': '苦笑1.png'
-  '{愤怒}': '皱眉1.png'
-  '{反感}': '皱眉2.png'
-  '{厌恶}': '皱眉3.png'
-  '{悲伤}': '难过1.png'
-  '{伤感}': '疑惑1.png'
-  '{心疼}': '皱眉2.png'
-  '{怀疑}': '疑惑1.png'
-  '{开心}': '苦笑2.png'
-  '{兴奋}': '可爱1.png'
-  '{喜悦}': '欣慰1.png'
-  '{好奇}': '微笑1.png'
-  '{可爱}': '可爱4.png'
-  '{惊讶}': '惊讶1.png'
-  '{别扭}': '可爱4.png'
-  '{害羞}': '微笑1.png'
-  '{困惑}': '可爱2.png'
-  '{感动}': '欣慰1.png'
+  '{认同}': '认同.png'
+  '{嘲笑}': '嘲笑.png'
+  '{愤怒}': '愤怒.png'
+  '{惊讶}': '惊讶.png'
+  '{厌恶}': '厌恶.png'
+  '{悲伤}': '悲伤.png'
+  '{伤感}': '伤感.png'
+  '{疑惑}': '疑惑.png'
+  '{怀疑}': '怀疑.png'
+  '{开心}': '开心.png'
+  '{兴奋}': '兴奋.png'
+  '{骄傲}': "骄傲.png"
+  '{好奇}': '好奇.png'
+  '{可爱}': '可爱.png'
+  '{生气}': '生气.png'
+  '{无奈}': '无奈.png'
+  '{别扭}': '别扭.png'
+  '{害羞}': '害羞.png'
+  '{困惑}': '困惑.png'
 FIX_TRANSLATE_ERROR_RULES:
-  "Yatley|Yatoli|ATRI": "アトリ"
+  "Yatley|Yatoli|ATRI|Atoli": "アトリ"
   "Xia Sheng氏|Xia Sheng|XiaSheng|斑鸠夏生|斑鳩夏生|夏生": "なつき"
   "みづなもえ|水菜萌": "みなも"
   "神の白水野菜": "かみしろみなも"

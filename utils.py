@@ -5,6 +5,7 @@ import sys
 import time
 
 import config
+import utils
 import value
 import re
 import websocket
@@ -20,7 +21,7 @@ def fix_emotion_keys(text):
 def fix_emotion_images(text):
     shortcut_pattern = r'\{.*?\}'
     shortcuts = re.findall(shortcut_pattern, text)
-    shortcut_keys = [config.EMOTION_KEYS_SHORTCUT_DICT[s] for s in shortcuts if s in config.EMOTION_IMAGES_SHORTCUT_DICT]
+    shortcut_keys = [config.EMOTION_IMAGES_SHORTCUT_DICT[s] for s in shortcuts if s in config.EMOTION_IMAGES_SHORTCUT_DICT]
     return shortcut_keys
 
 
@@ -83,6 +84,7 @@ def save_dialog(msg):
               encoding="utf-8") as f:
         f.write(msg + "\n")
 
+
 def set_model_style(model_style):
     i = 0
     while i <= 5:
@@ -95,6 +97,18 @@ def set_model_style(model_style):
         except:
             print("Failed to connect VTube Studio API. Retry...")
             init_ws()
+
+
+def set_trans_image_url(url):
+    value.trans_image_url = url
+    print(f"Set emotion: {url.split('/')[-1]}")
+
+
+def hide_openai_api_key(api_key):
+    try:
+        return api_key[:8] + "*" * (len(api_key) - len(api_key[:8]) - len(api_key[-6:])) + api_key[-6:]
+    except:
+        return ""
 
 
 def send_keys(lista):
@@ -118,10 +132,10 @@ def send_images(lista):
     while True:
         for i in lista:
             if value.stop_event:
-                value.trans_image_url = config.EMOTION_IMAGE_URL + config.EMOTION_IMAGE_DEFAULT
+                utils.set_trans_image_url(config.EMOTION_IMAGE_URL + config.EMOTION_IMAGE_DEFAULT)
                 return
             # print("Send Images: " + i)
-            value.trans_image_url = config.EMOTION_IMAGE_URL + i
+            utils.set_trans_image_url(config.EMOTION_IMAGE_URL + i)
             time.sleep(random.randint(6000, 10000) / 1000)
 
 

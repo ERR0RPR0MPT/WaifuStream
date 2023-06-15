@@ -40,6 +40,10 @@ def execute():
                         ide = "0"
                         name = config.TEXT_RANDOM_QUESTION
                         timestamp = str(time.time())
+                    else:
+                        choice_flag = 0
+                        time.sleep(0.3)
+                        continue
                 if len(msg.strip()) > 0:
                     log = f"Received: id={ide},name={name},content={msg},time={timestamp}"
                     try:

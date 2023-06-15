@@ -19,7 +19,11 @@ if __name__ == '__main__':
     threading.Thread(target=danmaku.init_danmaku).start()
     time.sleep(0.75)
     utils.clear_console()
-    print(f"Server started at http://localhost:{str(config.SERVER_PORT)}")
+    print(f"Server started at http://localhost:{str(config.SERVER_PORT)}\n")
+    print(f"If you want to display model images on a web page in OBS Stduio or somewhere:")
+    print(f"  1. Use http://localhost:{str(config.SERVER_PORT)} to access the translation page.")
+    print(f"  2. Use http://localhost:{str(config.SERVER_PORT)}/image/ to access the model image page.\n")
+    print(f"Use \"help\" to get help.\n")
     while True:
         try:
             inp = input("root@WaifuStream:~# ")

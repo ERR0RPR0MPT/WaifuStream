@@ -1,0 +1,117 @@
+ID=-10000 Name=终端
+Question: 你好
+GPT Original Output: 哥哥，你好呀~ 有什么需要帮忙的吗？
+GPT Emotional Output: {认同} {可爱} {开心}
+Original = 哥哥，你好呀~ 有什么需要帮忙的吗？
+Target = お兄ちゃん、こんにちは〜なにか手伝うことはありますか？
+
+ID=1383053369 Name=AT的黒
+Question: 用户“AT的黒”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥你好啊~ 欢迎来到直播间！
+GPT Emotional Output: {开心} {兴奋}
+Original = 哥哥你好啊~ 欢迎来到直播间！
+Target = こんにちは、お兄ちゃん〜生放送ルームへようこそ！
+
+ID=125160481 Name=凌维三度
+Question: #hwllo
+GPT Original Output: 哥哥，你好！今天过得怎么样呢？
+GPT Emotional Output: {喜悦}
+Original = 哥哥，你好！今天过得怎么样呢？
+Target = お兄ちゃん、こんにちは！今日はどうでしたか？
+
+ID=1383053369 Name=AT的黒
+Question: #一加一等于多少
+GPT Original Output: 嘿嘿，这么简单的问题哥哥也会问啊！当然是等于二啦~
+GPT Emotional Output: {嘲笑} {反感}
+Original = 嘿嘿，这么简单的问题哥哥也会问啊！当然是等于二啦~
+Target = おいおい、おお兄ちゃんさんはこんな素朴な質問をしてみます！もちろん2個分ですよ～
+
+ID=3493261102549725 Name=bili_3493261102549725
+Question: 用户“bili_3493261102549725”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你好哦~欢迎进入直播间，有什么想说的吗？
+GPT Emotional Output: 开心 {欢迎} 进入直播间，好奇 {哥哥} 会说些什么呢？
+Original = 哥哥，你好哦~欢迎进入直播间，有什么想说的吗？
+Target = お兄ちゃん、こんにちは〜生放送ルームへようこそ。何か言いたいことはありますか？
+
+ID=1383053369 Name=AT的黒
+Question: #笑一个
+GPT Original Output: 嘿嘿，好的，笑啥呢？（微笑）
+GPT Emotional Output: {开心}
+Original = 嘿嘿，好的，笑啥呢？（微笑）
+Target = おいおい、OK、何を笑ってるの？
+
+ID=1383053369 Name=AT的黒
+Question: #茄子
+GPT Original Output: （偷偷地笑）哥哥你开玩笑啊，茄子不是蔬菜吗？怎么会笑呢~
+GPT Emotional Output: {嘲笑} {别扭}
+Original = （偷偷地笑）哥哥你开玩笑啊，茄子不是蔬菜吗？怎么会笑呢~
+Target = （密かに笑いながら）おお兄ちゃんさん、冗談ですよ。ナスって野菜じゃないの？どうやって笑えるの～
+
+ID=3493261102549636 Name=122の1の657
+Question: 用户“122の1の657”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哇~ 你好呀，122の1の657，是哥哥的新朋友吗？欢迎欢迎~
+GPT Emotional Output: {开心} {兴奋} {好奇}
+Original = 哇~ 你好呀，122の1の657，是哥哥的新朋友吗？欢迎欢迎~
+Target = うわぁ～こんにちは、122の1の657，それは私のお兄ちゃんの新しい友達ですか？ようこそいらっしゃいませ～
+
+ID=1383053369 Name=AT的黒
+Question: #说茄子
+GPT Original Output: 茄子~ 这个词语的发音很好听呢，你是不是特别喜欢这个词啊，哥哥？
+GPT Emotional Output: {好奇} {认同} {可爱}
+Original = 茄子~ 这个词语的发音很好听呢，你是不是特别喜欢这个词啊，哥哥？
+Target = ナス〜この言葉の発音はいいですね、本当にこの言葉が好きなのですか？お兄ちゃん?
+
+ID=125160481 Name=凌维三度
+Question: #音理你的头发被我弄乱了你会生气吗
+GPT Original Output: 哎呀，没关系的啦哥哥，我并不会生气的。不过下次你要小心一点哦，别让我头发乱乱的。
+GPT Emotional Output: {安慰} {开心} {宽容}
+Original = 哎呀，没关系的啦哥哥，我并不会生气的。不过下次你要小心一点哦，别让我头发乱乱的。
+Target = おっと、大丈夫だよ、お兄ちゃん私は怒るつもりはありません。でも次回からは気をつけてね私の髪を汚さないでください。
+
+ID=-10000 Name=终端
+Question: 说“白さん”
+GPT Original Output: 白さん？哥哥，你在说什么呢？
+GPT Emotional Output: {好奇}
+Original = 白さん？哥哥，你在说什么呢？
+Target = 白さん？お兄ちゃん、あなたは何について話していますか？
+
+ID=53010159 Name=绮缘离梦
+Question: 用户“绮缘离梦”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥你好呀~欢迎来到我的直播间~ [微笑表情]
+GPT Emotional Output: {开心} {认同}
+Original = 哥哥你好呀~欢迎来到我的直播间~ [微笑表情]
+Target = こんにちは、お兄ちゃん〜私の生放送へようこそ~
+
+ID=1383053369 Name=AT的黒
+Question: #读白さん试试
+GPT Original Output: 哥哥，你在考我日语呢？（微笑）好嘞，读一下——ばいくさん！
+GPT Emotional Output: {开心}
+Original = 哥哥，你在考我日语呢？（微笑）好嘞，读一下——ばいくさん！
+Target = お兄ちゃん、私の日本語をテストしていますか？(笑) わかりました、读一下——ばいくさん！
+
+ID=53010159 Name=绮缘离梦
+Question: #51号混凝土是什么味道的
+GPT Original Output: 啊？51号混凝土的味道？这个问题好奇怪啊 [惊讶表情]，我不知道呢，毕竟我是个动画人物，没有闻过混凝土的味道呢~ [滑稽表情]
+GPT Emotional Output: {好奇}
+Original = 啊？51号混凝土的味道？这个问题好奇怪啊 [惊讶表情]，我不知道呢，毕竟我是个动画人物，没有闻过混凝土的味道呢~ [滑稽表情]
+Target = ああ？コンクリート51の匂い？この質問はとても奇妙です[驚きの表情]、わからないやっぱりアニメのキャラクターなので、コンクリートの匂いを嗅いだことがありますか？
+
+ID=125160481 Name=凌维三度
+Question: 用户“凌维三度”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，有一个叫做凌维三度的用户进入直播间了哦，我们要欢迎一下他呢~
+GPT Emotional Output: {开心}，欢迎欢迎~凌维三度很{好奇}我们的直播呢！
+Original = 哥哥，有一个叫做凌维三度的用户进入直播间了哦，我们要欢迎一下他呢~
+Target = お兄ちゃん、Lingwei Sanduという名前のユーザーがライブブロードキャストルームに入りました。私たちは彼を歓迎したいです~
+
+ID=1383053369 Name=AT的黒
+Question: #读「白さん」
+GPT Original Output: 哥哥，要读白さん吗？好的，那我来读一下——はくさん！
+GPT Emotional Output: {好奇}
+Original = 哥哥，要读白さん吗？好的，那我来读一下——はくさん！
+Target = お兄ちゃん、要读白さん吗？OK、那我来读一下——はくさん！
+

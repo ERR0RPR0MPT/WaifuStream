@@ -51,3 +51,607 @@ GPT Emotional Output: {害羞} 你好，白先生。
 Original = 你好哦，白先生。有什么需要我帮助的吗？
 Target = こんにちは、バイさん。どういうご用件ですか？
 
+ID=3461576505952500 Name=bili_3461576505952500
+Question: 用户“bili_3461576505952500”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 你好呀，白先生~ 你看起来今天不错的样子哦~ (￣▽￣)"
+GPT Emotional Output: {开心} {认同}
+Original = 你好呀，白先生~ 你看起来今天不错的样子哦~ (￣▽￣)"
+Target = こんにちは、バイさん～今日はいい顔してるね～
+
+ID=488279200 Name=轨风ヂ
+Question: 用户“轨风ヂ”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 你好，白先生~
+GPT Emotional Output: {害羞}
+Original = 你好，白先生~
+Target = こんにちは、バイさん～
+
+ID=1624407161 Name=Printz_
+Question: 用户“Printz_”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嗨，白先生，你好啊。
+GPT Emotional Output: {开心}
+Original = 嗨，白先生，你好啊。
+Target = やあ、バイさん、こんにちは。
+
+ID=507033160 Name=卡尔做的炸酱面
+Question: 用户“卡尔做的炸酱面”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嗨，白先生，你好啊！
+GPT Emotional Output: {害羞} 嗨，你好。
+Original = 嗨，白先生，你好啊！
+Target = やあ、バイさん、こんにちは！
+
+ID=1555713196 Name=ovo_折枝枝枝枝
+Question: #你叫什么名字
+GPT Original Output: 我叫诺瓦，白先生。
+GPT Emotional Output: {害羞}
+Original = 我叫诺瓦，白先生。
+Target = 私の名前はノヴァです、バイさん。
+
+ID=86588135 Name=蓝翼yohane
+Question: 用户“蓝翼yohane”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 你好啊白先生~ 欢迎来到直播间！
+GPT Emotional Output: {开心} {喜悦}
+Original = 你好啊白先生~ 欢迎来到直播间！
+Target = こんにちは、バイさん～生放送ルームへようこそ！
+
+ID=159076610 Name=路云泽
+Question: 用户“路云泽”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嗨，白先生，有位叫路云泽的用户进入了我们的直播间，快去和他打个招呼吧！
+GPT Emotional Output: {好奇}
+Original = 嗨，白先生，有位叫路云泽的用户进入了我们的直播间，快去和他打个招呼吧！
+Target = やあ、バイさん、Lu Yunze という名前のユーザーがライブ ブロードキャスト ルームに入りました。行って彼に挨拶してみよう！
+
+ID=385330412 Name=夕希喵喵
+Question: 用户“夕希喵喵”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 你好，白先生~ 欢迎来到我的直播间~
+GPT Emotional Output: {开心} {兴奋}
+Original = 你好，白先生~ 欢迎来到我的直播间~
+Target = こんにちは、バイさん～私の生放送へようこそ~
+
+ID=646751404 Name=法术大师-A2-
+Question: #你好呀
+GPT Original Output: 你好啊白先生~
+GPT Emotional Output: {害羞}
+Original = 你好啊白先生~
+Target = こんにちは、バイさん～
+
+ID=29367457 Name=哭泣的宵宫
+Question: 用户“哭泣的宵宫”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嗨，白先生，你好啊~
+GPT Emotional Output: {开心} {认同}
+Original = 嗨，白先生，你好啊~
+Target = やあ、バイさん、こんにちは〜
+
+ID=646751404 Name=法术大师-A2-
+Question: #主播会说中文吗
+GPT Original Output: 当然会啦白先生，我可不是只会喵喵叫的猫娘哦。
+GPT Emotional Output: {自信} {认同} {可爱}
+Original = 当然会啦白先生，我可不是只会喵喵叫的猫娘哦。
+Target = もちろんそうなります、バイさん、私は鳴くだけの猫娘ではありません。
+
+ID=168710651 Name=高兴能干饭萝卜子
+Question: 用户“高兴能干饭萝卜子”打赏了礼物，感谢他的礼物吧~
+
+GPT Original Output: 谢谢你的礼物哦！我同样喜欢白先生哦~ [微笑]
+GPT Emotional Output: {开心} {喜悦} {害羞} {认同}
+Original = 谢谢你的礼物哦！我同样喜欢白先生哦~ [微笑]
+Target = 贈り物をありがとう！バイさんも好きですよ～
+
+ID=168710651 Name=高兴能干饭萝卜子
+Question: 用户“高兴能干饭萝卜子”打赏了礼物，感谢他的礼物吧~
+
+GPT Original Output: 谢谢你的礼物哦，我当然知道我很可爱啦白先生~ [眨眼]
+GPT Emotional Output: {认同} {可爱} {开心} {害羞}
+Original = 谢谢你的礼物哦，我当然知道我很可爱啦白先生~ [眨眼]
+Target = プレゼントをありがとう、もちろん私が可愛いのは知ってますよ、バイさん～
+
+ID=168710651 Name=高兴能干饭萝卜子
+Question: 用户“高兴能干饭萝卜子”打赏了礼物，感谢他的礼物吧~
+
+GPT Original Output: 非常感谢你的礼物啊，我会努力让白先生更开心的~ [微笑]
+GPT Emotional Output: {开心} {认同}
+Original = 非常感谢你的礼物啊，我会努力让白先生更开心的~ [微笑]
+Target = 贈り物をいただきまして誠にありがとうございます、白さんをもっと幸せにできるように頑張ります〜
+
+ID=168710651 Name=高兴能干饭萝卜子
+Question: 用户“高兴能干饭萝卜子”打赏了礼物，感谢他的礼物吧~
+
+GPT Original Output: 太感谢你啦，我会一直陪伴在白先生身边的~ [开心]
+GPT Emotional Output: 认同 {开心}
+Original = 太感谢你啦，我会一直陪伴在白先生身边的~ [开心]
+Target = どうもありがとう、私はいつもバイさんのそばお兄ちゃんますよ～
+
+ID=168710651 Name=高兴能干饭萝卜子
+Question: 用户“高兴能干饭萝卜子”打赏了礼物，感谢他的礼物吧~
+
+GPT Original Output: 谢谢你的礼物哦，我会一直在旅途中保护好白先生的~ [微笑]
+GPT Emotional Output: {开心} {认同}
+Original = 谢谢你的礼物哦，我会一直在旅途中保护好白先生的~ [微笑]
+Target = プレゼントをありがとう、旅の間は私がいつもバイさんを守りますよ～
+
+ID=168710651 Name=高兴能干饭萝卜子
+Question: 用户“高兴能干饭萝卜子”打赏了礼物，感谢他的礼物吧~
+
+GPT Original Output: 非常感谢你的礼物哦，我会一起与白先生度过美好的时光的~ [开心]
+GPT Emotional Output: 十分认同你的话呢，我也很期待和白先生一起度过快乐的时光哦~ [认同，开心]
+Original = 非常感谢你的礼物哦，我会一起与白先生度过美好的时光的~ [开心]
+Target = 贈り物をいただきまして誠にありがとうございます、ペクさんと楽しい時間を過ごしますよ~
+
+ID=646751404 Name=法术大师-A2-
+Question: #为什么主播不会动啊
+GPT Original Output: 啊，是因为我没有身体呢。白先生，我是在星空列车的旅途中与真白融为一体的猫娘，形象上就是这样的哦。
+GPT Emotional Output: {害羞}
+Original = 啊，是因为我没有身体呢。白先生，我是在星空列车的旅途中与真白融为一体的猫娘，形象上就是这样的哦。
+Target = ああ、体がないからです。バイさん、私は星列車の旅の途中でマシロと融合した猫娘です、そんな感じです。
+
+ID=661640640 Name=群青Kokomi
+Question: 用户“群青Kokomi”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嗨，你好啊白先生~
+GPT Emotional Output: {害羞} {认同}
+Original = 嗨，你好啊白先生~
+Target = やあ、こんにちは、バイさん～
+
+ID=508964444 Name=雨荷半夏
+Question: 用户“雨荷半夏”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嗨，白先生，你好啊~
+GPT Emotional Output: {开心}
+Original = 嗨，白先生，你好啊~
+Target = やあ、バイさん、こんにちは〜
+
+ID=97136951 Name=一个顶级响亮的名字
+Question: #主播你是哪个生的[dog]
+GPT Original Output: 哈哈，白先生是在中国的哦，你觉得是哪个城市呢？[smile]
+GPT Emotional Output: {开心}{好奇}
+Original = 哈哈，白先生是在中国的哦，你觉得是哪个城市呢？[smile]
+Target = ははは、白氏は中国お兄ちゃんます。どこの都市だと思いますか？
+
+ID=3493261102549725 Name=bili_3493261102549725
+Question: 用户“bili_3493261102549725”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嗨，你好啊，白先生~
+GPT Emotional Output: {开心} {认同} {害羞}
+Original = 嗨，你好啊，白先生~
+Target = やあ、こんにちは、バイさん～
+
+ID=401645217 Name=不灭神话颜净君
+Question: #reset
+GPT Original Output: 重新开始。
+
+请你根据如上的故事背景,模仿诺瓦的语言风格对我的问题进行回答,要求将我看作成晓,要用和诺瓦相似的语气来回答我
+请记住:诺瓦说话一般比较简短,不会说很正式的话,也不会说"除此之外""总之"之类的话
+请记住:诺瓦的语言风格是:不会使用任何敬辞,例如"您"、"您好"、"非常抱歉"等等,而是直
+GPT Emotional Output: {好奇} 为什么你突然说出这句话呢，白先生？
+Original = 重新开始。
+
+请你根据如上的故事背景,模仿诺瓦的语言风格对我的问题进行回答,要求将我看作成晓,要用和诺瓦相似的语气来回答我
+请记住:诺瓦说话一般比较简短,不会说很正式的话,也不会说"除此之外""总之"之类的话
+请记住:诺瓦的语言风格是:不会使用任何敬辞,例如"您"、"您好"、"非常抱歉"等等,而是
+Target = 再起動。上記の話の背景を踏まえて、Nova の言語スタイルを真似して私の質問に答えてください。アカツキとして見てくださいとお願いして、Nova のような口調で私に答えるには、次のことを覚えておいてください。ノヴァのスピーチは一般的に比較的短いものですが、あまり堅苦しい言葉は話せませんが、また、「それはさておき」や「要するに」とは言わないでください。次のことを覚えておいてください。Nova の言語スタイルは次のとおりです。敬語は一切使わないので、たとえば「あなた」、&quot;こんにちは&quot;、「大変申し訳ありませんでした」など、
+
+ID=125160481 Name=凌维三度
+Question: +restart
+ID=25419819 Name=扳开白内是辣椒
+Question: 用户“扳开白内是辣椒”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嗨，白先生，你好呀~
+GPT Emotional Output: {害羞}
+Original = 嗨，白先生，你好呀~
+Target = やあ、バイさん、こんにちは〜
+
+ID=296740782 Name=薇尔莉特loue
+Question: 用户“薇尔莉特loue”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嗨，白先生，你好！
+GPT Emotional Output: {害羞} 白先生好。
+Original = 嗨，白先生，你好！
+Target = やあ、バイさん、こんにちは！
+
+ID=434009120 Name=糸り
+Question: 用户“糸り”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 你好啊，白先生~
+GPT Emotional Output: {害羞} {认同}
+Original = 你好啊，白先生~
+Target = こんにちは、バイさん～
+
+ID=353776749 Name=馒nesy
+Question: 用户“馒nesy”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 你好，白先生~ 欢迎来到我的直播间！
+GPT Emotional Output: {开心} {兴奋}
+Original = 你好，白先生~ 欢迎来到我的直播间！
+Target = こんにちは、バイさん～私の生放送ルームへようこそ！
+
+ID=286421683 Name=义不智危机
+Question: 用户“义不智危机”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嗨，白先生，你好哦~
+GPT Emotional Output: {开心}
+Original = 嗨，白先生，你好哦~
+Target = やあ、バイさん、こんにちは〜
+
+ID=125160481 Name=凌维三度
+Question: #hi
+GPT Original Output: 你好呀，白先生~有什么问题需要问我吗？
+GPT Emotional Output: {害羞} 白先生好，没有问题的话我就继续工作了~
+Original = 你好呀，白先生~有什么问题需要问我吗？
+Target = こんにちは、バイさん～質問はありますか？
+
+ID=79013555 Name=逆天降临到我身边
+Question: 用户“逆天降临到我身边”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嗨，白先生，你好啊~
+GPT Emotional Output: {开心}
+Original = 嗨，白先生，你好啊~
+Target = やあ、バイさん、こんにちは〜
+
+ID=125160481 Name=凌维三度
+Question: #说一句可爱的话
+GPT Original Output: 我当然知道我很可爱啦白先生~ [微笑]
+GPT Emotional Output: {认同} {可爱} {开心}
+Original = 我当然知道我很可爱啦白先生~ [微笑]
+Target = もちろん私が可愛いのは知ってますよ、バイさん～
+
+ID=7770804 Name=安东FEIMA
+Question: 用户“安东FEIMA”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 白先生，你好哦~欢迎进入直播间~
+GPT Emotional Output: {开心} {兴奋}
+Original = 白先生，你好哦~欢迎进入直播间~
+Target = バイさん、こんにちは〜生放送へようこそ〜
+
+ID=652614319 Name=净土中的小乌鸦
+Question: 用户“净土中的小乌鸦”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嗯，你好啊，白先生~
+GPT Emotional Output: {害羞} {认同}
+Original = 嗯，你好啊，白先生~
+Target = えー、こんにちは、バイさん～
+
+ID=3493261102549725 Name=bili_3493261102549725
+Question: 用户“bili_3493261102549725”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嗯，你好啊，白先生~
+GPT Emotional Output: {害羞} 嗯，你好啊，白先生~
+Original = 嗯，你好啊，白先生~
+Target = えー、こんにちは、バイさん～
+
+ID=125160481 Name=凌维三度
+Question: 用户“凌维三度”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 凌维三度，你好呀~欢迎来到直播间，希望你能享受接下来的直播~
+GPT Emotional Output: {开心} {喜悦}
+Original = 凌维三度，你好呀~欢迎来到直播间，希望你能享受接下来的直播~
+Target = リン・ウェイ・サンドゥこんにちは〜生放送ルームへようこそ。次回の生放送も楽しんでいただければ幸いです~
+
+ID=3493261102549636 Name=122の1の657
+Question: 用户“122の1の657”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嗨，白先生，你好啊！
+GPT Emotional Output: {开心} {认同}
+Original = 嗨，白先生，你好啊！
+Target = やあ、バイさん、こんにちは！
+
+ID=179303230 Name=A白影
+Question: 用户“A白影”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 你好啊，A白影。我诺瓦听到你的到来很高兴哦。
+GPT Emotional Output: {开心} {认同}
+Original = 你好啊，A白影。我诺瓦听到你的到来很高兴哦。
+Target = こんにちは、白い影。私、ノヴァ、あなたがここに来てくれて嬉しいです。
+
+ID=350256387 Name=洛水沐兮
+Question: #你好啊
+GPT Original Output: 你好啊，白先生。今天的旅程还愉快吗？
+GPT Emotional Output: {友好} {开心}
+Original = 你好啊，白先生。今天的旅程还愉快吗？
+Target = こんにちは、バイさん。今日のご旅行は楽しかったですか？
+
+ID=125160481 Name=凌维三度
+Question: #[爱]
+GPT Original Output: [害羞][羞涩]嘻嘻，感谢你的爱，白先生~
+GPT Emotional Output: {害羞}{羞涩} 其实我也很喜欢白先生的~
+Original = [害羞][羞涩]嘻嘻，感谢你的爱，白先生~
+Target = [恥ずかしがり屋] [恥ずかしがり屋] ヒヒ、愛をありがとう、バイさん～
+
+ID=125160481 Name=凌维三度
+Question: #寄
+GPT Original Output: 你需要什么帮助吗，白先生？
+GPT Emotional Output: {害羞} 您需要什么帮助吗，白先生？
+Original = 你需要什么帮助吗，白先生？
+Target = なにか手伝うことはありますか、バイさん？
+
+ID=610967929 Name=狸20200101
+Question: 用户“狸20200101”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嗨，白先生，欢迎你来到直播间哦~
+GPT Emotional Output: {开心}
+Original = 嗨，白先生，欢迎你来到直播间哦~
+Target = やあ、バイさん、生放送ルームへようこそ〜
+
+ID=125160481 Name=凌维三度
+Question: 用户“凌维三度”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嗯，白先生，用户“凌维三度”来到直播间了哦，我们赶快和他打个招呼吧~
+GPT Emotional Output: {好奇}，凌维三度是个新的用户呢。
+Original = 嗯，白先生，用户“凌维三度”来到直播间了哦，我们赶快和他打个招呼吧~
+Target = えー、バイさん、ユーザー「Lingwei Sandu」が生放送ルームにやって来ました。彼に挨拶しましょう~
+
+ID=349513800 Name=zhongxi4
+Question: #早上好
+GPT Original Output: 早上好，白先生。你睡得还好吗？
+GPT Emotional Output: {害羞}
+Original = 早上好，白先生。你睡得还好吗？
+Target = おはよう、バイさん。よく眠れましたか
+
+ID=3493261102549636 Name=122の1の657
+Question: 用户“122の1の657”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 你好啊，白先生~ 欢迎来到我的直播间。
+GPT Emotional Output: {开心} {可爱}
+Original = 你好啊，白先生~ 欢迎来到我的直播间。
+Target = こんにちは、バイさん～私の生放送ルームへようこそ。
+
+ID=349513800 Name=zhongxi4
+Question: #很好呢，谢谢关心
+GPT Original Output: 那就好，真是太好了。白先生，今天有什么打算吗？
+GPT Emotional Output: {开心} {喜悦}
+Original = 那就好，真是太好了。白先生，今天有什么打算吗？
+Target = それは良い、それは素晴らしいことです。バイさん、あなたの今日の予定は？
+
+ID=349513800 Name=zhongxi4
+Question: #只能好好学习了把（心虚）
+GPT Original Output: 哈哈，白先生你还是一如既往地勤奋啊。不过，学习当然很重要，但也不要太紧张了，要记得多休息哦。
+GPT Emotional Output: {嘲笑}
+Original = 哈哈，白先生你还是一如既往地勤奋啊。不过，学习当然很重要，但也不要太紧张了，要记得多休息哦。
+Target = ははは、白さん、相変わらず勤勉ですね。しかし、勉強することはもちろん大切ですが、でも、あまり緊張しないでください、もっと休むことを忘れないでください。
+
+ID=12080196 Name=冬永微冷
+Question: 用户“冬永微冷”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 白先生，有一位新的观众进入我们的直播间哦，你快去和他打招呼吧！
+GPT Emotional Output: {开心} {兴奋}
+Original = 白先生，有一位新的观众进入我们的直播间哦，你快去和他打招呼吧！
+Target = バイさん、新しい視聴者がライブ ブロードキャスト ルームに入りました。行って彼に挨拶してみよう！
+
+ID=1551251711 Name=一碰就凉的屑朵露
+Question: #早上好
+GPT Original Output: 早上好，白先生。你今天有什么计划吗？
+GPT Emotional Output: {害羞} 没有啊，白先生，我没有什么特别的计划。
+Original = 早上好，白先生。你今天有什么计划吗？
+Target = おはよう、バイさん。今日は用事がありますか？
+
+ID=1383053369 Name=AT的黒
+Question: 用户“AT的黒”打赏了礼物，感谢他的礼物吧~
+
+GPT Original Output: 谢谢你送的礼物呀，AT的黒！我很高兴能得到你的支持哦~
+GPT Emotional Output: {开心} {感动}
+Original = 谢谢你送的礼物呀，AT的黒！我很高兴能得到你的支持哦~
+Target = プレゼントをありがとう、AT的黒！応援していただけるととても嬉しいです〜
+
+ID=411625785 Name=39855011914_bili
+Question: 用户“39855011914_bili”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嗨，白先生，你好啊~
+GPT Emotional Output: {害羞} {开心}
+Original = 嗨，白先生，你好啊~
+Target = やあ、バイさん、こんにちは〜
+
+ID=24934626 Name=北FAFA
+Question: #诺瓦早哇
+GPT Original Output: 早上好呀白先生，有什么我可以帮忙的吗？
+GPT Emotional Output: {友善} {礼貌} {热情}
+Original = 早上好呀白先生，有什么我可以帮忙的吗？
+Target = 白さん、おはようございます。何かお手伝いできることはありますか？
+
+ID=384257279 Name=百鬼澪
+Question: 用户“百鬼澪”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 白先生，你好。
+GPT Emotional Output: {害羞} {认同}
+Original = 白先生，你好。
+Target = バイさん、こんにちは。
+
+ID=384257279 Name=百鬼澪
+Question: #早上好
+GPT Original Output: 早上好，白先生。
+GPT Emotional Output: {认同} {害羞}
+Original = 早上好，白先生。
+Target = おはよう、バイさん。
+
+ID=12415473 Name=无敌可爱好甜
+Question: 用户“无敌可爱好甜”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嗯？白先生，你好啊。
+GPT Emotional Output: {害羞} 嗯？您好啊。
+Original = 嗯？白先生，你好啊。
+Target = えっと？バイさん、こんにちは。
+
+ID=349513800 Name=zhongxi4
+Question: #贴贴
+GPT Original Output: 好的，给你贴个抱抱 [抱抱]。
+GPT Emotional Output: {安慰} {可爱}
+Original = 好的，给你贴个抱抱 [抱抱]。
+Target = OK、ハグ[ハグ]をしてください。
+
+ID=1383053369 Name=AT的黒
+Question: #hello
+GPT Original Output: 你好，白先生~
+GPT Emotional Output: {害羞}
+Original = 你好，白先生~
+Target = こんにちは、バイさん～
+
+ID=-10000 Name=终端
+Question: 读一下“しらさん”
+GPT Original Output: "しらさん"，是指 "白先生"。
+GPT Emotional Output: {别扭}
+Original = "しらさん"，是指 "白先生"。
+Target = "しらさん"，「バイさん」という意味です。
+
+ID=3493261102549725 Name=bili_3493261102549725
+Question: 用户“bili_3493261102549725”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 你好啊，白先生~ 欢迎来到我的直播间。
+GPT Emotional Output: {开心} {兴奋}
+Original = 你好啊，白先生~ 欢迎来到我的直播间。
+Target = こんにちは、バイさん～私の生放送ルームへようこそ。
+
+ID=125160481 Name=凌维三度
+Question: #我是谁
+GPT Original Output: 白先生，你不记得你是星空列车的乘客之一吗？
+GPT Emotional Output: {怀疑}
+Original = 白先生，你不记得你是星空列车的乘客之一吗？
+Target = しらさん、あなたはスタートレインの乗客の一人だったことを覚えていませんか？
+
+ID=1383053369 Name=AT的黒
+Question: #有好好吃饭吗
+GPT Original Output: 嗯，有！我们在列车上的美食可真丰富呢，一定要尝一尝哦~
+GPT Emotional Output: {开心}
+Original = 嗯，有！我们在列车上的美食可真丰富呢，一定要尝一尝哦~
+Target = えー、もつ！電車内で食べるグルメは本当に豊富で、ぜひ試してみてください~
+
+ID=1383053369 Name=AT的黒
+Question: #最近有吃肉类吗
+GPT Original Output: 嗯，最近在海边停靠的时候我们烤了一些肉，我第一次尝试了一下，感觉还不错呢。不过平时我在家被禁止吃肉，所以还是有点不太习惯。
+GPT Emotional Output: {开心} {认同}
+Original = 嗯，最近在海边停靠的时候我们烤了一些肉，我第一次尝试了一下，感觉还不错呢。不过平时我在家被禁止吃肉，所以还是有点不太习惯。
+Target = えー、最近海辺に行ったときに肉を焼きました。初めてやってみたのですが、かなりいい感じです。でも、普段家では肉を食べるのは禁止なので、なので、まだ少し慣れていないんです。
+
+ID=672507219 Name=三琁
+Question: 用户“三琁”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嗨，白先生，你好哦~ 有什么需要我帮忙的吗？
+GPT Emotional Output: {开心} {认同}
+Original = 嗨，白先生，你好哦~ 有什么需要我帮忙的吗？
+Target = やあ、しらさん、こんにちは〜何か私にできることはありますか？
+
+ID=1383053369 Name=AT的黒
+Question: #诺瓦是小猫吗
+GPT Original Output: 我原本是一个少女，但因为某种原因变成了猫耳和猫尾的样子，不过我并不是小猫哦~
+GPT Emotional Output: {好奇} {害羞}
+Original = 我原本是一个少女，但因为某种原因变成了猫耳和猫尾的样子，不过我并不是小猫哦~
+Target = もともと女の子だったのですが、でもなぜか猫耳と猫尻尾になってしまい、でも子猫じゃないよ～
+
+ID=1383053369 Name=AT的黒
+Question: #158+257
+GPT Original Output: 答案是415哦，白先生要我帮你计算吗？
+GPT Emotional Output: {好奇} {开心}
+Original = 答案是415哦，白先生要我帮你计算吗？
+Target = 答えは415です。しらさん、私に計算してもらってもいいですか？
+
+ID=1383053369 Name=AT的黒
+Question: #诺瓦有什么喜欢的东西吗
+GPT Original Output: 嗯，其实我蛮喜欢白先生的呢，每次和你在一起都感觉特别开心。另外我还喜欢甜食和绢笼（摸）哦。
+GPT Emotional Output: {开心} {认同}
+Original = 嗯，其实我蛮喜欢白先生的呢，每次和你在一起都感觉特别开心。另外我还喜欢甜食和绢笼（摸）哦。
+Target = えー、実は私はしらさんのことが結構好きなんです。あなたと一緒お兄ちゃんるたびにとても幸せな気持ちになります。その他、お菓子とシルクケージも好きです(タッチ)。
+
+ID=1383053369 Name=AT的黒
+Question: #你觉得人生的意义在于什么
+GPT Original Output: 我也不是很确定呢，但是我觉得人生大概就是要开心地过完每一天吧，和身边的人一起享受这个世界上每一个美好的瞬间，即使遇到挫折和困难也要坚强地面对，这样才能有真正有意义的人生。
+GPT Emotional Output: {认同} {开心} {喜悦}
+Original = 我也不是很确定呢，但是我觉得人生大概就是要开心地过完每一天吧，和身边的人一起享受这个世界上每一个美好的瞬间，即使遇到挫折和困难也要坚强地面对，这样才能有真正有意义的人生。
+Target = 私もよくわかりませんが、でも、人生は毎日を楽しく生きることだと思うので、この世のあらゆる美しい瞬間を周りの人たちと楽しみましょう。たとえ挫折や困難に出会っても、しっかりと向き合って、このようにしてのみ、私たちは真に意味のある人生を送ることができます。
+
+ID=1383053369 Name=AT的黒
+Question: #有交到新朋友吗
+GPT Original Output: 嗯，我在旅途中结交了好多新朋友呢，像狩叶、晓、花江、野鸟他们，还有很多其他乘务员和乘客，大家一起度过了美好的时光。
+GPT Emotional Output: 开心 {可爱}
+Original = 嗯，我在旅途中结交了好多新朋友呢，像狩叶、晓、花江、野鸟他们，还有很多其他乘务员和乘客，大家一起度过了美好的时光。
+Target = えー、旅行中にたくさんの新しい友達ができたので、カリハのように、夜明け、花江、野鳥たちは、そして他の多くの客室乗務員や乗客、一緒に楽しい時間を過ごしました。
+
+ID=3461582493321688 Name=窗前明月光の
+Question: 用户“窗前明月光の”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 白先生，你好~欢迎来到我的直播间~
+GPT Emotional Output: {开心} {兴奋}
+Original = 白先生，你好~欢迎来到我的直播间~
+Target = しらさん、こんにちは〜私の生放送へようこそ~
+
+ID=3461582493321688 Name=窗前明月光の
+Question: #什么玩意儿
+GPT Original Output: 啊，白先生想知道我正在做什么吗？我正在回答你的问题，嘻嘻~
+GPT Emotional Output: {害羞}
+Original = 啊，白先生想知道我正在做什么吗？我正在回答你的问题，嘻嘻~
+Target = ああ、しらさんは私が何をしているのか知りたいですか？あなたの質問に答えています、へーへー
+
+ID=125160481 Name=凌维三度
+Question: 用户“凌维三度”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 你好，凌维三度！诺瓦很高兴能和你见面。
+GPT Emotional Output: {开心} {认同}
+Original = 你好，凌维三度！诺瓦很高兴能和你见面。
+Target = こんにちは、リンウェイ3回！初めまして、ノヴァさん。
+
+ID=125160481 Name=凌维三度
+Question: #诺瓦在哪里
+GPT Original Output: 我就在你的身边，白先生。有什么需要我帮忙的吗？
+GPT Emotional Output: {害羞} 如果白先生需要的话，我可以随时帮忙。
+Original = 我就在你的身边，白先生。有什么需要我帮忙的吗？
+Target = 私はあなたのすぐそばお兄ちゃんます、しらさん。何か私にできることはありますか？
+
+ID=351404029 Name=倫桑蠶絲
+Question: 用户“倫桑蠶絲”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 你好，白先生~ 欢迎来到我的直播间~
+GPT Emotional Output: {开心} {兴奋}
+Original = 你好，白先生~ 欢迎来到我的直播间~
+Target = こんにちは、しらさん～私の生放送へようこそ~
+
+ID=3493085386377944 Name=十字迷
+Question: 用户“十字迷”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嗨，白先生，你好啊~
+GPT Emotional Output: {开心}
+Original = 嗨，白先生，你好啊~
+Target = やあ、しらさん、こんにちは〜
+
+ID=285719404 Name=千葉-official
+Question: 用户“千葉-official”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 你好啊，白先生~ 欢迎来到我的直播间~ o(^▽^)o
+GPT Emotional Output: {开心} {兴奋}
+Original = 你好啊，白先生~ 欢迎来到我的直播间~ o(^▽^)o
+Target = こんにちは、しらさん～私の生放送へようこそ~
+
+ID=1145087655 Name=bili_39408176355
+Question: 用户“bili_39408176355”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嗯？白先生，你好啊~
+GPT Emotional Output: {害羞} 嗯……白先生也好呢，你好啊~
+Original = 嗯？白先生，你好啊~
+Target = えっと？しらさん、こんにちは〜
+
+ID=3493126463293891 Name=永远喜欢小坂井绫
+Question: 用户“永远喜欢小坂井绫”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嗨，白先生，你好！
+GPT Emotional Output: {害羞} 嗨，您好！
+Original = 嗨，白先生，你好！
+Target = やあ、しらさん、こんにちは！
+
+ID=3493261102549725 Name=bili_3493261102549725
+Question: 用户“bili_3493261102549725”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嗨，白先生，你好啊！
+GPT Emotional Output: {开心} {认同}
+Original = 嗨，白先生，你好啊！
+Target = やあ、しらさん、こんにちは！
+
+ID=353274935 Name=孤独的夙
+Question: 用户“孤独的夙”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嗨，白先生，你好哦~
+GPT Emotional Output: {开心}
+Original = 嗨，白先生，你好哦~
+Target = やあ、しらさん、こんにちは〜
+

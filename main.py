@@ -1,5 +1,6 @@
 import sys
 import config
+import nlp
 import process
 import value
 import server
@@ -26,7 +27,7 @@ if __name__ == '__main__':
     print(f"Use \"help\" to get help.\n")
     while True:
         try:
-            inp = input("root@WaifuStream:~# ")
+            inp = input(f"{config.CONFIG_NAME}@WaifuStream:~# ")
             inp = inp.replace("\n", "")
             if inp == "":
                 continue
@@ -46,7 +47,13 @@ if __name__ == '__main__':
                 print("Restarting...")
                 utils.restart()
             elif inp.startswith("chat:"):
-                print("Chat: " + inp[5:])
+                if inp[5:] == "":
+                    print("Please enter the content of the chat.")
+                    continue
+                if inp[5:] == "+reset":
+                    value.chat_dict[0] = nlp.ChatGPT(config.SYSTEM_PROMPT)
+                    print("Chat Reset.")
+                    continue
                 danmu_dict = {
                     "text": inp[5:],
                     "id": "-10000",

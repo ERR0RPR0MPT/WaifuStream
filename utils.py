@@ -33,7 +33,7 @@ def fix_translate_error(text):
 
 
 def is_cmd_or_msg(danmu_dict):
-    if danmu_dict["text"].startswith(("+", "#")):
+    if danmu_dict["text"].startswith(config.CONFIG_MATCH_COMMAND):
         return True
     return False
 

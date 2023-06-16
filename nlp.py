@@ -1,9 +1,11 @@
+import json
 import random
 import re
 import threading
 import time
 import traceback
 import danmaku
+import multiprocess
 import utils
 import value
 import config
@@ -69,20 +71,38 @@ def set_available_openai_key():
                 traceback.print_exc()
                 openai.api_key = origin_key
                 config.OPENAI_API_KEY_LIST.remove(new_key)
-                print(f"OpenAI API Key: {utils.hide_openai_api_key(new_key)} is not available. Check for another one...")
+                print(
+                    f"OpenAI API Key: {utils.hide_openai_api_key(new_key)} is not available. Check for another one...")
                 continue
             openai.api_key = new_key
             return
 
 
-def on_msg(q, ide, name):
+def on_msg(danmu):
     """
     消息事件循环
-    :param q: 消息
-    :param ide: 用户ID
-    :param name: 用户名
+    :param danmu: 消息
     :return:
     """
+
+    q = danmu["text"]
+    ide = danmu["id"]
+    name = danmu["name"]
+    timestamp = danmu["timestamp"]
+    typer = "danmu"
+    multi = "false"
+    steps = "-1"
+    if "{model_myself}" in q:
+        q = q.replace("{model_myself}", config.MULTI_NAME)
+        danmu["text"] = q
+    try:
+        typer = danmu["type"]
+        if config.MULTI_MODE:
+            multi = danmu["multi"]
+            steps = danmu["steps"]
+    except:
+        pass
+
     try:
         value.chat_dict[ide]
     except:
@@ -100,128 +120,170 @@ def on_msg(q, ide, name):
     # if len(chat.messages) > 15:
     #     chat = ChatGPT(config.SYSTEM_PROMPT)
 
-    # 发送弹幕
-    if ide != "0" or ide != "-10000":
-        danmaku.send_danmaku(f"@{name} {config.TEXT_THINKING}")
-
-    value.sender_str = f"{name} -> Inferencing..."
-    value.stop_event = False
-
-    # 提问-回答-记录
-    value.chat_dict[ide].messages.append({"role": "user", "content": q})
-    answer_rsp = value.chat_dict[ide].ask_gpt()
-    answer = ""
-    # 流式输出
-    value.trans_origin_str = ""
-    value.trans_target_str = ""
-    value.trans_emotion_data = ""
-    value.audio_queue = {}
-    value.audio_threads_queue = {}
-    value.audio_threads_num = 99999999
-    value.is_play_audio_timeout = False
-    i = 0
-    sentences_num = 0
-    sentences_detect = False
-    t1 = threading.Thread(target=vits.play_audio_queue)
-    t1.start()
-    t_emo = None
-
-    for chunk in answer_rsp:
-        try:
-            now_token = chunk.choices[0].delta.to_dict()["content"]
-            answer += now_token
-            if len(answer) >= config.MAX_ANSWER_LENGTH:
-                print("Answer too long, shutdown...")
-                break
-            value.trans_origin_str = answer
-            # 检测是否成功输出一句话
-            if any(char in now_token for char in '，。：？！、,.:?!~'):
-                try:
-                    sentences_num += 1
-                    if sentences_num == 3 and config.EMOTION_SIMULATION_ENABLE:
-                        # 识别感情
-                        sentences_detect = True
-                        t_emo = threading.Thread(target=emotion_analysis_init, args=(answer,))
-                        t_emo.start()
-                    # 提取最后一句话
-                    tokens = re.split('(?<=[，。：？！、,.:?!~])', answer)
-                    tokens = [token.strip() for token in tokens if token.strip()]
-                    partial_answer = tokens[-1]
-
-                    # 调用翻译
-                    trans_text = ""
-                    if config.TRANSLATE_MODE == "gpt":
-                        print(f"Using GPT to translate...{partial_answer}")
-                        trans_chat = ChatGPT(config.TRANSLATE_PROMPT)
-                        trans_chat.messages.append(
-                            {"role": "user", "content": config.TRANSLATE_PROMPT.replace("{content}", partial_answer)})
-                        trans_text = trans_chat.ask_gpt_get()
-                        print(f"GPT translate done: {trans_text}")
-                    elif config.TRANSLATE_MODE == "google":
-                        k = 0
-                        while True:
-                            try:
-                                text = value.client.translate(partial_answer, target=config.TRANSLATE_TARGET_LANGUAGE)
-                                trans_text = text.translatedText
-                                break
-                            except:
-                                # traceback.print_exc()
-                                k += 1
-                                print("Error: translation failed, try other ways.")
-                                if k < 3:
-                                    time.sleep(0.2)
-                                    continue
-                                print("Using original text...")
-                                trans_text = partial_answer
-                                break
-
-                    # 翻译人工修正
-                    trans_text = utils.fix_translate_error(trans_text)
-                    # 更新UI
-                    value.trans_target_str += trans_text
-                    # 运行VITS推理
-                    t = threading.Thread(target=vits.run_vits_and_play, args=(trans_text, i))
-                    t.start()
-                    value.audio_threads_queue[str(i)] = t
-                    i += 1
-                except:
-                    traceback.print_exc()
-                    continue
-        except:
-            continue
-
-    # 感情检测
-    if not sentences_detect and config.EMOTION_SIMULATION_ENABLE:
-        t_emo = threading.Thread(target=emotion_analysis_init, args=(answer,))
-        t_emo.start()
-    t_emo.join()
-
-    print(f"GPT Original Output: {answer}")
-    utils.save_dialog(f"GPT Original Output: {answer}")
-    print(f"GPT Emotional Output: {value.trans_emotion_data}")
-    utils.save_dialog(f"GPT Emotional Output: {value.trans_emotion_data}")
-    print(f"Original = {value.trans_origin_str}\nTarget = {value.trans_target_str}")
-    utils.save_dialog(f"Original = {value.trans_origin_str}\nTarget = {value.trans_target_str}\n")
-    utils.save_short_dialog(f"A: {value.trans_origin_str}\n\n")
-    value.sender_str = f"{name} -> Playing"
-
-    # 等待模型音频完毕
     try:
-        for _, v in value.audio_threads_queue.items():
-            v.join()
-        value.audio_threads_num = len(value.audio_threads_queue)
-        t1.join(config.MAX_CHAT_ANSWER_SECONDS)
-        if t1.is_alive():
-            value.is_play_audio_timeout = True
-            print("Play Audio Thread execution timed out. Stop the audio thread...")
-    except:
-        print("Error: May be shutdown by long tokens.")
+        # 发送弹幕
+        if ide != "0" or ide != "-10000":
+            danmaku.send_danmaku(f"@{name} {config.TEXT_THINKING}")
 
-    value.stop_event = True
-    value.audio_queue = {}
-    value.audio_threads_queue = {}
-    value.chat_dict[ide].messages.append({"role": "assistant", "content": answer})
-    value.sender_str = f"{name} -> Finished"
+        value.sender_str = f"{name} -> Inferencing..."
+        value.stop_event = False
+
+        # 提问-回答-记录
+        value.chat_dict[ide].messages.append({"role": "user", "content": q})
+        answer_rsp = value.chat_dict[ide].ask_gpt()
+        answer = ""
+        # 流式输出
+        value.trans_origin_str = ""
+        value.trans_target_str = ""
+        value.trans_emotion_data = ""
+        value.audio_queue = {}
+        value.audio_threads_queue = {}
+        value.audio_threads_num = 99999999
+        value.is_play_audio_timeout = False
+        i = 0
+        sentences_num = 0
+        sentences_detect = False
+        t1 = threading.Thread(target=vits.play_audio_queue)
+        t1.start()
+        t_emo = None
+
+        for chunk in answer_rsp:
+            try:
+                now_token = chunk.choices[0].delta.to_dict()["content"]
+                answer += now_token
+                if len(answer) >= config.MAX_ANSWER_LENGTH:
+                    print("Answer too long, shutdown...")
+                    break
+                value.trans_origin_str = answer
+                # 检测是否成功输出一句话
+                if any(char in now_token for char in '，。：？！、,.:?!~'):
+                    try:
+                        sentences_num += 1
+                        if sentences_num == 3 and config.EMOTION_SIMULATION_ENABLE:
+                            # 识别感情
+                            sentences_detect = True
+                            t_emo = threading.Thread(target=emotion_analysis_init, args=(answer,))
+                            t_emo.start()
+                        # 提取最后一句话
+                        tokens = re.split('(?<=[，。：？！、,.:?!~])', answer)
+                        tokens = [token.strip() for token in tokens if token.strip()]
+                        partial_answer = tokens[-1]
+
+                        # 调用翻译
+                        trans_text = ""
+                        if config.TRANSLATE_MODE == "gpt":
+                            print(f"Using GPT to translate...{partial_answer}")
+                            trans_chat = ChatGPT(config.TRANSLATE_PROMPT)
+                            trans_chat.messages.append(
+                                {"role": "user",
+                                 "content": config.TRANSLATE_PROMPT.replace("{content}", partial_answer)})
+                            trans_text = trans_chat.ask_gpt_get()
+                            print(f"GPT translate done: {trans_text}")
+                        elif config.TRANSLATE_MODE == "google":
+                            k = 0
+                            while True:
+                                try:
+                                    text = value.client.translate(partial_answer,
+                                                                  target=config.TRANSLATE_TARGET_LANGUAGE)
+                                    trans_text = text.translatedText
+                                    break
+                                except:
+                                    # traceback.print_exc()
+                                    k += 1
+                                    print("Error: translation failed, try other ways.")
+                                    if k < 3:
+                                        time.sleep(0.2)
+                                        continue
+                                    print("Using original text...")
+                                    trans_text = partial_answer
+                                    break
+
+                        # 翻译人工修正
+                        trans_text = utils.fix_translate_error(trans_text)
+                        # 更新UI
+                        value.trans_target_str += trans_text
+                        # 运行VITS推理
+                        t = threading.Thread(target=vits.run_vits_and_play, args=(trans_text, i))
+                        t.start()
+                        value.audio_threads_queue[str(i)] = t
+                        i += 1
+                    except:
+                        traceback.print_exc()
+                        continue
+            except:
+                continue
+
+        # 感情检测
+        if not sentences_detect and config.EMOTION_SIMULATION_ENABLE:
+            t_emo = threading.Thread(target=emotion_analysis_init, args=(answer,))
+            t_emo.start()
+        t_emo.join()
+
+        print(f"GPT Original Output: {answer}")
+        utils.save_dialog(f"GPT Original Output: {answer}")
+        print(f"GPT Emotional Output: {value.trans_emotion_data}")
+        utils.save_dialog(f"GPT Emotional Output: {value.trans_emotion_data}")
+        print(f"Original = {value.trans_origin_str}\nTarget = {value.trans_target_str}")
+        utils.save_dialog(f"Original = {value.trans_origin_str}\nTarget = {value.trans_target_str}\n")
+        utils.save_short_dialog(f"A: {value.trans_origin_str}\n\n")
+        value.sender_str = f"{name} -> Playing"
+
+        # 等待模型音频完毕
+        try:
+            for _, v in value.audio_threads_queue.items():
+                v.join()
+            value.audio_threads_num = len(value.audio_threads_queue)
+            t1.join(config.MAX_CHAT_ANSWER_SECONDS)
+            if t1.is_alive():
+                value.is_play_audio_timeout = True
+                print("Play Audio Thread execution timed out. Stop the audio thread...")
+        except:
+            print("Error: May be shutdown by long tokens.")
+
+        # 如果开启模型间交流，就发msg消息到multifile
+        try:
+            try:
+                mut = danmu["multi_user_text"]
+            except:
+                mut = q
+                pass
+            if config.MULTI_MODE and typer != "enter" and typer != "gift":
+                ts = str(time.time())
+                msg_dict = {
+                    "multi": "true",
+                    "type": "msg",
+                    "modelId": config.MULTI_ID,
+                    "modelName": config.MULTI_NAME,
+                    "multi_user": name,
+                    "multi_user_text": mut,
+                    "multi_model": config.MULTI_NAME,
+                    "multi_model_text": answer,
+                    "name": "模型间问答",
+                    "id": "-5000",
+                    "msgId": ''.join(random.choice("123456789") for _ in range(8)),
+                    "text": answer,
+                    "timestamp": ts,
+                    "steps": "0" if steps == "-1" else str(int(steps) + 1),
+                }
+                multiprocess.write_file(ts + "_" + ''.join(
+                    random.choice("123456789") for _ in range(8)) + "_msg_" + config.MULTI_NAME + ".txt",
+                                        json.dumps(msg_dict))
+        except:
+            traceback.print_exc()
+            print("Error when run multi sender.")
+
+        value.stop_event = True
+        value.audio_queue = {}
+        value.audio_threads_queue = {}
+        value.chat_dict[ide].messages.append({"role": "assistant", "content": answer})
+        value.sender_str = f"{name} -> Finished"
+    except:
+        traceback.print_exc()
+        print("Error: GPT chat failed.")
+        value.stop_event = True
+        value.audio_queue = {}
+        value.audio_threads_queue = {}
+        value.sender_str = f"{name} -> Error"
     return answer
 
 

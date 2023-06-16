@@ -18,6 +18,7 @@ TRANSLATE_MODE: "google"  # gpt or google
 TRANSLATE_TARGET_LANGUAGE: "ja"
 MAX_DANMAKU_QUEUE_LENGTH: 10
 MAX_INTERACT_MESSAGES_PER_MINUTE: 1
+INTERACT_MESSAGES_RANDOM: 0.1
 MAX_WAIT_SECONDS: 600
 MAX_ANSWER_LENGTH: 150
 MAX_CHAT_ANSWER_SECONDS: 30
@@ -25,6 +26,15 @@ IGNORED_USERS: []
 EMOTION_IMAGE_URL: "http://localhost:8005/assets/noir/images/"
 EMOTION_IMAGE_DEFAULT: "待机.png"
 TERMINAL_CHAT_NAME: "终端"
+MULTI_MODE: true
+MULTI_ID: "-10002"
+MULTI_NAME: "诺瓦"
+MULTI_MAX_STEPS: 1
+MULTI_PROMPT: |
+  "{user}": "{user_text}"
+  "{model}": "{model_text}"
+  上面是其他人在直播间内进行的对话，直播间内有亚托莉、音理、诺瓦，你是{model_myself}，此时你也在直播间，需要和观众们对话，假设你要加入他们的对话。请尽量迎合观众的请求，并输出你想说的内容，不要输出任何多余的内容。
+MULTI_DIR: "multi"
 VITS_DOMAINS:
   - ""
 OPENAI_API_KEY_LIST:

@@ -1,4 +1,5 @@
-
+import random
+import string
 import threading
 import time
 from bilibili_api import sync
@@ -36,7 +37,12 @@ async def on_enter(event):
     :param event:
     :return:
     """
-    # 观众进入直播间
+    # 随机概率执行
+    if random.random() > config.INTERACT_MESSAGES_RANDOM:
+        print("Interact message random rate limit reached, ignore this message, id=" + str(
+            event["data"]["data"]["uid"]) + " name=" + event["data"]["data"]["uname"])
+        return
+    # 判断条件
     current_time = time.time()
     if current_time - value.interact_last_append_time <= 60 and value.interact_messages_appended >= config.MAX_INTERACT_MESSAGES_PER_MINUTE:
         print("Interact message rate limit reached, ignore this message, id=" + str(
@@ -46,11 +52,18 @@ async def on_enter(event):
         value.interact_last_append_time = current_time
         value.interact_messages_appended = 1
 
+    
     danmu_dict = {
+        "multi": "false",
+        "type": "enter",
+        "modelId": config.MULTI_ID,
+        "modelName": config.MULTI_NAME,
         "text": config.WELCOME_PROMPT.replace("{user}", event["data"]["data"]["uname"]),
         "id": str(event["data"]["data"]["uid"]),
         "name": event["data"]["data"]["uname"],
-        "timestamp": str(time.time()),
+        "msgId": ''.join(random.choice("123456789") for _ in range(8)),
+        "steps": "-1",
+        "timestamp": str(time.time())
     }
     value.msg_queue.append(danmu_dict)
 
@@ -63,10 +76,17 @@ async def on_gift(event):
     :return:
     """
     # 收到礼物
+    
     danmu_dict = {
+        "multi": "false",
+        "type": "gift",
+        "modelId": config.MULTI_ID,
+        "modelName": config.MULTI_NAME,
         "text": config.THANKS_FOR_GIFT_PROMPT.replace("{user}", event["data"]["data"]["uname"]),
         "id": str(event["data"]["data"]["uid"]),
         "name": event["data"]["data"]["uname"],
+        "msgId": ''.join(random.choice("123456789") for _ in range(8)),
+        "steps": "-1",
         "timestamp": str(time.time()),
     }
     value.msg_queue.append(danmu_dict)
@@ -79,12 +99,21 @@ async def on_danmaku(event):
     :param event:
     :return:
     """
+    
     danmu_dict = {
+        "multi": "false",
+        "type": "danmaku",
+        "modelId": config.MULTI_ID,
+        "modelName": config.MULTI_NAME,
         "text": event["data"]["info"][1],
         "id": str(event["data"]["info"][2][0]),
         "name": event["data"]["info"][2][1],
+        "msgId": ''.join(random.choice("123456789") for _ in range(8)),
+        "steps": "-1",
         "timestamp": str(time.time()),
     }
+    # 替换中文符号
+    danmu_dict["text"] = danmu_dict["text"].replace("：", ":", 1)
     # 避免机器人发送的弹幕被检测到
     if danmu_dict["id"] == str(config.BILI_USER_UID) and (
             config.TEXT_IGNORE_DANMAKU in danmu_dict["text"] or config.TEXT_DANMAKU_SAVED in danmu_dict["text"] or config.TEXT_THINKING in

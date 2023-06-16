@@ -11,12 +11,13 @@ import value
 
 def execute():
     """
-    主线程
+    消息处理主线程
     :return:
     """
     while True:
         try:
             choice_flag = 0
+            danmu = None
             while True:
                 if choice_flag <= config.MAX_WAIT_SECONDS:
                     if len(value.msg_queue) <= 0:
@@ -35,6 +36,7 @@ def execute():
                         msg = random.choice(config.RANDOM_QUESTION)
                         ide = "0"
                         name = config.TEXT_RANDOM_QUESTION
+                        
                         timestamp = str(time.time())
                     else:
                         choice_flag = 0
@@ -64,7 +66,7 @@ def execute():
                     while True:
                         retries += 1
                         try:
-                            nlp.on_msg(msg, ide, name)
+                            nlp.on_msg(danmu)
                             break
                         except openai.error.AuthenticationError:
                             print("OpenAI AuthenticationError, Try to set a key...")

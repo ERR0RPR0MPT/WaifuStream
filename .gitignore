@@ -3,6 +3,7 @@ __pycache__
 resource
 stream
 backup
+multi
 assets/atri/atri
 assets/noir/noir
 assets/noir/vits

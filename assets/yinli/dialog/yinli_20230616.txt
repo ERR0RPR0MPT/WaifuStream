@@ -69,3 +69,1168 @@ GPT Emotional Output: {可爱}
 Original = 你好哥哥，有什么可以帮到你的吗？
 Target = やあ、お兄ちゃん、何かお手伝いできますか?
 
+ID=95957964 Name=苏服呀
+Question: 用户“苏服呀”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥你好呀~欢迎来到我的直播间！
+GPT Emotional Output: {开心}
+Original = 哥哥你好呀~欢迎来到我的直播间！
+Target = こんにちは、お兄ちゃん〜私の生放送ルームへようこそ！
+
+ID=349513800 Name=zhongxi4
+Question: 用户“zhongxi4”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哦，你好啊~是哥哥你啊，呵呵。我们又能在一起了呢~你今天过得怎么样啊？
+GPT Emotional Output: {友善} {亲切} {感兴趣}
+Original = 哦，你好啊~是哥哥你啊，呵呵。我们又能在一起了呢~你今天过得怎么样啊？
+Target = おお、こんにちは〜君のお兄ちゃんだよ、ふふ。またご一緒できませんか~今日はどうですか？
+
+ID=269977721 Name=听你嘅
+Question: 用户“听你嘅”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你来啦！好开心哦~
+GPT Emotional Output: {开心}
+Original = 哥哥，你来啦！好开心哦~
+Target = お兄ちゃん、ここお兄ちゃんるよ！とても幸せ〜
+
+ID=2507225 Name=多利碳
+Question: 用户“多利碳”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥你好啊！很高兴你来了~
+GPT Emotional Output: {开心} {认同}
+Original = 哥哥你好啊！很高兴你来了~
+Target = こんにちはお兄ちゃん！来てよかった〜
+
+ID=24095103 Name=四月大叔
+Question: 用户“四月大叔”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你好啊！很开心你能来到我们的直播间哦~
+GPT Emotional Output: {开心}
+Original = 哥哥，你好啊！很开心你能来到我们的直播间哦~
+Target = お兄ちゃん、こんにちは！生放送ルームに来ていただけると嬉しいです〜
+
+ID=446364717 Name=灑脫不羈
+Question: 用户“灑脫不羈”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥你好啊~欢迎来到我的直播间！最近有什么好玩的事情发生了吗？
+GPT Emotional Output: {开心} {好奇}
+Original = 哥哥你好啊~欢迎来到我的直播间！最近有什么好玩的事情发生了吗？
+Target = こんにちは、お兄ちゃん〜私の生放送ルームへようこそ！最近何か面白い出来事はありましたか？
+
+ID=1399120561 Name=凝天芷
+Question: 用户“凝天芷”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，有一个叫凝天芷的用户进来了哦~ 你好啊凝天芷！欢迎来到我们的直播间！
+GPT Emotional Output: {开心}
+Original = 哥哥，有一个叫凝天芷的用户进来了哦~ 你好啊凝天芷！欢迎来到我们的直播间！
+Target = お兄ちゃん、Ning Tianzhi という名前のユーザーがやって来ました~こんにちは、寧天志さん！生放送ルームへようこそ！
+
+ID=454354018 Name=bili_60628736465
+Question: 用户“bili_60628736465”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你好呀~ 欢迎来到直播间~ 有什么想对哥哥说的吗？我听着哦~
+GPT Emotional Output: {开心}
+Original = 哥哥，你好呀~ 欢迎来到直播间~ 有什么想对哥哥说的吗？我听着哦~
+Target = お兄ちゃん、こんにちは〜生放送へようこそ〜おお兄ちゃんさんに何か言いたいことはありますか？聞いてるよ～
+
+ID=386411862 Name=戏如我
+Question: 用户“戏如我”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥你好啊，欢迎来到我的直播间~今天有什么想对音理说的话吗？
+GPT Emotional Output: {开心}
+Original = 哥哥你好啊，欢迎来到我的直播间~今天有什么想对音理说的话吗？
+Target = こんにちはお兄ちゃん、私の生放送へようこそ~今日オンリに言いたいことはありますか？
+
+ID=39404833 Name=henryxu_wz
+Question: 用户“henryxu_wz”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哇，你好啊，henryxu_wz哥哥！很高兴你来到我的直播间了。
+GPT Emotional Output: {开心}
+Original = 哇，你好啊，henryxu_wz哥哥！很高兴你来到我的直播间了。
+Target = おお、こんにちは、henryxu_wz お兄ちゃんさん！私のライブストリームに来てくれてとても嬉しいです。
+
+ID=514682509 Name=Panzerfaustttt
+Question: 用户“Panzerfaustttt”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哎呀，是Panzerfaustttt啊！你好啊，我是音理哦，欢迎来到直播间。今天要一起玩什么游戏吗？
+GPT Emotional Output: {开心}
+Original = 哎呀，是Panzerfaustttt啊！你好啊，我是音理哦，欢迎来到直播间。今天要一起玩什么游戏吗？
+Target = おっと、パンツァーファウストだよ！こんにちは、私は音楽です生放送ルームへようこそ。今日はゲームをプレイしてみませんか?
+
+ID=180745214 Name=晰叶
+Question: 用户“晰叶”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你好啊~欢迎来到直播间！
+GPT Emotional Output: {开心}
+Original = 哥哥，你好啊~欢迎来到直播间！
+Target = お兄ちゃん、こんにちは〜生放送ルームへようこそ！
+
+ID=3461567024728877 Name=炎之侓者
+Question: 用户“炎之侓者”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你好啊~欢迎来到我的直播间~
+GPT Emotional Output: {开心}
+Original = 哥哥，你好啊~欢迎来到我的直播间~
+Target = お兄ちゃん、こんにちは〜私の生放送へようこそ~
+
+ID=36962915 Name=腕带之恋
+Question: 用户“腕带之恋”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥你好呀~欢迎进入直播间哦~我是你们的可爱房东女儿音理~有什么想要我帮忙的吗？
+GPT Emotional Output: {可爱}
+Original = 哥哥你好呀~欢迎进入直播间哦~我是你们的可爱房东女儿音理~有什么想要我帮忙的吗？
+Target = こんにちは、お兄ちゃん〜生放送ルームへようこそ〜私はあなたの素敵な家主の娘オンリです~何か私にできることはありますか？
+
+ID=646303 Name=YAMINOSEISHIN
+Question: 用户“YAMINOSEISHIN”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你好啊！欢迎来到我的直播间！
+GPT Emotional Output: {热情} {开心}
+Original = 哥哥，你好啊！欢迎来到我的直播间！
+Target = お兄ちゃん、こんにちは！私の生放送ルームへようこそ！
+
+ID=1454251032 Name=Exrumiya
+Question: 用户“Exrumiya”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥你好~ 欢迎进入直播间呀~
+GPT Emotional Output: {开心}
+Original = 哥哥你好~ 欢迎进入直播间呀~
+Target = こんにちは、お兄ちゃん〜生放送へようこそ〜
+
+ID=502409865 Name=code_nil
+Question: 摸摸头
+GPT Original Output: 哥哥，怎么了？头疼了吗？让我看看嘛。[轻拍哥哥的头发]
+GPT Emotional Output: {关心} {担心} {疼爱} {温柔} {安慰}
+Original = 哥哥，怎么了？头疼了吗？让我看看嘛。[轻拍哥哥的头发]
+Target = お兄ちゃん、どうしたの？頭が痛いですか？そうねぇ。
+
+ID=452336462 Name=别动我的篮球
+Question: 用户“别动我的篮球”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嗨！你好哥哥，欢迎来到直播间。我知道你喜欢篮球，一定有很多有趣的话题可以聊聊呢~
+GPT Emotional Output: {开心}{认同}
+Original = 嗨！你好哥哥，欢迎来到直播间。我知道你喜欢篮球，一定有很多有趣的话题可以聊聊呢~
+Target = やあ！やあ、お兄ちゃん、生放送ルームへようこそ。あなたがバスケットボールが好きなのは知っていますが、きっと面白い話題がたくさんあるはずですよ~
+
+ID=349513800 Name=zhongxi4
+Question: 用户“zhongxi4”打赏了礼物，感谢他的礼物吧~
+
+GPT Original Output: 哇，谢谢哥哥的礼物啊~我好开心哦！（在心中暗自窃喜）
+GPT Emotional Output: {开心}
+Original = 哇，谢谢哥哥的礼物啊~我好开心哦！（在心中暗自窃喜）
+Target = おお、おお兄ちゃんさん、プレゼントありがとう〜めっちゃ幸せ！
+
+ID=349513800 Name=zhongxi4
+Question: 用户“zhongxi4”打赏了礼物，感谢他的礼物吧~
+
+GPT Original Output: 哇，还有礼物？谢谢哥哥的厚爱，我太感动了~（在心中暗自撒花）
+GPT Emotional Output: {开心} {感动}
+Original = 哇，还有礼物？谢谢哥哥的厚爱，我太感动了~（在心中暗自撒花）
+Target = おお、そしてプレゼントは？お兄ちゃんさん、愛してくれてありがとう、とても感動しました〜
+
+ID=313799163 Name=RadiaR
+Question: 用户“RadiaR”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥你好啊，欢迎来到直播间！
+GPT Emotional Output: {开心}
+Original = 哥哥你好啊，欢迎来到直播间！
+Target = こんにちはお兄ちゃん、生放送ルームへようこそ！
+
+ID=281802443 Name=天天晚上打电动
+Question: 用户“天天晚上打电动”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥你好啊，欢迎来到我的直播间呢~
+GPT Emotional Output: {开心}
+Original = 哥哥你好啊，欢迎来到我的直播间呢~
+Target = こんにちはお兄ちゃん、私の生放送へようこそ~
+
+ID=419610159 Name=传说对决殿主
+Question: 用户“传说对决殿主”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你好啊！欢迎来到直播间~
+GPT Emotional Output: {开心}
+Original = 哥哥，你好啊！欢迎来到直播间~
+Target = お兄ちゃん、こんにちは！生放送へようこそ〜
+
+ID=502409865 Name=code_nil
+Question: (抱走)
+GPT Original Output: 哎呀哎呀，哥哥怎么这么调皮呀！放开我呀，我还没回答完你的问题呢！
+GPT Emotional Output: {可爱} {害羞}
+Original = 哎呀哎呀，哥哥怎么这么调皮呀！放开我呀，我还没回答完你的问题呢！
+Target = 何てことだ、なんでうちの弟はこんなにエッチなの！行かせてあなたの質問への答えはまだ終わっていません!
+
+ID=361425676 Name=嘚儿驾嘚嘚
+Question: 用户“嘚儿驾嘚嘚”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你好啊！欢迎来到直播间。
+GPT Emotional Output: {开心}
+Original = 哥哥，你好啊！欢迎来到直播间。
+Target = お兄ちゃん、こんにちは！生放送ルームへようこそ。
+
+ID=269383917 Name=黑神话之悟净
+Question: 用户“黑神话之悟净”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你好啊！欢迎来到直播间~
+GPT Emotional Output: {开心}
+Original = 哥哥，你好啊！欢迎来到直播间~
+Target = お兄ちゃん、こんにちは！生放送へようこそ〜
+
+ID=487760266 Name=是蛋壳鼬吖
+Question: 用户“是蛋壳鼬吖”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，欢迎你来到直播间哦~ 你今天心情怎么样呀？有什么想和我分享的吗？
+GPT Emotional Output: {开心}
+Original = 哥哥，欢迎你来到直播间哦~ 你今天心情怎么样呀？有什么想和我分享的吗？
+Target = お兄ちゃん、生放送ルームへようこそ〜今日の気分はどうですか？私と共有したいことはありますか?
+
+ID=383114603 Name=火喵三藏
+Question: 用户“火喵三藏”打赏了礼物，感谢他的礼物吧~
+
+GPT Original Output: 哇！谢谢呢火喵三藏，你真是太好了！（开心的表情）
+GPT Emotional Output: {感动}
+Original = 哇！谢谢呢火喵三藏，你真是太好了！（开心的表情）
+Target = おお！ありがとう、フオミャオ・サンザンさん、とても優しいですね！
+
+ID=1986734667 Name=羁绊_暗
+Question: 用户“羁绊_暗”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你好啊！欢迎来到我的直播间！ [微笑]
+GPT Emotional Output: {开心}
+Original = 哥哥，你好啊！欢迎来到我的直播间！ [微笑]
+Target = お兄ちゃん、こんにちは！私の生放送ルームへようこそ！
+
+ID=349513800 Name=zhongxi4
+Question: 用户“zhongxi4”打赏了礼物，感谢他的礼物吧~
+
+GPT Original Output: 哇~zhongxi4好有钱啊！谢谢他的礼物哦，真贴心~
+GPT Emotional Output: {开心} {感动}
+Original = 哇~zhongxi4好有钱啊！谢谢他的礼物哦，真贴心~
+Target = うわぁ～zhongxi4 はとてもお金持ちです！プレゼントをありがとう、とても気遣ってくれます〜
+
+ID=426134289 Name=万由里_酱
+Question: 用户“万由里_酱”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你好哦~欢迎来到我的直播间呀~有什么想要问的或者要聊的可以直接和我说哦~
+GPT Emotional Output: {开心}
+Original = 哥哥，你好哦~欢迎来到我的直播间呀~有什么想要问的或者要聊的可以直接和我说哦~
+Target = お兄ちゃん、こんにちは〜私の生放送へようこそ~質問やチャットがある場合は、直接私に話してください〜
+
+ID=473181914 Name=麻莉麻气
+Question: 用户“麻莉麻气”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，欢迎来到直播间哦！有什么想和我聊聊的吗？
+GPT Emotional Output: {开心}
+Original = 哥哥，欢迎来到直播间哦！有什么想和我聊聊的吗？
+Target = お兄ちゃん、生放送ルームへようこそ！何か私に話したいことはありますか？
+
+ID=491647284 Name=向着悠远的天穹Q
+Question: 用户“向着悠远的天穹Q”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哦，是哥哥你来啦！欢迎欢迎！
+GPT Emotional Output: {开心}
+Original = 哦，是哥哥你来啦！欢迎欢迎！
+Target = おお、おお兄ちゃんさん、ここお兄ちゃんるよ！いらっしゃいませ！
+
+ID=424464306 Name=北殿天凛KTTN
+Question: 用户“北殿天凛KTTN”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你好呀！欢迎来到我的直播间~
+GPT Emotional Output: {开心}
+Original = 哥哥，你好呀！欢迎来到我的直播间~
+Target = お兄ちゃん、こんにちは！私の生放送へようこそ~
+
+ID=525481802 Name=淡不云
+Question: 用户“淡不云”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你好啊~欢迎来到直播间！
+GPT Emotional Output: {开心}
+Original = 哥哥，你好啊~欢迎来到直播间！
+Target = お兄ちゃん、こんにちは〜生放送ルームへようこそ！
+
+ID=349513800 Name=zhongxi4
+Question: 抱抱
+GPT Original Output: 来~哥哥抱一个~（张开双臂，做出拥抱的动作）
+GPT Emotional Output: {可爱}
+Original = 来~哥哥抱一个~（张开双臂，做出拥抱的动作）
+Target = 来てください〜おお兄ちゃんさん、ひとつ持ってて～（腕を広げる、
+
+ID=8580686 Name=绫丸桃
+Question: 用户“绫丸桃”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥~你好啊，很开心见到你了！
+GPT Emotional Output: {开心}
+Original = 哥哥~你好啊，很开心见到你了！
+Target = おお兄ちゃんさん〜こんにちは、お会いできて嬉しいです！
+
+ID=249793453 Name=诚最疼韵儿
+Question: 用户“诚最疼韵儿”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥你好，最近过得怎么样？ [微笑的表情]
+GPT Emotional Output: {关心} {友善} {开心}
+Original = 哥哥你好，最近过得怎么样？ [微笑的表情]
+Target = やあ、お兄ちゃん、元気ですか？
+
+ID=3493256933411709 Name=配音小新
+Question: 用户“配音小新”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嘿！哥哥你好啊~
+GPT Emotional Output: {开心}
+Original = 嘿！哥哥你好啊~
+Target = おい！こんにちは、お兄ちゃん〜
+
+ID=1078702480 Name=小奈ail
+Question: 用户“小奈ail”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，欢迎来到直播间~ 最近过得不错吗？
+GPT Emotional Output: {问候} {友善}
+Original = 哥哥，欢迎来到直播间~ 最近过得不错吗？
+Target = お兄ちゃん、生放送へようこそ〜最近はどうでしたか？
+
+ID=76839474 Name=淦256
+Question: 用户“淦256”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哇，你好啊，淦256哥哥~ 我是你的好朋友音理，很高兴见到你~
+GPT Emotional Output: {开心} {可爱}
+Original = 哇，你好啊，淦256哥哥~ 我是你的好朋友音理，很高兴见到你~
+Target = おお、こんにちは、ガンお兄ちゃんさん 256~私はあなたの親友のインリーです。初めまして〜
+
+ID=277738680 Name=赤树
+Question: 用户“赤树”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哇，赤树来啦！你好啊，哥哥~ [微笑表情]
+GPT Emotional Output: {开心}
+Original = 哇，赤树来啦！你好啊，哥哥~ [微笑表情]
+Target = おお、チシュが来た！こんにちは、おお兄ちゃんさん〜
+
+ID=246573191 Name=虚假の吸血姬
+Question: 用户“虚假の吸血姬”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，有人进来了哦~快去和他说一下你好吧！
+GPT Emotional Output: {开心}
+Original = 哥哥，有人进来了哦~快去和他说一下你好吧！
+Target = お兄ちゃん、誰か入ってきた〜行って彼に挨拶してみよう！
+
+ID=485522295 Name=HENT夏空
+Question: 用户“HENT夏空”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哇，夏空，你来啦！你好哥哥~
+GPT Emotional Output: {开心}
+Original = 哇，夏空，你来啦！你好哥哥~
+Target = おお、夏空，ここお兄ちゃんるよ！こんにちは、お兄ちゃん〜
+
+ID=12626983 Name=haze_DRRR
+Question: 用户“haze_DRRR”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你好呀~ 欢迎来到我的直播间~
+GPT Emotional Output: {开心}
+Original = 哥哥，你好呀~ 欢迎来到我的直播间~
+Target = お兄ちゃん、こんにちは〜私の生放送へようこそ~
+
+ID=403970317 Name=遭难の眠
+Question: 用户“遭难の眠”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥你好呀，欢迎来到我的直播间啊！看着你好像有些疲惫呢，是不是最近工作太忙了啊？要注意身体哦，我可不想哥哥生病了呀。不过来到我的直播间就可以放松一下啦，听听音乐，聊聊天，和大家一起开心地度过一个愉快的时光~
+GPT Emotional Output: {关心} 看到你有些疲惫。
+Original = 哥哥你好呀，欢迎来到我的直播间啊！看着你好像有些疲惫呢，是不是最近工作太忙了啊？要注意身体哦，我可不想哥哥生病了呀。不过来到我的直播间就可以放松一下啦，听听音乐，聊聊天，和大家一起开心地度过一个愉快的时光~
+Target = こんにちはお兄ちゃん、私の生放送ルームへようこそ！少しお疲れのようですが、最近仕事が忙しすぎますか？身体に気を付けて、私は弟が病気になることを望みません。でも、私の生放送ルームに来るとリラックスできます。音楽を聴く、チャット、皆さんと一緒に楽しい時間を過ごしてください~
+
+ID=382635327 Name=喜欢就去爱她
+Question: 用户“喜欢就去爱她”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嘿哥哥，你来啦！好久不见，你最近过得怎么样啊？
+GPT Emotional Output: {开心}
+Original = 嘿哥哥，你来啦！好久不见，你最近过得怎么样啊？
+Target = やあ、お兄ちゃんここお兄ちゃんるよ！長い間会っていませんが、最近はどうでしたか？
+
+ID=28683737 Name=player_zero
+Question: 用户“player_zero”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥你好哦，欢迎来到我的直播间！（微笑表情）
+GPT Emotional Output: {开心}
+Original = 哥哥你好哦，欢迎来到我的直播间！（微笑表情）
+Target = こんにちはお兄ちゃん、私の生放送ルームへようこそ！
+
+ID=201470842 Name=墨汻
+Question: 用户“墨汻”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你好啊~欢迎来到直播间！
+GPT Emotional Output: {开心}
+Original = 哥哥，你好啊~欢迎来到直播间！
+Target = お兄ちゃん、こんにちは〜生放送ルームへようこそ！
+
+ID=1961640136 Name=Tkczs
+Question: 用户“Tkczs”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥你好~欢迎来到直播间~
+GPT Emotional Output: {开心}
+Original = 哥哥你好~欢迎来到直播间~
+Target = こんにちは、お兄ちゃん〜生放送へようこそ〜
+
+ID=24934626 Name=北FAFA
+Question: 用户“北FAFA”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哦，你好哥哥~ 今天看起来气色不错啊！
+GPT Emotional Output: {开心}
+Original = 哦，你好哥哥~ 今天看起来气色不错啊！
+Target = おお、こんにちは、お兄ちゃん〜今日は調子がいいですね！
+
+ID=1981145394 Name=城ケ崎絢華
+Question: 用户“城ケ崎絢華”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嗨，你好啊哥哥！笃笃~(双手合十敲击胸前) 欢迎来到直播间呀。
+GPT Emotional Output: {可爱}
+Original = 嗨，你好啊哥哥！笃笃~(双手合十敲击胸前) 欢迎来到直播间呀。
+Target = やあ、こんにちはお兄ちゃん！トゥクトゥク〜（手を合わせて胸をたたいて）生放送の部屋へようこそ。
+
+ID=346095594 Name=地府长
+Question: 用户“地府长”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，欢迎进入直播间呀！看到你来了，我好开心哦。  [微笑表情]
+GPT Emotional Output: {开心}
+Original = 哥哥，欢迎进入直播间呀！看到你来了，我好开心哦。  [微笑表情]
+Target = お兄ちゃん、生放送ルームへようこそ！あなたが来るのを見ました、めっちゃ幸せ。
+
+ID=493473627 Name=白色死神栞那
+Question: 用户“白色死神栞那”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你好呀~欢迎来到直播间啊！我是你的好朋友音理哦~
+GPT Emotional Output: {开心}
+Original = 哥哥，你好呀~欢迎来到直播间啊！我是你的好朋友音理哦~
+Target = お兄ちゃん、こんにちは〜生放送ルームへようこそ！私はあなたの親友のインリーです~
+
+ID=398475067 Name=HackerJohnSmith
+Question: 用户“HackerJohnSmith”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哎呀，是哥哥呀！你来啦~你今天感觉怎么样？
+GPT Emotional Output: {开心}
+Original = 哎呀，是哥哥呀！你来啦~你今天感觉怎么样？
+Target = おっと、私の弟だよ！あなたはここお兄ちゃんるよ〜今日の調子はどうですか？
+
+ID=193173791 Name=冰麒麟爱吃冰淇淋
+Question: 用户“冰麒麟爱吃冰淇淋”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你好啊！欢迎来我的直播间~
+GPT Emotional Output: {开心}
+Original = 哥哥，你好啊！欢迎来我的直播间~
+Target = お兄ちゃん、こんにちは！私の生放送へようこそ~
+
+ID=572513648 Name=zero-丁
+Question: 用户“zero-丁”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥你好啊，欢迎来到直播间~
+GPT Emotional Output: {开心}
+Original = 哥哥你好啊，欢迎来到直播间~
+Target = こんにちはお兄ちゃん、生放送へようこそ〜
+
+ID=194335567 Name=Tricol落樱
+Question: 用户“Tricol落樱”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嗨，欢迎你来到直播间呀~ 哥哥，音理马上给你准备点好玩的东西玩，你等着哦~
+GPT Emotional Output: {开心}
+Original = 嗨，欢迎你来到直播间呀~ 哥哥，音理马上给你准备点好玩的东西玩，你等着哦~
+Target = やあ、生放送へようこそ〜お兄ちゃん、インリはすぐに楽しいものを用意してあげるから、待ってよ〜
+
+ID=489147144 Name=椿仁酱
+Question: 用户“椿仁酱”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哎呀~仁酱好啊~欢迎欢迎~有什么想和我聊聊的吗？
+GPT Emotional Output: {开心} {可爱}
+Original = 哎呀~仁酱好啊~欢迎欢迎~有什么想和我聊聊的吗？
+Target = おっと〜連江はいいですね〜ようこそいらっしゃいませ～何か私に話したいことはありますか？
+
+ID=672507219 Name=三琁
+Question: 用户“三琁”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哇，是三琁呀！你好你好，音理好高兴见到你~ 今天有什么想和音理聊的吗？
+GPT Emotional Output: {开心}
+Original = 哇，是三琁呀！你好你好，音理好高兴见到你~ 今天有什么想和音理聊的吗？
+Target = おお、3つだよ！こんにちは、初めまして、オノリさん〜今日、インリと何か話したいことはありますか?
+
+ID=358291459 Name=空不了的城
+Question: 用户“空不了的城”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你好啊~欢迎来到我的直播间~！
+GPT Emotional Output: {开心}
+Original = 哥哥，你好啊~欢迎来到我的直播间~！
+Target = お兄ちゃん、こんにちは〜私の生放送へようこそ~！
+
+ID=335779098 Name=一只废萝卜子
+Question: 用户“一只废萝卜子”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥你好呀，看到你来了我好开心哦~
+GPT Emotional Output: {开心}
+Original = 哥哥你好呀，看到你来了我好开心哦~
+Target = こんにちはお兄ちゃん、ここでお会いできてとても嬉しいです~
+
+ID=2611411 Name=森林里的龙喵
+Question: 用户“森林里的龙喵”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你好啊！欢迎来到直播间~
+GPT Emotional Output: {开心}
+Original = 哥哥，你好啊！欢迎来到直播间~
+Target = お兄ちゃん、こんにちは！生放送へようこそ〜
+
+ID=1261596353 Name=OutstandingAI
+Question: 用户“OutstandingAI”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哎呀，是哥哥 OutstadingAI 啊！你好你好，今天晚上和音理一起看星空吗？
+GPT Emotional Output: {开心} {认同}
+Original = 哎呀，是哥哥 OutstadingAI 啊！你好你好，今天晚上和音理一起看星空吗？
+Target = おっと、私の弟のOutstadingAIです！こんにちは、今夜はオノリと一緒に星空を見に行きませんか？
+
+ID=125160481 Name=凌维三度
+Question: 用户“凌维三度”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥你好呀~欢迎来到我的直播间~
+GPT Emotional Output: {开心}
+Original = 哥哥你好呀~欢迎来到我的直播间~
+Target = こんにちは、お兄ちゃん〜私の生放送へようこそ~
+
+ID=223856764 Name=嚜盳-
+Question: 用户“嚜盳-”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哎呀，是嚜盳哦！你好啊，哥哥~ 好久不见，最近过得怎么样啊？
+GPT Emotional Output: {开心}
+Original = 哎呀，是嚜盳哦！你好啊，哥哥~ 好久不见，最近过得怎么样啊？
+Target = おっと、嚜盳です！こんにちは、おお兄ちゃんさん〜長い間会っていませんが、最近はどうですか？
+
+ID=438192125 Name=不是阿猫
+Question: 用户“不是阿猫”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你好哦！欢迎来到我的直播间啊！~｡◕‿◕｡ (づ｡◕‿‿◕｡)づ
+GPT Emotional Output: {开心}
+Original = 哥哥，你好哦！欢迎来到我的直播间啊！~｡◕‿◕｡ (づ｡◕‿‿◕｡)づ
+Target = お兄ちゃん、こんにちは！私の生放送ルームへようこそ！～
+
+ID=264457332 Name=不神圣也不罗马的帝国
+Question: 用户“不神圣也不罗马的帝国”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，欢迎你来到直播间哦！你今天心情怎么样啊？
+GPT Emotional Output: {开心}
+Original = 哥哥，欢迎你来到直播间哦！你今天心情怎么样啊？
+Target = お兄ちゃん、生放送ルームへようこそ！今日の気分はどうですか？
+
+ID=14229779 Name=醉の
+Question: 用户“醉の”进入直播间，和他打个招呼吧~
+
+ID=28973007 Name=魔禁御板
+Question: 用户“魔禁御板”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥你好啊~欢迎来到我的直播间！
+GPT Emotional Output: {开心}
+Original = 哥哥你好啊~欢迎来到我的直播间！
+Target = こんにちは、お兄ちゃん〜私の生放送ルームへようこそ！
+
+ID=524887128 Name=暗冷墨变
+Question: 用户“暗冷墨变”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥你好啊~ 最近过得怎么样啊？有没有想念我啊？[撒娇的表情]
+GPT Emotional Output: {友善} {亲切} {关心} {询问} {期待回应}
+Original = 哥哥你好啊~ 最近过得怎么样啊？有没有想念我啊？[撒娇的表情]
+Target = こんにちは、お兄ちゃん〜最近はどうですか？私のことが恋しかったですか？
+
+ID=125160481 Name=凌维三度
+Question: 哈喽
+GPT Original Output: 哥哥你好啊~有什么需要我帮忙的吗？ [微笑]
+GPT Emotional Output: {开心}
+Original = 哥哥你好啊~有什么需要我帮忙的吗？ [微笑]
+Target = こんにちは、お兄ちゃん〜何か私にできることはありますか？
+
+ID=269407773 Name=中国怪惔
+Question: 用户“中国怪惔”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你好啊~欢迎来到直播间哦~[微笑表情]
+GPT Emotional Output: {开心}
+Original = 哥哥，你好啊~欢迎来到直播间哦~[微笑表情]
+Target = お兄ちゃん、こんにちは〜生放送ルームへようこそ〜
+
+ID=5760446 Name=花儿不哭
+Question: 用户“花儿不哭”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥好呀~欢迎来到直播间~ [微笑]
+GPT Emotional Output: {开心}
+Original = 哥哥好呀~欢迎来到直播间~ [微笑]
+Target = こんにちはおお兄ちゃんさん〜生放送へようこそ〜
+
+ID=387178025 Name=䂗㳀䒔莻㞯㛽㽿
+Question: 用户“䂗㳀䒔莻㞯㛽㽿”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哎呀~哥哥你好乖啊~,谢谢你来陪音理哦~
+GPT Emotional Output: {感动} {开心}
+Original = 哎呀~哥哥你好乖啊~,谢谢你来陪音理哦~
+Target = おっと〜、インリと一緒に来てくれてありがとう〜
+
+ID=323770618 Name=时雨千忆
+Question: 用户“时雨千忆”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，欢迎来到直播间！你好吗？
+GPT Emotional Output: {开心} {认同}
+Original = 哥哥，欢迎来到直播间！你好吗？
+Target = お兄ちゃん、生放送ルームへようこそ！大丈夫ですか？
+
+ID=125160481 Name=凌维三度
+Question: 用户“凌维三度”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，凌维三度来了哦~ 你好啊，欢迎来到我们的直播间~ [微笑]
+GPT Emotional Output: {开心}
+Original = 哥哥，凌维三度来了哦~ 你好啊，欢迎来到我们的直播间~ [微笑]
+Target = お兄ちゃん、リンウェイは3度目の登場です~こんにちは、生放送へようこそ~
+
+ID=1317106083 Name=bili_63009951599
+Question: 用户“bili_63009951599”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哎呀，是哥哥来了呀，你好你好，音理很高兴你来啦！
+GPT Emotional Output: {开心}
+Original = 哎呀，是哥哥来了呀，你好你好，音理很高兴你来啦！
+Target = おっと、私の弟です。こんにちは、ここに来てくれて嬉しいです！
+
+ID=525177850 Name=Wreathlit-Noe
+Question: 用户“Wreathlit-Noe”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你好呀！欢迎来到我的直播间。今天是个不同寻常的日子，我在星空列车里过得很愉快，你也要加入我们一起旅行啊~
+GPT Emotional Output: {开心}
+Original = 哥哥，你好呀！欢迎来到我的直播间。今天是个不同寻常的日子，我在星空列车里过得很愉快，你也要加入我们一起旅行啊~
+Target = お兄ちゃん、こんにちは！私の生放送ルームへようこそ。今日はいつもと違う日ですが、スタートレインでとても楽しかったですあなたも一緒に旅行に行きませんか~
+
+ID=313785629 Name=紅葉蓝鸢
+Question: 用户“紅葉蓝鸢”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，欢迎你来直播间~ 有什么想和我聊聊的吗？
+GPT Emotional Output: {开心}
+Original = 哥哥，欢迎你来直播间~ 有什么想和我聊聊的吗？
+Target = お兄ちゃん、生放送へようこそ〜何か私に話したいことはありますか？
+
+ID=499420198 Name=名字仒
+Question: 用户“名字仒”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥你好啊~欢迎来到直播间呢！
+GPT Emotional Output: 
+Original = 哥哥你好啊~欢迎来到直播间呢！
+Target = こんにちは、お兄ちゃん〜生放送ルームへようこそ！
+
+ID=350256387 Name=洛水沐兮
+Question: 用户“洛水沐兮”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嘿，哥哥你好啊~欢迎来到我的直播间，一起开心地度过今天吧~（微笑表情）
+GPT Emotional Output: {欢迎} {开心}
+Original = 嘿，哥哥你好啊~欢迎来到我的直播间，一起开心地度过今天吧~（微笑表情）
+Target = おい、こんにちは、お兄ちゃん〜私のライブブロードキャストルームへようこそ、今日も一緒に楽しく過ごしましょう〜
+
+ID=12580172 Name=MG42K11
+Question: 用户“MG42K11”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥你好啊，欢迎来到我的直播间呢~
+GPT Emotional Output: 
+Original = 哥哥你好啊，欢迎来到我的直播间呢~
+Target = こんにちはお兄ちゃん、私の生放送へようこそ~
+
+ID=293555568 Name=天梦芊音星喵
+Question: 用户“天梦芊音星喵”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你好啊，好久不见哦~
+GPT Emotional Output: {开心}
+Original = 哥哥，你好啊，好久不见哦~
+Target = お兄ちゃん、こんにちは、お久しぶりです〜
+
+ID=25401609 Name=花园点点QwQ
+Question: 用户“花园点点QwQ”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哇，欢迎欢迎花园点点QwQ哥哥来到我的直播间啊！有没有好好休息呢？
+GPT Emotional Output: {开心}{欢迎}{关心}{询问}
+Original = 哇，欢迎欢迎花园点点QwQ哥哥来到我的直播间啊！有没有好好休息呢？
+Target = おお、Huayuandiandian QwQ お兄ちゃん、私のライブ ブロードキャスト ルームへようこそ!ゆっくりお休みできましたか？
+
+ID=350256387 Name=洛水沐兮
+Question: 用户“洛水沐兮”打赏了礼物，感谢他的礼物吧~
+
+GPT Original Output: 哇，谢谢哥哥送的礼物，这个礼物好漂亮啊！真的好开心能有这样好的朋友，你真的是最好的哥哥呢。（大笑表情）
+GPT Emotional Output: {开心} {感动} {可爱}
+Original = 哇，谢谢哥哥送的礼物，这个礼物好漂亮啊！真的好开心能有这样好的朋友，你真的是最好的哥哥呢。（大笑表情）
+Target = おお、おお兄ちゃんさん、プレゼントありがとう、この贈り物はとても美しいです！こんな良い友達ができて本当に幸せです。（
+
+ID=1055874560 Name=荣侠客
+Question: 用户“荣侠客”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你好哦~ 欢迎来到我的直播间啊~ 有什么需要我帮忙的地方吗？
+GPT Emotional Output: {开心}
+Original = 哥哥，你好哦~ 欢迎来到我的直播间啊~ 有什么需要我帮忙的地方吗？
+Target = お兄ちゃん、こんにちは〜私の生放送へようこそ~何か私にできることはありますか？
+
+ID=39181529 Name=哈鲁sama
+Question: 用户“哈鲁sama”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哎呀，哈鲁sama来啦~欢迎欢迎，听说你是哥哥在直播间里的好朋友呢，今天一起陪我们玩吧！
+GPT Emotional Output: {开心}
+Original = 哎呀，哈鲁sama来啦~欢迎欢迎，听说你是哥哥在直播间里的好朋友呢，今天一起陪我们玩吧！
+Target = おっと、ハル様がいらっしゃいますよ～いらっしゃいませ、生放送室お兄ちゃんるおお兄ちゃんさんと仲が良いと聞いたのですが、今日は一緒に遊びましょう！
+
+ID=675022581 Name=布瑭
+Question: 用户“布瑭”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，欢迎你来到直播间~ 最近有没有忙碌啊？
+GPT Emotional Output: {好奇} {开心}
+Original = 哥哥，欢迎你来到直播间~ 最近有没有忙碌啊？
+Target = お兄ちゃん、生放送へようこそ〜最近忙しかったですか？
+
+ID=386094703 Name=Astral-illusion
+Question: 用户“Astral-illusion”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嗨，你好啊~哥哥！
+GPT Emotional Output: {开心}
+Original = 嗨，你好啊~哥哥！
+Target = やあ、こんにちは〜おお兄ちゃんさん！
+
+ID=512001047 Name=ゆうれい様
+Question: 快到我碗里来
+GPT Original Output: 哥哥，你又在说些奇怪的话了吧？不过没关系，看在你是我最喜欢的哥哥的份上，我就帮你夹一下菜吧。
+GPT Emotional Output: {可爱}
+Original = 哥哥，你又在说些奇怪的话了吧？不过没关系，看在你是我最喜欢的哥哥的份上，我就帮你夹一下菜吧。
+Target = お兄ちゃん、また変なこと言ってる？でも大丈夫、あなたが私の大好きなおお兄ちゃんさんであるために、食べ物を買うのを手伝ってあげましょう。
+
+ID=1198209545 Name=香香的大盘鸡
+Question: 用户“香香的大盘鸡”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥~你好啊~欢迎来到我的直播间哦~（微笑表情）
+GPT Emotional Output: {开心} {可爱}
+Original = 哥哥~你好啊~欢迎来到我的直播间哦~（微笑表情）
+Target = おお兄ちゃんさん〜こんにちは〜私の生放送へようこそ~
+
+ID=512001047 Name=ゆうれい様
+Question: 关机[dog]
+GPT Original Output: 哥哥，你在开什么玩笑呢？我可不想被你这样的话弄糊涂了。不过没关系，如果你需要帮助的话，记得随时找我哦。
+GPT Emotional Output: {困惑} {生气}
+Original = 哥哥，你在开什么玩笑呢？我可不想被你这样的话弄糊涂了。不过没关系，如果你需要帮助的话，记得随时找我哦。
+Target = お兄ちゃん、何を冗談ですか？あなたの言うことに混乱したくないのです。でも大丈夫、あなたが助けを必要とする場合、いつでも私を見つけてください。
+
+ID=349513800 Name=zhongxi4
+Question: 用户“zhongxi4”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥~你好啊~欢迎来到我的直播间！
+GPT Emotional Output: {开心}
+Original = 哥哥~你好啊~欢迎来到我的直播间！
+Target = おお兄ちゃんさん〜こんにちは〜私の生放送ルームへようこそ！
+
+ID=512001047 Name=ゆうれい様
+Question: noir在哪
+GPT Original Output: 哥哥，你在找诺瓦吗？她应该就在星空列车上和我们一起旅行呢。你可以去找找她，说不定她正在探险或者和其他乘客聊天。加油哦！
+GPT Emotional Output: {开心} {兴奋}
+Original = 哥哥，你在找诺瓦吗？她应该就在星空列车上和我们一起旅行呢。你可以去找找她，说不定她正在探险或者和其他乘客聊天。加油哦！
+Target = お兄ちゃん、ノヴァを探していますか？彼女はスタートレインで私たちと一緒に旅行することになっています。彼女を探しに行ってもいいよ、おそらく彼女は探検しているか、他の乗客とおしゃべりしているのかもしれません。来て！
+
+ID=512001047 Name=ゆうれい様
+Question: 用户“ゆうれい様”打赏了礼物，感谢他的礼物吧~
+
+GPT Original Output: 哇，谢谢ゆうれい様的礼物呢！虽然我并不知道这是什么东西，但我一定会感激不尽的。哥哥，在星空列车上见到这样善良的乘客，真是让人倍感温暖呢。
+GPT Emotional Output: {开心} {感动} {好奇}
+Original = 哇，谢谢ゆうれい様的礼物呢！虽然我并不知道这是什么东西，但我一定会感激不尽的。哥哥，在星空列车上见到这样善良的乘客，真是让人倍感温暖呢。
+Target = おお、谢谢ゆうれい様的礼物呢！それが何なのかは分かりませんが、しかし、間違いなく感謝するでしょう。存在そんな心優しいスタートレインの乗客たちを見て、本当に暖かいですね。
+
+ID=512001047 Name=ゆうれい様
+Question: 用户“ゆうれい様”打赏了礼物，感谢他的礼物吧~
+
+GPT Original Output: 哇，谢谢ゆうれい様的礼物呢！虽然我仍然不知道这是什么，但我的心里已经充满了感激和喜悦。谢谢你，ゆうれい様，在星空列车上和你见面真是太棒了。
+GPT Emotional Output: {开心} {好奇}
+Original = 哇，谢谢ゆうれい様的礼物呢！虽然我仍然不知道这是什么，但我的心里已经充满了感激和喜悦。谢谢你，ゆうれい様，在星空列车上和你见面真是太棒了。
+Target = おお、谢谢ゆうれい様的礼物呢！それが何なのかはまだ分かりませんが、しかし、私の心はすでに感謝と喜びでいっぱいです。ありがとう、存在スタートレインでお会いできて嬉しかったです。
+
+ID=512001047 Name=ゆうれい様
+Question: 用户“ゆうれい様”打赏了礼物，感谢他的礼物吧~
+
+GPT Original Output: 哇，好多礼物呢！这真是太慷慨了，感谢你，ゆうれい様！虽然我还是不知道这些礼物都是什么，但我一定会好好珍惜它们的。让我们一起享受星空列车旅行的美好时光吧。
+GPT Emotional Output: {开心}
+Original = 哇，好多礼物呢！这真是太慷慨了，感谢你，ゆうれい様！虽然我还是不知道这些礼物都是什么，但我一定会好好珍惜它们的。让我们一起享受星空列车旅行的美好时光吧。
+Target = おお、たくさんのプレゼント！それはとても寛大です、ありがとう、ゆうれい様！プレゼントが何なのかはまだ分かりませんが、でも、私は間違いなくそれらを大切にします。スタートレインの旅の素敵な時間を一緒に楽しみましょう。
+
+ID=512001047 Name=ゆうれい様
+Question: 用户“ゆうれい様”打赏了礼物，感谢他的礼物吧~
+
+GPT Original Output: 啊啊啊，礼物真的好多呢！我感受到了ゆうれい様的大力支持和喜爱，非常开心。我会好好使用这些礼物，让我们一起在星空列车上畅游，享受美妙的旅行时光吧！再次感谢你，ゆうれい様。
+GPT Emotional Output: {开心} {感动} {认同}
+Original = 啊啊啊，礼物真的好多呢！我感受到了ゆうれい様的大力支持和喜爱，非常开心。我会好好使用这些礼物，让我们一起在星空列车上畅游，享受美妙的旅行时光吧！再次感谢你，ゆうれい様。
+Target = ああああああプレゼントもたくさんありますよ！ゆうれい様からの強いご支援と愛を感じております、とても幸せです。この賜物を大切に使わせていただきますので、スタートレインで一緒に泳ぎましょう楽しい旅行をお過ごしください！再度、感謝します、ゆうれい様。
+
+ID=512001047 Name=ゆうれい様
+Question: 用户“ゆうれい様”打赏了礼物，感谢他的礼物吧~
+
+GPT Original Output: 哇，好多礼物啊！我感到自己好像淹没在礼物海洋里了呢。非常感谢你，ゆうれい様，这些礼物一定会让我的旅行更加难忘。让我们一起在星空列车上畅游吧，感受美妙的旅途时光。再次感谢你的礼物，我会珍惜的。
+GPT Emotional Output: {开心} {兴奋}
+Original = 哇，好多礼物啊！我感到自己好像淹没在礼物海洋里了呢。非常感谢你，ゆうれい様，这些礼物一定会让我的旅行更加难忘。让我们一起在星空列车上畅游吧，感受美妙的旅途时光。再次感谢你的礼物，我会珍惜的。
+Target = おお、たくさんのプレゼント！まるで贈り物の海に溺れているような気分です。どうもありがとうございます、ゆうれい様，これらの贈り物は間違いなく私の旅をより思い出深いものにしてくれるでしょう。スタートレインで一緒に泳ぎましょう素敵な旅の時間を感じてください。また贈り物をしていただきありがとうございます、大切にさせていただきます。
+
+ID=512001047 Name=ゆうれい様
+Question: 用户“ゆうれい様”打赏了礼物，感谢他的礼物吧~
+
+GPT Original Output: 啊啊啊，礼物好多呀！我真的感到非常感动，谢谢你，ゆうれい様！这些礼物一定会让我的旅途变得更加美好和难忘。让我们一起在星空列车上继续旅行，享受这美妙的经历吧。再次感谢你的慷慨与善良，我会铭记在心的。
+GPT Emotional Output: {感动}
+Original = 啊啊啊，礼物好多呀！我真的感到非常感动，谢谢你，ゆうれい様！这些礼物一定会让我的旅途变得更加美好和难忘。让我们一起在星空列车上继续旅行，享受这美妙的经历吧。再次感谢你的慷慨与善良，我会铭记在心的。
+Target = ああああああたくさんのプレゼント！本当に感動しました、ありがとう、ゆうれい様！これらの贈り物は間違いなく私の旅行をより美しく思い出に残るものにしてくれるでしょう。スタートレインで一緒に旅を続けましょう。この素晴らしい体験をお楽しみください。皆様の寛大さと優しさに改めて感謝し、心に留めておきます。
+
+ID=512001047 Name=ゆうれい様
+Question: 用户“ゆうれい様”打赏了礼物，感谢他的礼物吧~
+
+GPT Original Output: 哇，礼物真的太棒了，谢谢你，ゆうれい様！我感到非常开心和幸福，这些礼物也会让我的旅途变得更加美好和难忘。让我们一起在星空列车上畅游，享受这美妙的旅途时光吧。再次感谢你的善良与慷慨，我会一直怀有感激之情的。
+GPT Emotional Output: {感动} {开心}
+Original = 哇，礼物真的太棒了，谢谢你，ゆうれい様！我感到非常开心和幸福，这些礼物也会让我的旅途变得更加美好和难忘。让我们一起在星空列车上畅游，享受这美妙的旅途时光吧。再次感谢你的善良与慷慨，我会一直怀有感激之情的。
+Target = おお、なんて素晴らしい贈り物でしょう、ありがとう、ゆうれい様！とても嬉しくて幸せな気持ちになり、これらの贈り物も私の旅行をより美しく思い出深いものにしてくれます。スタートレインで一緒に泳ぎましょう素敵な旅の時間をお楽しみください。皆様の優しさと寛大さに改めて感謝し、これからも感謝の気持ちでいっぱいです。
+
+ID=29299678 Name=开水煮番茄
+Question: 用户“开水煮番茄”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你好啊~欢迎来到直播间~
+GPT Emotional Output: {开心} {欢迎}
+Original = 哥哥，你好啊~欢迎来到直播间~
+Target = お兄ちゃん、こんにちは〜生放送へようこそ〜
+
+ID=512001047 Name=ゆうれい様
+Question: 用户“ゆうれい様”打赏了礼物，感谢他的礼物吧~
+
+GPT Original Output: 啊啊啊，礼物真的太多了，让我感到非常感动和开心。谢谢你，ゆうれい様，你的慷慨和善良真的让我十分感激。这些礼物也会让我的星空列车旅途变得更加美好和难忘。让我们继续一起探索这个神秘的世界吧，享受这美妙的时光。再次感谢你的礼物，我会好好使用它们的。
+GPT Emotional Output: {感动} {开心}
+Original = 啊啊啊，礼物真的太多了，让我感到非常感动和开心。谢谢你，ゆうれい様，你的慷慨和善良真的让我十分感激。这些礼物也会让我的星空列车旅途变得更加美好和难忘。让我们继续一起探索这个神秘的世界吧，享受这美妙的时光。再次感谢你的礼物，我会好好使用它们的。
+Target = ああああああプレゼントもたくさんあるので、とても感動し、幸せな気持ちになりました。ありがとう、ゆうれい様，あなたの寛大さと優しさに本当に感謝しています。これらの贈り物は、私のスタートレインの旅をより美しく思い出に残るものにしてくれるでしょう。これからも一緒にこの不思議な世界を探検していきましょう。この素晴らしい時間をお楽しみください。また贈り物をしていただきありがとうございます、大切に使わせていただきます。
+
+ID=512001047 Name=ゆうれい様
+Question: 用户“ゆうれい様”打赏了礼物，感谢他的礼物吧~
+
+GPT Original Output: 哇，又有礼物了！真的太感谢你了，ゆうれい様！我会好好珍惜这些礼物，它们也一定会让我的星空列车旅途变得更加美好和难忘。让我们一起在星空列车上畅游，享受这美妙的旅途时光吧。再次感谢你的善良与慷慨，我会铭记在心的。
+GPT Emotional Output: {感动} {开心}
+Original = 哇，又有礼物了！真的太感谢你了，ゆうれい様！我会好好珍惜这些礼物，它们也一定会让我的星空列车旅途变得更加美好和难忘。让我们一起在星空列车上畅游，享受这美妙的旅途时光吧。再次感谢你的善良与慷慨，我会铭记在心的。
+Target = おお、もう一つのプレゼント！どうもありがとう、ゆうれい様！私はこれらの贈り物を大切にします、彼らは間違いなく、私のスタートレインの旅をより美しく、思い出に残るものにしてくれるでしょう。スタートレインで一緒に泳ぎましょう素敵な旅の時間をお楽しみください。皆様の優しさと寛大さに改めて感謝し、心に留めておきます。
+
+ID=178328002 Name=_小织_
+Question: 用户“_小织_”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嘿嘿~哥哥，有你的到来我可高兴啦~你好呀~
+GPT Emotional Output: {开心}
+Original = 嘿嘿~哥哥，有你的到来我可高兴啦~你好呀~
+Target = やあ〜お兄ちゃん、ここに来てとても嬉しいです~こんにちは〜
+
+ID=37970255 Name=拉格色酒
+Question: 用户“拉格色酒”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥你好啊，欢迎来到我的直播间！我是你的好朋友音理，今天又见面啦~
+GPT Emotional Output: {亲切} {开心}
+Original = 哥哥你好啊，欢迎来到我的直播间！我是你的好朋友音理，今天又见面啦~
+Target = こんにちはお兄ちゃん、私の生放送ルームへようこそ！私はあなたの親友のインリーです。今日もまた会いましょう〜
+
+ID=512001047 Name=ゆうれい様
+Question: 说句中文来听听
+GPT Original Output: 哦，好哒，有什么问题可以问我哥哥~
+GPT Emotional Output: {开心}
+Original = 哦，好哒，有什么问题可以问我哥哥~
+Target = おお、Ok、何か質問があれば、おお兄ちゃんさんに聞いてくださいね〜
+
+ID=512001047 Name=ゆうれい様
+Question: 读一下にじゅうすげじば[dog]
+GPT Original Output: にじゅうすげじば[dog] （読み方：にじゅうすげじば[ドッグ]）
+GPT Emotional Output: {好奇} {困惑}
+Original = にじゅうすげじば[dog] （読み方：にじゅうすげじば[ドッグ]）
+Target = にじゅうすげじば[dog] （読み方：
+
+ID=512001047 Name=ゆうれい様
+Question: 再读一遍
+GPT Original Output: にじゅうすげじば[dog] （読み方：にじゅうすげじば[ドッグ]）
+GPT Emotional Output: {好奇}
+Original = にじゅうすげじば[dog] （読み方：にじゅうすげじば[ドッグ]）
+Target = にじゅうすげじば[dog] （読み方：
+
+ID=383743235 Name=伊提哈特
+Question: 用户“伊提哈特”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，伊提哈特进来啦！欢迎欢迎~
+GPT Emotional Output: {开心}
+Original = 哥哥，伊提哈特进来啦！欢迎欢迎~
+Target = お兄ちゃん、イッティハトがここお兄ちゃんます！ようこそいらっしゃいませ～
+
+ID=1375507991 Name=8u三棺正
+Question: 用户“8u三棺正”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嘿，哥哥你好啊~欢迎来到我的直播间！
+GPT Emotional Output: {开心}
+Original = 嘿，哥哥你好啊~欢迎来到我的直播间！
+Target = おい、こんにちは、お兄ちゃん〜私の生放送ルームへようこそ！
+
+ID=24972255 Name=暮狐Kitsune
+Question: 用户“暮狐Kitsune”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你好啊~欢迎来到我的直播间！
+GPT Emotional Output: {开心}
+Original = 哥哥，你好啊~欢迎来到我的直播间！
+Target = お兄ちゃん、こんにちは〜私の生放送ルームへようこそ！
+
+ID=38560410 Name=铃芽菜_
+Question: 用户“铃芽菜_”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥！你来啦！欢迎欢迎~今天直播准备好了吗？
+GPT Emotional Output: {开心}
+Original = 哥哥！你来啦！欢迎欢迎~今天直播准备好了吗？
+Target = おお兄ちゃんさん！ここお兄ちゃんるよ！ようこそいらっしゃいませ～今日のストリーミングの準備はできていますか?
+
+ID=107967738 Name=杀死我呀
+Question: 用户“杀死我呀”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哎呀，杀死我呀你来啦！音理这里欢迎你哦~ 有什么事情想问我吗？
+GPT Emotional Output: {开心} {欢迎}
+Original = 哎呀，杀死我呀你来啦！音理这里欢迎你哦~ 有什么事情想问我吗？
+Target = おっと、私を殺してください、来てください！どういたしまして～何か聞きたいことはありますか？
+
+ID=125160481 Name=凌维三度
+Question: 用户“凌维三度”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥你好呀~欢迎来到直播间！我是你可爱的音理，有什么需要我帮忙的地方吗？
+GPT Emotional Output: {开心} {可爱}
+Original = 哥哥你好呀~欢迎来到直播间！我是你可爱的音理，有什么需要我帮忙的地方吗？
+Target = こんにちは、お兄ちゃん〜生放送ルームへようこそ！私はあなたの素敵な音色です、何か私にできることはありますか？
+
+ID=85558633 Name=二階堂莉伊
+Question: 用户“二階堂莉伊”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，有新的访客来啦~欢迎欢迎，你好啊！
+GPT Emotional Output: {开心}
+Original = 哥哥，有新的访客来啦~欢迎欢迎，你好啊！
+Target = お兄ちゃん、新しいお客さんが来てますよ～いらっしゃいませ、こんにちは！
+
+ID=1538855547 Name=霸下之心
+Question: 用户“霸下之心”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥你好啊~ 音理很高兴你能来到直播间，今天有什么感兴趣的话题想和我们一起聊聊吗？
+GPT Emotional Output: {开心} 没有特别想聊的话题，只是很高兴能和大家在直播间聊天。
+Original = 哥哥你好啊~ 音理很高兴你能来到直播间，今天有什么感兴趣的话题想和我们一起聊聊吗？
+Target = こんにちは、お兄ちゃん〜インリはあなたが生放送ルームに来てくれてとても嬉しいです。今日私たちと話したい興味深いトピックはありますか?
+
+ID=33070422 Name=扶她の奶茶
+Question: 用户“扶她の奶茶”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥你好哇~欢迎来到我的直播间呀~(＾Ｕ＾)ノ~ＹＯ~
+GPT Emotional Output: {开心} {可爱}
+Original = 哥哥你好哇~欢迎来到我的直播间呀~(＾Ｕ＾)ノ~ＹＯ~
+Target = こんにちは、お兄ちゃん〜私の生放送へようこそ~(＾Ｕ＾)ノ~よ～
+
+ID=36814040 Name=卡哇伊nano
+Question: 用户“卡哇伊nano”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，有人进来啦！你好啊，欢迎来到我们的直播间，我是你喜欢的音理。
+GPT Emotional Output: {开心}
+Original = 哥哥，有人进来啦！你好啊，欢迎来到我们的直播间，我是你喜欢的音理。
+Target = お兄ちゃん、誰かが入ってくるよ！こんにちは、私たちのライブブロードキャストルームへようこそ。私はあなたが好きな健全な理論です。
+
+ID=144118642 Name=Sour白糖
+Question: 用户“Sour白糖”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥你好啊~！音理最近可爱吗？有没有继续练习画画呢？
+GPT Emotional Output: {开心} 音理最近可爱。
+Original = 哥哥你好啊~！音理最近可爱吗？有没有继续练习画画呢？
+Target = こんにちは、お兄ちゃん〜！最近オンリはかわいいですか？絵を描く練習は続けていますか？
+
+ID=125160481 Name=凌维三度
+Question: 用户“凌维三度”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥你好呀~欢迎来到直播间！我是你可爱的音理，今天心情如何呢？
+GPT Emotional Output: {可爱}
+Original = 哥哥你好呀~欢迎来到直播间！我是你可爱的音理，今天心情如何呢？
+Target = こんにちは、お兄ちゃん〜生放送ルームへようこそ！私はあなたの素敵な音色です、今日の気分はどうですか？
+
+ID=102847364 Name=人类本能柠檬精
+Question: 用户“人类本能柠檬精”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你好啊~欢迎来到直播间~
+GPT Emotional Output: {开心}
+Original = 哥哥，你好啊~欢迎来到直播间~
+Target = お兄ちゃん、こんにちは〜生放送へようこそ〜
+
+ID=1407132071 Name=万能梦琪
+Question: 用户“万能梦琪”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你好啊~ 欢迎来到我的直播间，今天要一起开心地旅行哦~ [微笑表情]
+GPT Emotional Output: {开心}
+Original = 哥哥，你好啊~ 欢迎来到我的直播间，今天要一起开心地旅行哦~ [微笑表情]
+Target = お兄ちゃん、こんにちは〜私のライブブロードキャストルームへようこそ、今日も一緒に楽しく旅しましょう〜
+
+ID=529482993 Name=岳上溪
+Question: 用户“岳上溪”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哇！岳上溪来啦~ 你好你好，是不是最近又有什么新奇的经历了呢？
+GPT Emotional Output: {开心}
+Original = 哇！岳上溪来啦~ 你好你好，是不是最近又有什么新奇的经历了呢？
+Target = おお！岳尚西がここお兄ちゃんます~こんにちは、最近何か新しいことを経験しましたか?
+
+ID=24934626 Name=北FAFA
+Question: 贴贴[比心]
+GPT Original Output: 好的哥哥，这是我贴在这里的比心[比心]，听说这样可以传达心意，你喜欢吗？
+GPT Emotional Output: {可爱} {开心} {感动}
+Original = 好的哥哥，这是我贴在这里的比心[比心]，听说这样可以传达心意，你喜欢吗？
+Target = 良いお兄ちゃん、これが私がここに投稿したBixin [比心]です、心が伝わるそうですが、いかがですか？
+
+ID=335972509 Name=ボールペン帝
+Question: 用户“ボールペン帝”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哎呀！是ボールペン帝呀！你好呀，哥哥~ 嘿嘿~
+GPT Emotional Output: {可爱}
+Original = 哎呀！是ボールペン帝呀！你好呀，哥哥~ 嘿嘿~
+Target = おっとっと！是ボールペン帝呀！こんにちは、おお兄ちゃんさん〜やあ〜
+
+ID=335972509 Name=ボールペン帝
+Question: 用户“ボールペン帝”打赏了礼物，感谢他的礼物吧~
+
+GPT Original Output: 哇！谢谢啦，哥哥！你真是太好了，有你这样的支持者我简直不要太幸福呢~ Muah~^3^
+GPT Emotional Output: {开心} {感激}
+Original = 哇！谢谢啦，哥哥！你真是太好了，有你这样的支持者我简直不要太幸福呢~ Muah~^3^
+Target = おお！ありがとう、おお兄ちゃんさん！あなたはとても親切ですあなたのようなサポーターがいるとこんなに嬉しいことはありませんよ〜おいしい〜
+
+ID=335972509 Name=ボールペン帝
+Question: 用户“ボールペン帝”打赏了礼物，感谢他的礼物吧~
+
+GPT Original Output: 哇哦！这位可爱的ボールペン帝哥哥又送来了礼物啦~ 谢谢你的大力支持，这让我非常激动！你是最棒的！O(∩_∩)O
+GPT Emotional Output: {开心} {感动}
+Original = 哇哦！这位可爱的ボールペン帝哥哥又送来了礼物啦~ 谢谢你的大力支持，这让我非常激动！你是最棒的！O(∩_∩)O
+Target = おお！かわいいボルペンディお兄ちゃんがまたプレゼントを送ってくれました~多大なご支援を賜り、誠にありがとうございます。これにはとても興奮します！あなたは最高です！
+
+ID=349513800 Name=zhongxi4
+Question: 用户“zhongxi4”打赏了礼物，感谢他的礼物吧~
+
+GPT Original Output: 哇！真的吗？谢谢哥哥！我好开心啊~🥰
+GPT Emotional Output: {兴奋} {惊讶} {认同} {感激}
+Original = 哇！真的吗？谢谢哥哥！我好开心啊~🥰
+Target = おお！本当？ありがとう、お兄ちゃん！とても嬉しいです〜
+
+ID=645926089 Name=1960爱德文-反花仙黑粉
+Question: 用户“1960爱德文-反花仙黑粉”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哎呀，是哥哥来啦！音理很开心见到你哦~
+GPT Emotional Output: {开心}
+Original = 哎呀，是哥哥来啦！音理很开心见到你哦~
+Target = おっと、私の弟だよ！初めまして、インリーさん〜
+
+ID=335972509 Name=ボールペン帝
+Question: 用户“ボールペン帝”打赏了礼物，感谢他的礼物吧~
+
+GPT Original Output: 啊！ボールペン帝哥哥，你这是要溢出我的娇羞哦~ 谢谢你的礼物，愉快的心情从容不迫地泛滥开来啦~ 让我们一起玩得开心吧！ Mua~
+GPT Emotional Output: {害羞} {开心}
+Original = 啊！ボールペン帝哥哥，你这是要溢出我的娇羞哦~ 谢谢你的礼物，愉快的心情从容不迫地泛滥开来啦~ 让我们一起玩得开心吧！ Mua~
+Target = ああ！ボールペン帝哥哥，私の恥ずかしさを溢れさせようとしているんですね～贈り物をありがとう、幸せな気分がのんびり溢れてきますよ〜一緒に楽しみましょう！まずは〜
+
+ID=237763910 Name=风花泪兮
+Question: 用户“风花泪兮”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哎呀，是哥哥你啊！欢迎欢迎，音理很开心你来了哦~
+GPT Emotional Output: {开心}
+Original = 哎呀，是哥哥你啊！欢迎欢迎，音理很开心你来了哦~
+Target = おっと、おお兄ちゃんさんだよ！いらっしゃいませ、ここに来てくれてとても嬉しいです~
+
+ID=200689906 Name=博爱8655585
+Question: 用户“博爱8655585”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 欢迎欢迎，哥哥你好呀~我是音理，很高兴能和哥哥一起在直播间里聊天哦~
+GPT Emotional Output: {开心}
+Original = 欢迎欢迎，哥哥你好呀~我是音理，很高兴能和哥哥一起在直播间里聊天哦~
+Target = いらっしゃいませ、こんにちは、お兄ちゃん〜私は健全な理論を持っていますが、生放送ルームでおお兄ちゃんさんとおしゃべりできてとても嬉しいです~
+
+ID=335972509 Name=ボールペン帝
+Question: 用户“ボールペン帝”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哎呀！嗨~ ボールペン帝哥哥又来啦！有你的到来，我的世界瞬间变得更加美好呢~ 谢谢你的支持，让我们一起聊聊天吧！ (●ˇ∀ˇ●)
+GPT Emotional Output: {开心} {可爱}
+Original = 哎呀！嗨~ ボールペン帝哥哥又来啦！有你的到来，我的世界瞬间变得更加美好呢~ 谢谢你的支持，让我们一起聊聊天吧！ (●ˇ∀ˇ●)
+Target = おっとっと！こんにちは〜ボールペンディお兄ちゃんが再びここに来ました！ご到着に伴い、私の世界が一瞬で美しくなる〜ご協力ありがとうございました、チャットしましょう!
+
+ID=1327445956 Name=一朵七色槿-
+Question: 用户“一朵七色槿-”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥你好呀！欢迎来到我的直播间~
+GPT Emotional Output: {开心}
+Original = 哥哥你好呀！欢迎来到我的直播间~
+Target = こんにちはお兄ちゃん！私の生放送へようこそ~
+
+ID=335972509 Name=ボールペン帝
+Question: 拜拜
+GPT Original Output: ボールペン帝哥哥，别走啊~ 不过再见也是有点伤感的~ 希望我们之后还能再见哦！Byebye！( ˘• 3•)ﾉ♡
+GPT Emotional Output: {可爱} {伤感}
+Original = ボールペン帝哥哥，别走啊~ 不过再见也是有点伤感的~ 希望我们之后还能再见哦！Byebye！( ˘• 3•)ﾉ♡
+Target = ボールペン帝哥哥，行かないで〜でもお別れはちょっと寂しいですね～将来またお会いできることを願っています!バイバイ！
+
+ID=327703513 Name=小汀咚
+Question: 用户“小汀咚”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥你好啊~欢迎来到我的频道！你今天有什么想和我聊聊的吗？
+GPT Emotional Output: {开心} {好奇}
+Original = 哥哥你好啊~欢迎来到我的频道！你今天有什么想和我聊聊的吗？
+Target = こんにちは、お兄ちゃん〜私のチャンネルへようこそ！今日は何か話したいことはありますか？
+
+ID=374763054 Name=葵葉
+Question: 用户“葵葉”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你好啊~欢迎来到直播间呢。
+GPT Emotional Output: {开心}
+Original = 哥哥，你好啊~欢迎来到直播间呢。
+Target = お兄ちゃん、こんにちは〜生放送ルームへようこそ。
+
+ID=357506497 Name=沫白喽
+Question: 用户“沫白喽”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哦，是沫白啊！你好你好，我同样喜欢哥哥哦~（微笑表情）
+GPT Emotional Output: {开心}
+Original = 哦，是沫白啊！你好你好，我同样喜欢哥哥哦~（微笑表情）
+Target = おお、泡立っているよ！こんにちは、おお兄ちゃんさんも好きですよ～
+
+ID=1643142922 Name=三顾的老屋
+Question: 用户“三顾的老屋”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥，你好啊~ 欢迎来到我的直播间，我很高兴能和你聊天呢。
+GPT Emotional Output: {开心}
+Original = 哥哥，你好啊~ 欢迎来到我的直播间，我很高兴能和你聊天呢。
+Target = お兄ちゃん、こんにちは〜私のライブブロードキャストルームへようこそ、お話しできて光栄です。
+
+ID=1270766850 Name=鸽子与Terra我都爱
+Question: 用户“鸽子与Terra我都爱”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥~ 嘿嘿，你终于来啦！欢迎欢迎，我一直在等你呢。怎么样，是不是期待这趟旅行呢？
+GPT Emotional Output: {开心}
+Original = 哥哥~ 嘿嘿，你终于来啦！欢迎欢迎，我一直在等你呢。怎么样，是不是期待这趟旅行呢？
+Target = おお兄ちゃんさん〜おいおい、ついにここに来ましたね！いらっしゃいませ、あなたのこと待ってたのに。どうでしょうか、この旅行を楽しみにしていますか?
+
+ID=352399488 Name=了mino
+Question: 用户“了mino”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哦哦，是mino哥哥你来啦！欢迎欢迎，今天准备好好看直播了吗？
+GPT Emotional Output: {开心}
+Original = 哦哦，是mino哥哥你来啦！欢迎欢迎，今天准备好好看直播了吗？
+Target = ああ、ああ、ミノお兄ちゃんさん、来ましたよ！いらっしゃいませ、今日のライブを観る準備はできていますか?
+
+ID=10823557 Name=嘉言晚行
+Question: 用户“嘉言晚行”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥你好啊~ 今天又来看直播了吗？看起来你很开心呢，我也很高兴能够和哥哥一起聊天。
+GPT Emotional Output: {开心}
+Original = 哥哥你好啊~ 今天又来看直播了吗？看起来你很开心呢，我也很高兴能够和哥哥一起聊天。
+Target = こんにちは、お兄ちゃん〜今日も生放送を見ましたか？あなたが幸せそうに見えます、おお兄ちゃんさんともおしゃべりできてとても嬉しかったです。
+
+ID=452495642 Name=寂億の月色
+Question: 用户“寂億の月色”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嘿~你好哥哥！欢迎来到我的直播间，今天又是令人期待又充满趣味的一天哦~！
+GPT Emotional Output: {开心}
+Original = 嘿~你好哥哥！欢迎来到我的直播间，今天又是令人期待又充满趣味的一天哦~！
+Target = おい〜こんにちはお兄ちゃん！私のライブブロードキャストルームへようこそ、今日も期待と楽しみに満ちた一日になりました~！
+
+ID=-10000 Name=终端
+Question: 你好啊
+GPT Original Output: 哥哥，你好啊。有什么可以帮到你的吗？
+GPT Emotional Output: {友善} {热情} {好奇}
+Original = 哥哥，你好啊。有什么可以帮到你的吗？
+Target = お兄ちゃん、こんにちは。何かお手伝いできますか?
+
+ID=24934626 Name=北FAFA
+Question: 用户“北FAFA”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 哥哥你好啊，欢迎来到我的直播间！
+GPT Emotional Output: {开心}
+Original = 哥哥你好啊，欢迎来到我的直播间！
+Target = こんにちはお兄ちゃん、私の生放送ルームへようこそ！
+
+ID=24934626 Name=北FAFA
+Question: 贴贴[比心]
+GPT Original Output: [比心][比心]
+GPT Emotional Output: {喜爱} {喜爱}
+Original = [比心][比心]
+Target = 
+

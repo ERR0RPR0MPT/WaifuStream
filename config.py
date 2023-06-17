@@ -1,4 +1,3 @@
-import traceback
 
 import yaml
 import sys

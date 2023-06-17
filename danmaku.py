@@ -2,7 +2,6 @@ import random
 import threading
 import time
 import traceback
-
 from bilibili_api import sync, Danmaku, live, Credential
 import utils
 import value
@@ -116,8 +115,7 @@ async def on_danmaku(event):
     danmu_dict["text"] = danmu_dict["text"].replace("：", ":", 1)
     # 避免机器人发送的弹幕被检测到
     if danmu_dict["id"] == str(config.BILI_USER_UID) and (
-            config.TEXT_IGNORE_DANMAKU in danmu_dict["text"] or config.TEXT_DANMAKU_SAVED in danmu_dict[
-        "text"] or config.TEXT_THINKING in
+            config.TEXT_IGNORE_DANMAKU in danmu_dict["text"] or config.TEXT_DANMAKU_SAVED in danmu_dict["text"] or config.TEXT_THINKING in
             danmu_dict["text"]):
         print(config.TEXT_IGNORE_DANMAKU + "(" + config.TEXT_IGNORE_ROBOT + "): text=" + danmu_dict["text"] + " id=" +
               danmu_dict[

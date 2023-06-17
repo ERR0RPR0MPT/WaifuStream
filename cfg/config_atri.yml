@@ -1,5 +1,6 @@
 CONFIG_NAME: "atri"
-CONFIG_MATCH_COMMAND: "#atri:"
+#CONFIG_MATCH_COMMAND: "#atri:"
+CONFIG_MATCH_COMMAND: "#"
 SHELL_TITLE: "亚托莉"
 SERVER_PORT: 8004
 SERVER_TRANSLATE_PROXY:
@@ -8,6 +9,18 @@ BILI_ROOM_ID: 27941749
 BILI_USER_UID: 125160481
 BILI_ADMIN_USERS:
   - 0
+BILI_LIVE_AREA_ID: 371
+BILI_KEEP_ALIVE_SECONDS: 300
+BILI_SESSDATA: ""
+BILI_JCT: ""
+BILI_BUVID3: ""
+BILI_DEDEUSERID: ""
+OBS_HOST: "localhost"
+OBS_PORT: 4455
+OBS_PASSWORD: ""
+STREAM_SCHEDULE:
+  START_TIME: "8:0"
+  STOP_TIME: "7:0"
 VTS_API_URL: "ws://localhost:8001"
 AUTO_ANSWER_ENABLE: false
 EMOTION_SIMULATION_ENABLE: true
@@ -18,7 +31,8 @@ TRANSLATE_MODE: "google"  # gpt or google
 TRANSLATE_TARGET_LANGUAGE: "ja"
 MAX_DANMAKU_QUEUE_LENGTH: 10
 MAX_INTERACT_MESSAGES_PER_MINUTE: 1
-INTERACT_MESSAGES_RANDOM: 0.1
+#INTERACT_MESSAGES_RANDOM: 0.1
+INTERACT_MESSAGES_RANDOM: 0.15
 MAX_WAIT_SECONDS: 600
 MAX_ANSWER_LENGTH: 150
 MAX_CHAT_ANSWER_SECONDS: 30
@@ -26,10 +40,11 @@ IGNORED_USERS: []
 EMOTION_IMAGE_URL: "http://localhost:8004/assets/atri/images/"
 EMOTION_IMAGE_DEFAULT: "待机.png"
 TERMINAL_CHAT_NAME: "终端"
-MULTI_MODE: true
+#MULTI_MODE: true
+MULTI_MODE: false
 MULTI_ID: "-10001"
 MULTI_NAME: "亚托莉"
-MULTI_MAX_STEPS: 1
+MULTI_MAX_STEPS: 2
 MULTI_PROMPT: |
   "{user}": "{user_text}"
   "{model}": "{model_text}"
@@ -50,24 +65,6 @@ VITS_PAYLOAD:
     - 1
     - false
   session_hash: "abcdefghij"
-BILI_DANMAKU_SEND_URL: "https://api.live.bilibili.com/msg/send"
-BILI_DANMAKU_SEND_DATA:
-  bubble: "0"
-  msg: ""
-  color: "16777215"
-  mode: "1"
-  room_type: "0"
-  jumpfrom: "0"
-  fontsize: "25"
-  rnd: ""
-  roomid: ""
-  csrf: ""
-  csrf_token: ""
-BILI_DANMAKU_SEND_HEADER:
-  Cookie: ""
-  Origin: "https://live.bilibili.com"
-  Referer: "https://live.bilibili.com/0"
-  User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36"
 RANDOM_QUESTION:
   - "亚托莉，介绍一下自己吧"
   - "亚托莉，你对自己的智能感到自豪吗？"

@@ -111,7 +111,7 @@ async def on_danmaku(event):
         "timestamp": str(time.time()),
     }
     # 替换中文符号
-    danmu_dict["text"] = danmu_dict["text"].replace("：", ":", 1)
+    danmu_dict["text"] = danmu_dict["text"].replace("：", ":", 1).replace("＃", "#", 1)
     # 避免机器人发送的弹幕被检测到
     if danmu_dict["id"] == str(config.BILI_USER_UID) and (
             config.TEXT_IGNORE_DANMAKU in danmu_dict["text"] or config.TEXT_DANMAKU_SAVED in danmu_dict["text"] or config.TEXT_THINKING in

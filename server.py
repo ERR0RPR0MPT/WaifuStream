@@ -19,7 +19,7 @@ class MyRequestHandler(http.server.BaseHTTPRequestHandler):
             self.send_response(200)
             self.end_headers()
             self.wfile.write(
-                value.html_template.replace("{z}", value.sender_str).replace("{a}", value.trans_origin_str).replace(
+                utils.get_html_template().replace("{z}", value.sender_str).replace("{a}", value.trans_origin_str).replace(
                     "{b}",
                     value.trans_target_str).encode(
                     encoding="utf-8"))
@@ -36,7 +36,7 @@ class MyRequestHandler(http.server.BaseHTTPRequestHandler):
         elif self.path == "/image/":
             self.send_response(200)
             self.end_headers()
-            self.wfile.write(value.html_image_template.replace("{image_url}", value.trans_image_url).encode(encoding="utf-8"))
+            self.wfile.write(utils.get_html_image_template().replace("{image_url}", value.trans_image_url).encode(encoding="utf-8"))
         elif self.path == "/update_image_data/":
             if value.trans_image_url == "":
                 utils.set_trans_image_url(config.EMOTION_IMAGE_URL + config.EMOTION_IMAGE_DEFAULT)

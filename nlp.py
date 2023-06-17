@@ -277,6 +277,7 @@ def on_msg(danmu):
         value.audio_threads_queue = {}
         value.chat_dict[ide].messages.append({"role": "assistant", "content": answer})
         value.sender_str = f"{name} -> Finished"
+        return answer
     except:
         traceback.print_exc()
         print("Error: GPT chat failed.")
@@ -284,7 +285,7 @@ def on_msg(danmu):
         value.audio_queue = {}
         value.audio_threads_queue = {}
         value.sender_str = f"{name} -> Error"
-    return answer
+        return "Error: GPT chat failed."
 
 
 def emotion_analysis(msg):

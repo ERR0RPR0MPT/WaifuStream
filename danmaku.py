@@ -1,9 +1,9 @@
 import random
-import string
 import threading
 import time
-from bilibili_api import sync
-import requests
+import traceback
+
+from bilibili_api import sync, Danmaku, live, Credential
 import utils
 import value
 import config
@@ -15,12 +15,12 @@ def send_danmaku_origin(msg):
     :param msg: 弹幕内容
     :return:
     """
-    bili_danmaku_send_data_temp = config.BILI_DANMAKU_SEND_DATA
-    bili_danmaku_send_data_temp["msg"] = msg
-    r = requests.post(url=config.BILI_DANMAKU_SEND_URL, data=bili_danmaku_send_data_temp,
-                      headers=config.BILI_DANMAKU_SEND_HEADER)
-    if r.status_code != 200:
-        print("Error when send danmaku, code=" + str(r.status_code) + " content=" + r.text)
+    try:
+        sync(value.roomOp.send_danmaku(Danmaku(msg)))
+    except:
+        traceback.print_exc()
+        print("Failed to send danmaku.")
+
 
 def send_danmaku(msg):
     """
@@ -29,6 +29,7 @@ def send_danmaku(msg):
     :return:
     """
     threading.Thread(target=send_danmaku_origin, args=(msg,)).start()
+
 
 @value.room.on('INTERACT_WORD')
 async def on_enter(event):
@@ -52,7 +53,6 @@ async def on_enter(event):
         value.interact_last_append_time = current_time
         value.interact_messages_appended = 1
 
-    
     danmu_dict = {
         "multi": "false",
         "type": "enter",
@@ -76,7 +76,7 @@ async def on_gift(event):
     :return:
     """
     # 收到礼物
-    
+
     danmu_dict = {
         "multi": "false",
         "type": "gift",
@@ -99,7 +99,7 @@ async def on_danmaku(event):
     :param event:
     :return:
     """
-    
+
     danmu_dict = {
         "multi": "false",
         "type": "danmaku",
@@ -116,46 +116,82 @@ async def on_danmaku(event):
     danmu_dict["text"] = danmu_dict["text"].replace("：", ":", 1)
     # 避免机器人发送的弹幕被检测到
     if danmu_dict["id"] == str(config.BILI_USER_UID) and (
-            config.TEXT_IGNORE_DANMAKU in danmu_dict["text"] or config.TEXT_DANMAKU_SAVED in danmu_dict["text"] or config.TEXT_THINKING in
+            config.TEXT_IGNORE_DANMAKU in danmu_dict["text"] or config.TEXT_DANMAKU_SAVED in danmu_dict[
+        "text"] or config.TEXT_THINKING in
             danmu_dict["text"]):
-        print(config.TEXT_IGNORE_DANMAKU + "(" + config.TEXT_IGNORE_ROBOT + "): text=" + danmu_dict["text"] + " id=" + danmu_dict[
-            "id"] + " name=" + danmu_dict["name"])
+        print(config.TEXT_IGNORE_DANMAKU + "(" + config.TEXT_IGNORE_ROBOT + "): text=" + danmu_dict["text"] + " id=" +
+              danmu_dict[
+                  "id"] + " name=" + danmu_dict["name"])
         return
 
     # 指定忽略的用户
     if danmu_dict["id"] in config.IGNORED_USERS:
-        print(config.TEXT_IGNORE_DANMAKU + "(" + config.TEXT_IGNORE_USER + "): text=" + danmu_dict["text"] + " id=" + danmu_dict[
-            "id"] + " name=" + danmu_dict["name"])
+        print(config.TEXT_IGNORE_DANMAKU + "(" + config.TEXT_IGNORE_USER + "): text=" + danmu_dict["text"] + " id=" +
+              danmu_dict[
+                  "id"] + " name=" + danmu_dict["name"])
         return
 
     # 弹幕是否合法
     if utils.is_valid_msg(danmu_dict):
-        while len(value.msg_queue) >= config.MAX_DANMAKU_QUEUE_LENGTH and time.time() - float(value.msg_queue[0]["timestamp"]) > 60.0:
+        while len(value.msg_queue) >= config.MAX_DANMAKU_QUEUE_LENGTH and time.time() - float(
+                value.msg_queue[0]["timestamp"]) > 60.0:
             msg_temp = value.msg_queue.pop(0)
-            print(config.TEXT_IGNORE_DANMAKU + "(" + config.TEXT_DELETE_EARLY_DANMAKU + "): text=" + msg_temp["text"] + " id=" +
+            print(config.TEXT_IGNORE_DANMAKU + "(" + config.TEXT_DELETE_EARLY_DANMAKU + "): text=" + msg_temp[
+                "text"] + " id=" +
                   msg_temp["id"] + " name=" + msg_temp["name"])
             send_danmaku(f"{config.TEXT_IGNORE_DANMAKU}: {config.TEXT_QUEUE_LIMITED}")
 
         # 检测是否为聊天信息或指令
         if not utils.is_cmd_or_msg(danmu_dict):
-            print(config.TEXT_IGNORE_DANMAKU + "(" + config.TEXT_IS_NOT_MSG_ALERT + "): text=" + danmu_dict["text"] + " id=" +
+            print(config.TEXT_IGNORE_DANMAKU + "(" + config.TEXT_IS_NOT_MSG_ALERT + "): text=" + danmu_dict[
+                "text"] + " id=" +
                   danmu_dict["id"] + " name=" + danmu_dict["name"])
             return
         # 去除前缀
         danmu_dict["text"] = danmu_dict["text"].replace(config.CONFIG_MATCH_COMMAND, "", 1)
         value.msg_queue.append(danmu_dict)
-        print(config.TEXT_DANMAKU_SAVED + ": text=" + danmu_dict["text"] + " id=" + danmu_dict["id"] + " name=" + danmu_dict[
-            "name"])
+        print(config.TEXT_DANMAKU_SAVED + ": text=" + danmu_dict["text"] + " id=" + danmu_dict["id"] + " name=" +
+              danmu_dict[
+                  "name"])
         send_danmaku(config.TEXT_DANMAKU_SAVED_ALERT)
     else:
-        print(config.TEXT_IGNORE_DANMAKU + "(" + config.TEXT_QUEUE_SAME_MSG + "): text=" + danmu_dict["text"] + " id=" + danmu_dict[
-            "id"] + " name=" + danmu_dict[
+        print(config.TEXT_IGNORE_DANMAKU + "(" + config.TEXT_QUEUE_SAME_MSG + "): text=" + danmu_dict["text"] + " id=" +
+              danmu_dict[
+                  "id"] + " name=" + danmu_dict[
                   "name"])
         send_danmaku(config.TEXT_QUEUE_SAME_MSG_ALERT)
 
-def init_danmaku():
+
+def keep_alive_danmaku():
     """
-    初始化弹幕
+    保证弹幕库不会断开连接
     :return:
     """
-    sync(value.room.connect())
+    credential = Credential(sessdata=config.BILI_SESSDATA, bili_jct=config.BILI_JCT, buvid3=config.BILI_BUVID3,
+                            dedeuserid=config.BILI_DEDEUSERID)
+    while True:
+        time.sleep(config.BILI_KEEP_ALIVE_SECONDS)
+        print("Schedule reload danmaku library.")
+        value.roomOp = live.LiveRoom(config.BILI_ROOM_ID, credential=credential)
+        value.room = live.LiveDanmaku(config.BILI_ROOM_ID, credential=credential, max_retry=999999999)
+
+
+def init_danmaku():
+    """
+    初始化弹幕库
+    :return:
+    """
+    threading.Thread(target=keep_alive_danmaku).start()
+    credential = Credential(sessdata=config.BILI_SESSDATA, bili_jct=config.BILI_JCT, buvid3=config.BILI_BUVID3,
+                            dedeuserid=config.BILI_DEDEUSERID)
+    while True:
+        try:
+            sync(value.room.connect())
+            print("Danmaku library error, reconnecting...")
+            value.roomOp = live.LiveRoom(config.BILI_ROOM_ID, credential=credential)
+            value.room = live.LiveDanmaku(config.BILI_ROOM_ID, credential=credential, max_retry=999999999)
+        except:
+            traceback.print_exc()
+            print("Danmaku library error, reconnecting...")
+            value.roomOp = live.LiveRoom(config.BILI_ROOM_ID, credential=credential)
+            value.room = live.LiveDanmaku(config.BILI_ROOM_ID, credential=credential, max_retry=999999999)

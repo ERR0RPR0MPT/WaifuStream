@@ -1,9 +1,11 @@
-
+import importlib
 import sys
+import traceback
 import config
 import multiprocess
 import nlp
 import process
+import schedule
 import value
 import server
 import utils
@@ -16,13 +18,9 @@ import threading
 
 if __name__ == '__main__':
     sys.stdout.write(f"\x1b]2;{config.SHELL_TITLE}\x07")
-    utils.init_ws()
-    threading.Thread(target=process.execute).start()
-    threading.Thread(target=multiprocess.multiprocess).start()
-    threading.Thread(target=server.start_http_server).start()
-    threading.Thread(target=danmaku.init_danmaku).start()
-    time.sleep(0.75)
     utils.clear_console()
+    utils.main_init()
+    time.sleep(0.75)
     print(f"Server started at http://localhost:{str(config.SERVER_PORT)}\n")
     print(f"If you want to display model images on a web page in OBS Studio or somewhere:")
     print(f"  1. Use http://localhost:{str(config.SERVER_PORT)} to access the translation page.")
@@ -55,6 +53,14 @@ if __name__ == '__main__':
                 print("API Keys: ")
                 for i in config.OPENAI_API_KEY_LIST:
                     print("\n" + i)
+            elif inp == "reload":
+                print("Reloading config...")
+                importlib.reload(config)
+                print("Success")
+            elif inp == "start":
+                utils.start_stream()
+            elif inp == "stop":
+                utils.stop_stream()
             elif inp.startswith("chat:"):
                 if inp[5:] == "":
                     print("Please enter the content of the chat.")
@@ -63,7 +69,6 @@ if __name__ == '__main__':
                     value.chat_dict[0] = nlp.ChatGPT(config.SYSTEM_PROMPT)
                     print("Chat Reset.")
                     continue
-                
                 danmu_dict = {
                     "type": "danmaku",
                     "text": inp[5:],
@@ -79,7 +84,8 @@ if __name__ == '__main__':
                 print("Unknown command. Please try again.")
                 continue
         except KeyboardInterrupt:
-            print("")
             continue
-
-# chat:大家好，今天直播间到场有哪些人呢？报一下名字吧！
+        except:
+            traceback.print_exc()
+            print("Failed. Please check the output.\n")
+            continue

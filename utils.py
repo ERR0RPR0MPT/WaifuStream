@@ -1,11 +1,19 @@
+import threading
 from datetime import datetime
 import os
 import random
 import sys
 import time
+
+from bilibili_api import sync
+
 import config
 import danmaku
+import multiprocess
 import nlp
+import process
+import schedule
+import server
 import value
 import re
 import websocket
@@ -134,6 +142,16 @@ def hide_openai_api_key(api_key):
         return ""
 
 
+def get_html_template():
+    with open(f"./assets/{config.CONFIG_NAME}/templates/index.html", "r", encoding="utf-8") as f:
+        return f.read()
+
+
+def get_html_image_template():
+    with open(f"./assets/{config.CONFIG_NAME}/templates/image.html", "r", encoding="utf-8") as f:
+        return f.read()
+
+
 def send_keys(lista):
     while True:
         for i in lista:
@@ -175,5 +193,28 @@ def init_ws():
                 print("Retry...")
 
 
+def start_stream():
+    print("Starting live...")
+    sync(value.roomOp.start(config.BILI_LIVE_AREA_ID))
+    value.obswscl.start_stream()
+    print("Success.")
+
+
+def stop_stream():
+    print("Stop live...")
+    sync(value.roomOp.stop())
+    value.obswscl.stop_stream()
+    print("Success.")
+
+
 def clear_console():
     os.system('cls' if os.name == 'nt' else 'clear')
+
+
+def main_init():
+    init_ws()
+    threading.Thread(target=process.execute).start()
+    threading.Thread(target=multiprocess.multiprocess).start()
+    threading.Thread(target=server.start_http_server).start()
+    threading.Thread(target=danmaku.init_danmaku).start()
+    threading.Thread(target=schedule.schedule).start()

@@ -1,6 +1,8 @@
-import threading
+
 from bilibili_api import live
+from bilibili_api import Credential
 from pygtrans import Translate
+import obsws_python as obs
 import config
 
 sender_str = ""
@@ -8,8 +10,6 @@ trans_origin_str = ""
 trans_target_str = ""
 trans_emotion_data = ""
 trans_image_url = ""
-html_template = open(f"./assets/{config.CONFIG_NAME}/templates/index.html", "r", encoding="utf-8").read()
-html_image_template = open(f"./assets/{config.CONFIG_NAME}/templates/image.html", "r", encoding="utf-8").read()
 msg_queue = []
 audio_queue = {}
 audio_threads_queue = {}
@@ -21,5 +21,8 @@ chat_dict = {}
 stop_event = False
 is_play_audio_timeout = False
 vts_ws = None
-room = live.LiveDanmaku(config.BILI_ROOM_ID)
 client = Translate(proxies=config.SERVER_TRANSLATE_PROXY)
+obswscl = obs.ReqClient(host=config.OBS_HOST, port=config.OBS_PORT, password=config.OBS_PASSWORD)
+credential = Credential(sessdata=config.BILI_SESSDATA, bili_jct=config.BILI_JCT, buvid3=config.BILI_BUVID3, dedeuserid=config.BILI_DEDEUSERID)
+roomOp = live.LiveRoom(config.BILI_ROOM_ID, credential=credential)
+room = live.LiveDanmaku(config.BILI_ROOM_ID, credential=credential, max_retry=999999999)

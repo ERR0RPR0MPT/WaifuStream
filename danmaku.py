@@ -165,13 +165,13 @@ def keep_alive_danmaku():
     保证弹幕库不会断开连接
     :return:
     """
-    credential = Credential(sessdata=config.BILI_SESSDATA, bili_jct=config.BILI_JCT, buvid3=config.BILI_BUVID3,
-                            dedeuserid=config.BILI_DEDEUSERID)
     while True:
-        time.sleep(config.BILI_KEEP_ALIVE_SECONDS)
-        print("Schedule reload danmaku library.")
-        value.roomOp = live.LiveRoom(config.BILI_ROOM_ID, credential=credential)
-        value.room = live.LiveDanmaku(config.BILI_ROOM_ID, credential=credential, max_retry=999999999)
+        try:
+            time.sleep(config.BILI_KEEP_ALIVE_SECONDS)
+            print("Schedule reload danmaku library.")
+            sync(value.room.disconnect())
+        except:
+            continue
 
 
 def init_danmaku():
@@ -180,16 +180,10 @@ def init_danmaku():
     :return:
     """
     threading.Thread(target=keep_alive_danmaku).start()
-    credential = Credential(sessdata=config.BILI_SESSDATA, bili_jct=config.BILI_JCT, buvid3=config.BILI_BUVID3,
-                            dedeuserid=config.BILI_DEDEUSERID)
     while True:
         try:
             sync(value.room.connect())
-            print("Danmaku library error, reconnecting...")
-            value.roomOp = live.LiveRoom(config.BILI_ROOM_ID, credential=credential)
-            value.room = live.LiveDanmaku(config.BILI_ROOM_ID, credential=credential, max_retry=999999999)
+            print("Danmaku library alert, reconnecting...")
         except:
             traceback.print_exc()
             print("Danmaku library error, reconnecting...")
-            value.roomOp = live.LiveRoom(config.BILI_ROOM_ID, credential=credential)
-            value.room = live.LiveDanmaku(config.BILI_ROOM_ID, credential=credential, max_retry=999999999)

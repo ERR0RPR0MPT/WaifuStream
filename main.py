@@ -2,6 +2,7 @@ import importlib
 import sys
 import traceback
 import config
+import danmaku
 import nlp
 import value
 import utils
@@ -74,6 +75,9 @@ if __name__ == '__main__':
             elif inp.startswith("image:"):
                 print("Set image: " + inp[6:])
                 utils.set_trans_image_url(config.EMOTION_IMAGE_URL + inp[6:])
+            elif inp.startswith("danmaku:"):
+                print("Send danmaku: " + inp[8:])
+                danmaku.send_danmaku(inp[8:])
             else:
                 print("Unknown command. Please try again.")
                 continue

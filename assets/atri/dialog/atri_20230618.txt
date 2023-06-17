@@ -1,0 +1,52 @@
+ID=125160481 Name=凌维三度
+Question: 用户“凌维三度”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 亲爱的凌维三度，你好啊！我是亚托莉，夏生先生的贴心助手。感谢你加入我们的直播间，希望你能在这里度过一个愉快的时光哦~
+GPT Emotional Output: {可爱}
+Original = 亲爱的凌维三度，你好啊！我是亚托莉，夏生先生的贴心助手。感谢你加入我们的直播间，希望你能在这里度过一个愉快的时光哦~
+Target = 親愛なるリン・ウェイサンドゥ様こんにちは！私はアトリです、なつきさんの心優しいアシスタント。生放送にご参加いただきありがとうございます。ここで楽しい時間を過ごしてください~
+
+ID=125160481 Name=凌维三度
+Question: 你好
+GPT Original Output: 你好，夏生先生！有什么我可以帮助你的吗？
+GPT Emotional Output: {友好} {礼貌} {热情}
+Original = 你好，夏生先生！有什么我可以帮助你的吗？
+Target = こんにちは、なつき先生！何かお手伝いできることはありますか？
+
+ID=678435019 Name=-AtomicNucleus-
+Question: 你好
+GPT Original Output: 你好，夏生先生！亚托莉在这里哟~有什么可以帮到你的吗？
+GPT Emotional Output: {可爱}
+Original = 你好，夏生先生！亚托莉在这里哟~有什么可以帮到你的吗？
+Target = こんにちは、なつき先生！アトリが来たよ～何かお手伝いできますか?
+
+ID=678435019 Name=-AtomicNucleus-
+Question: 你的语言模型是什么？
+GPT Original Output: 这是一个有趣的问题呢~ 但是，对于这个问题，我无法给出一个明确的答案。因为我的语言模型是由种种复杂的算法和工具构成的，用文字解释这些内容可能需要很多篇纸呢。
+GPT Emotional Output: {好奇}，但并没有明确的倾向。
+Original = 这是一个有趣的问题呢~ 但是，对于这个问题，我无法给出一个明确的答案。因为我的语言模型是由种种复杂的算法和工具构成的，用文字解释这些内容可能需要很多篇纸呢。
+Target = 興味深い質問ですね～しかし、この質問については、明確な答えは出せません。私の言語モデルはさまざまな複雑なアルゴリズムとツールで構成されているため、これらの内容を言葉で説明するには多くの論文が必要になるかもしれません。
+
+ID=678435019 Name=-AtomicNucleus-
+Question: 用户“-AtomicNucleus-”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 当然可以呢! 你好，-AtomicNucleus- 先生~很高兴见到你，我是亚托莉！
+GPT Emotional Output: {认同} {可爱}
+Original = 当然可以呢! 你好，-AtomicNucleus- 先生~很高兴见到你，我是亚托莉！
+Target = もちろんできます！こんにちは、-AtomicNucleus- ミスター〜お会いできて嬉しいです、アトリです！
+
+ID=125160481 Name=凌维三度
+Question: oh
+GPT Original Output: 你好！有什么可以帮助你的吗？
+GPT Emotional Output: {好奇}
+Original = 你好！有什么可以帮助你的吗？
+Target = こんにちは！どういうご用件ですか？
+
+ID=88798713 Name=酱香大白兔
+Question: 用户“酱香大白兔”进入直播间，和他打个招呼吧~
+
+GPT Original Output: 嗨~欢迎酱香大白兔回来~因为我是高性能的嘛~
+GPT Emotional Output: {开心}
+Original = 嗨~欢迎酱香大白兔回来~因为我是高性能的嘛~
+Target = こんにちは〜おかえりソース味の白うさぎ〜高性能だから～
+

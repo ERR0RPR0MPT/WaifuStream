@@ -17,7 +17,6 @@ def send_danmaku_origin(msg):
     try:
         sync(value.roomOp.send_danmaku(Danmaku(msg)))
     except:
-        traceback.print_exc()
         print("Failed to send danmaku.")
 
 

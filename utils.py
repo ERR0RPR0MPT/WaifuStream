@@ -1,9 +1,11 @@
+import asyncio
 import threading
 from datetime import datetime
 import os
 import random
 import sys
 import time
+from typing import Any
 
 from bilibili_api import sync
 
@@ -17,6 +19,19 @@ import server
 import value
 import re
 import websocket
+
+
+def __ensure_event_loop() -> None:
+    try:
+        asyncio.get_event_loop()
+    except:
+        asyncio.set_event_loop(asyncio.new_event_loop())
+
+
+def async_run(coroutine) -> Any:
+    __ensure_event_loop()
+    loop = asyncio.get_event_loop()
+    return loop.run_until_complete(coroutine)
 
 
 def fix_emotion_keys(text):
@@ -196,14 +211,16 @@ def init_ws():
 def start_stream():
     print("Starting live...")
     sync(value.roomOp.start(config.BILI_LIVE_AREA_ID))
-    value.obswscl.start_stream()
+    if config.OBS_ENABLE:
+        value.obswscl.start_stream()
     print("Success.")
 
 
 def stop_stream():
     print("Stop live...")
     sync(value.roomOp.stop())
-    value.obswscl.stop_stream()
+    if config.OBS_ENABLE:
+        value.obswscl.stop_stream()
     print("Success.")
 
 

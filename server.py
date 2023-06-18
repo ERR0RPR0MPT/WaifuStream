@@ -1,85 +1,64 @@
-from urllib.parse import unquote
-import json
-import logging
-import os
-import socketserver
 
+from flask import Flask, jsonify, make_response, send_file
+from urllib.parse import unquote
+import os
 import utils
 import value
 import config
-import http.server
+import logging
 
 
-class MyRequestHandler(http.server.BaseHTTPRequestHandler):
-    def log_message(self, formats, *args):
-        return
+app = Flask(__name__)
+app.debug = False
 
-    def do_GET(self):
-        if self.path == "/":
-            self.send_response(200)
-            self.end_headers()
-            self.wfile.write(
-                utils.get_html_template().replace("{z}", value.sender_str).replace("{a}", value.trans_origin_str).replace(
-                    "{b}",
-                    value.trans_target_str).encode(
-                    encoding="utf-8"))
-        elif self.path == "/update_data/":
-            data = {
-                "z": value.sender_str,
-                "a": value.trans_origin_str,
-                "b": value.trans_target_str
-            }
-            self.send_response(200)
-            self.send_header("Content-type", "application/json")
-            self.end_headers()
-            self.wfile.write(json.dumps(data).encode("utf-8"))
-        elif self.path == "/image/":
-            self.send_response(200)
-            self.end_headers()
-            self.wfile.write(utils.get_html_image_template().replace("{image_url}", value.trans_image_url).encode(encoding="utf-8"))
-        elif self.path == "/update_image_data/":
-            if value.trans_image_url == "":
-                utils.set_trans_image_url(config.EMOTION_IMAGE_URL + config.EMOTION_IMAGE_DEFAULT)
-            data = {"image_url": value.trans_image_url}
-            self.send_response(200)
-            self.send_header("Content-type", "application/json")
-            self.end_headers()
-            self.wfile.write(json.dumps(data).encode("utf-8"))
-        elif self.path.startswith(f"/assets/{config.CONFIG_NAME}/images/"):
-            if self.path == f"/assets/{config.CONFIG_NAME}/images/":
-                file_path = os.path.join(os.getcwd(), *self.path.split("/")[0:-1], config.EMOTION_IMAGE_DEFAULT)
-                self.send_response(200)
-                self.send_header("Content-type", "image/png")
-                self.end_headers()
-                with open(file_path, "rb") as f:
-                    self.wfile.write(f.read())
-                return
-            p = unquote(self.path)
-            file_path = os.path.join(os.getcwd(), *p.split("/"))
-            if os.path.isfile(file_path):
-                self.send_response(200)
-                self.send_header("Content-type", "image/png")
-                self.end_headers()
-                with open(file_path, "rb") as f:
-                    self.wfile.write(f.read())
-            else:
-                file_path = os.path.join(os.getcwd(), *p.split("/")[0:-1], config.EMOTION_IMAGE_DEFAULT)
-                self.send_response(200)
-                self.send_header("Content-type", "image/png")
-                self.end_headers()
-                with open(file_path, "rb") as f:
-                    self.wfile.write(f.read())
+
+@app.route("/")
+def home():
+    html_template = utils.get_html_template().replace("{z}", value.sender_str).replace("{a}", value.trans_origin_str).replace("{b}",value.trans_target_str)
+    return make_response(html_template, 200)
+
+@app.route("/update_data/")
+def update_data():
+    data = {
+        "z": value.sender_str,
+        "a": value.trans_origin_str,
+        "b": value.trans_target_str
+    }
+    return make_response(jsonify(data), 200)
+
+@app.route("/image/")
+def image():
+    html_image_template = utils.get_html_image_template().replace("{image_url}", value.trans_image_url)
+    return make_response(html_image_template, 200)
+
+@app.route("/update_image_data/")
+def update_image_data():
+    if value.trans_image_url == "":
+        utils.set_trans_image_url(config.EMOTION_IMAGE_URL + config.EMOTION_IMAGE_DEFAULT)
+    data = {"image_url": value.trans_image_url}
+    return make_response(jsonify(data), 200)
+
+@app.route("/assets/<path:path>")
+def assets(path):
+    if path.startswith(f"{config.CONFIG_NAME}/images/"):
+        if path == f"{config.CONFIG_NAME}/images/":
+            file_path = os.path.join(os.getcwd(), "assets", path.split("/")[0:-1], config.EMOTION_IMAGE_DEFAULT)
+            print(file_path)
+            return send_file(file_path, mimetype="image/png")
+        p = unquote(path)
+        file_path = os.path.join(os.getcwd(), "assets", *p.split("/"))
+        if os.path.isfile(file_path):
+            print(file_path)
+            return send_file(file_path, mimetype="image/png")
         else:
-            self.send_error(404)
-
-class ThreadHTTPServer(socketserver.ThreadingMixIn, http.server.HTTPServer):
-    pass
+            file_path = os.path.join(os.getcwd(), *p.split("/")[0:-1], config.EMOTION_IMAGE_DEFAULT)
+            print(file_path)
+            return send_file(file_path, mimetype="image/png")
+    else:
+        return make_response("Not Found", 404)
 
 
 def start_http_server():
-    logger = logging.getLogger()
-    logger.setLevel(logging.ERROR)
-    with ThreadHTTPServer(("", config.SERVER_PORT), MyRequestHandler) as server:
-        if not config.TRANSLATE_LOG_STATE:
-            server.RequestHandlerClass.log_request = lambda *args, **kwargs: None
-        server.serve_forever()
+    logging.getLogger('flask').setLevel(logging.FATAL)
+    logging.getLogger('werkzeug').setLevel(logging.FATAL)
+    utils.async_run(app.run(host=config.SERVER_HOST, port=config.SERVER_PORT))

@@ -8,9 +8,22 @@ BILI_ROOM_ID: 0
 BILI_USER_UID: 0
 BILI_ADMIN_USERS:
   - 0
+BILI_LIVE_AREA_ID: 371
+BILI_KEEP_ALIVE_SECONDS: 480
+BILI_SESSDATA: ""
+BILI_JCT: ""
+BILI_BUVID3: ""
+BILI_DEDEUSERID: ""
+OBS_ENABLE: true
+OBS_HOST: "localhost"
+OBS_PORT: 4455
+OBS_PASSWORD: ""
+STREAM_SCHEDULE:
+  START_TIME: "6:30"
+  STOP_TIME: "3:0"
 VTS_API_URL: "ws://localhost:8001"
 AUTO_ANSWER_ENABLE: false
-EMOTION_SIMULATION_ENABLE: false
+EMOTION_SIMULATION_ENABLE: true
 EMOTION_SIMULATION_MODE: "web"  # web or vts
 VITS_API_TYPE: 0  # 0: vits-fast-fine-tuning-inference, 1: moetts-inference
 TRANSLATE_LOG_STATE: false
@@ -18,7 +31,8 @@ TRANSLATE_MODE: "google"  # gpt or google
 TRANSLATE_TARGET_LANGUAGE: "ja"
 MAX_DANMAKU_QUEUE_LENGTH: 10
 MAX_INTERACT_MESSAGES_PER_MINUTE: 1
-INTERACT_MESSAGES_RANDOM: 0.1
+#INTERACT_MESSAGES_RANDOM: 0.1
+INTERACT_MESSAGES_RANDOM: 0.15
 MAX_WAIT_SECONDS: 600
 MAX_ANSWER_LENGTH: 150
 MAX_CHAT_ANSWER_SECONDS: 30
@@ -50,24 +64,6 @@ VITS_PAYLOAD:
     - "日本語"
     - 1
   session_hash: "abcdefghij"
-BILI_DANMAKU_SEND_URL: "https://api.live.bilibili.com/msg/send"
-BILI_DANMAKU_SEND_DATA:
-  bubble: "0"
-  msg: ""
-  color: "16777215"
-  mode: "1"
-  room_type: "0"
-  jumpfrom: "0"
-  fontsize: "25"
-  rnd: ""
-  roomid: ""
-  csrf: ""
-  csrf_token: ""
-BILI_DANMAKU_SEND_HEADER:
-  Cookie: ""
-  Origin: "https://live.bilibili.com"
-  Referer: "https://live.bilibili.com/0"
-  User-Agent: "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/113.0.0.0 Safari/537.36"
 RANDOM_QUESTION:
   - ""
 USER: user

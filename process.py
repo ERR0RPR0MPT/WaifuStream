@@ -3,8 +3,9 @@ import random
 import time
 import traceback
 import openai
+import bing
 import config
-import nlp
+import oa
 import utils
 import value
 
@@ -66,11 +67,14 @@ def execute():
                     while True:
                         retries += 1
                         try:
-                            nlp.on_msg(danmu)
+                            if config.MODEL == "openai":
+                                oa.on_msg(danmu)
+                            elif config.MODEL == "bing":
+                                bing.sync_ask_stream(danmu)
                             break
                         except openai.error.AuthenticationError:
                             print("OpenAI AuthenticationError, Try to set a key...")
-                            nlp.set_available_openai_key()
+                            oa.set_available_openai_key()
                             continue
                         except openai.error.InvalidRequestError:
                             print("Token has been limited. Try to recovery...")
@@ -78,7 +82,7 @@ def execute():
                                 value.sender_str = config.TEXT_RESET_DIALOG + " -> " + value.sender_str
                             if retries >= 2:
                                 break
-                            value.chat_dict[ide] = nlp.ChatGPT(config.SYSTEM_PROMPT)
+                            value.chat_dict[ide] = oa.ChatGPT(config.SYSTEM_PROMPT)
                             continue
                         except openai.error.RateLimitError:
                             print("Rate has been limited. Try to recovery...")
@@ -88,15 +92,16 @@ def execute():
                             #     time.sleep(10)
                             if retries >= 5:
                                 break
-                            nlp.set_available_openai_key()
+                            oa.set_available_openai_key()
                             continue
                         except:
                             traceback.print_exc()
                             print("Error in Inferencing.")
                             break
                     end_time = time.time()
-                    op_key = openai.api_key
-                    print(f"Used API Key：index={str(config.OPENAI_API_KEY_LIST.index(op_key) + 1)} -> {utils.hide_openai_api_key(op_key)}")
+                    if config.MODEL == "openai":
+                        op_key = openai.api_key
+                        print(f"Used API Key：index={str(config.OPENAI_API_KEY_LIST.index(op_key) + 1)} -> {oa.hide_openai_api_key(op_key)}")
                     print(config.TEXT_GPT_INFERENCE_TIME + " {}".format(
                         round(end_time - start_time, 2)) + config.TEXT_SECOND)
                 else:

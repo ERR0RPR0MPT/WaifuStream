@@ -4,12 +4,12 @@ import re
 import threading
 import time
 import traceback
+import config
 import danmaku
 import multiprocess
 import utils
-import value
-import config
 import openai
+import value
 import vits
 
 
@@ -46,6 +46,13 @@ class ChatGPT:
         return rsp.get("choices")[0]["message"]["content"]
 
 
+def hide_openai_api_key(api_key):
+    try:
+        return api_key[:8] + "*" * (len(api_key) - len(api_key[:8]) - len(api_key[-6:])) + api_key[-6:]
+    except:
+        return ""
+
+
 def set_available_openai_key():
     """
     随机获取一个 OpenAI API Key，并检查可用性
@@ -72,7 +79,7 @@ def set_available_openai_key():
                 openai.api_key = origin_key
                 config.OPENAI_API_KEY_LIST.remove(new_key)
                 print(
-                    f"OpenAI API Key: {utils.hide_openai_api_key(new_key)} is not available. Check for another one...")
+                    f"OpenAI API Key: {hide_openai_api_key(new_key)} is not available. Check for another one...")
                 continue
             openai.api_key = new_key
             return
@@ -318,4 +325,5 @@ def emotion_analysis_init(answer):
         threading.Thread(target=utils.send_images, args=(emotion_images,)).start()
 
 
-set_available_openai_key()
+if config.MODEL == "openai":
+    set_available_openai_key()

@@ -1,9 +1,11 @@
 import importlib
 import sys
 import traceback
+
+import bing
 import config
 import danmaku
-import nlp
+import oa
 import value
 import utils
 import os
@@ -61,12 +63,34 @@ if __name__ == '__main__':
                     print("Please enter the content of the chat.")
                     continue
                 if inp[5:] == "+reset":
-                    value.chat_dict[0] = nlp.ChatGPT(config.SYSTEM_PROMPT)
+                    if config.MODEL == "openai":
+                        value.chat_dict[0] = oa.ChatGPT(config.SYSTEM_PROMPT)
+                    elif config.MODEL == "bing":
+                        value.chat_dict[0] = bing.BingAI(config.SYSTEM_PROMPT)
                     print("Chat Reset.")
                     continue
                 danmu_dict = {
                     "type": "danmaku",
                     "text": inp[5:],
+                    "id": "-10000",
+                    "name": config.TERMINAL_CHAT_NAME,
+                    "timestamp": str(time.time()),
+                }
+                value.msg_queue.append(danmu_dict)
+            elif inp.startswith("c:"):
+                if inp[2:] == "":
+                    print("Please enter the content of the chat.")
+                    continue
+                if inp[2:] == "+reset":
+                    if config.MODEL == "openai":
+                        value.chat_dict[0] = oa.ChatGPT(config.SYSTEM_PROMPT)
+                    elif config.MODEL == "bing":
+                        value.chat_dict[0] = bing.BingAI(config.SYSTEM_PROMPT)
+                    print("Chat Reset.")
+                    continue
+                danmu_dict = {
+                    "type": "danmaku",
+                    "text": inp[2:],
                     "id": "-10000",
                     "name": config.TERMINAL_CHAT_NAME,
                     "timestamp": str(time.time()),

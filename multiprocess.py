@@ -152,4 +152,3 @@ def multiprocess():
             print("Error when run multiprocess. Retry...")
             time.sleep(1)
             continue
-# chat:亚托莉，音理，诺瓦，你们好啊！

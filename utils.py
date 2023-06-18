@@ -6,13 +6,11 @@ import random
 import sys
 import time
 from typing import Any
-
 from bilibili_api import sync
-
 import config
 import danmaku
 import multiprocess
-import nlp
+import oa
 import process
 import schedule
 import server
@@ -103,7 +101,7 @@ def is_valid_msg(msg):
             return False
     # 检查是否为重置对话指令
     if msg["text"] == "+reset" or msg_del_starts == "+reset":
-        value.chat_dict[msg["id"]] = nlp.ChatGPT(config.SYSTEM_PROMPT)
+        value.chat_dict[msg["id"]] = oa.ChatGPT(config.SYSTEM_PROMPT)
         danmaku.send_danmaku("@" + msg["name"] + f" {config.TEXT_OPERATION_RESET}")
         return False
     # 检查对话开头是否匹配
@@ -150,11 +148,7 @@ def set_trans_image_url(url):
     print(f"Set emotion: {url.split('/')[-1]}")
 
 
-def hide_openai_api_key(api_key):
-    try:
-        return api_key[:8] + "*" * (len(api_key) - len(api_key[:8]) - len(api_key[-6:])) + api_key[-6:]
-    except:
-        return ""
+
 
 
 def get_html_template():

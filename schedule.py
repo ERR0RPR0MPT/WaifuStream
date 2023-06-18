@@ -17,8 +17,8 @@ def schedule():
                 if len(s.split(":")) != 2:
                     print("Schedule task: Start time format error.")
                     return
-                start_time_h = int(config.STREAM_SCHEDULE["START_TIME"].split(":")[0])
-                start_time_m = int(config.STREAM_SCHEDULE["START_TIME"].split(":")[1])
+                start_time_h = int(s.split(":")[0])
+                start_time_m = int(s.split(":")[1])
                 if now.tm_hour == start_time_h and now.tm_min == start_time_m:
                     print("Schedule task: Start stream.")
                     utils.start_stream()
@@ -27,8 +27,8 @@ def schedule():
                 if len(s.split(":")) != 2:
                     print("Schedule task: Stop time format error.")
                     return
-                stop_time_h = int(config.STREAM_SCHEDULE["STOP_TIME"].split(":")[0])
-                stop_time_m = int(config.STREAM_SCHEDULE["STOP_TIME"].split(":")[1])
+                stop_time_h = int(s.split(":")[0])
+                stop_time_m = int(s.split(":")[1])
                 if now.tm_hour == stop_time_h and now.tm_min == stop_time_m:
                     print("Schedule task: Stop stream.")
                     utils.stop_stream()

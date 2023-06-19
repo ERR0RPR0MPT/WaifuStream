@@ -2,7 +2,7 @@ import random
 import threading
 import time
 import traceback
-from bilibili_api import sync, Danmaku, live, Credential
+from bilibili_api import sync, Danmaku
 import utils
 import value
 import config
@@ -114,7 +114,8 @@ async def on_danmaku(event):
     danmu_dict["text"] = danmu_dict["text"].replace("：", ":", 1).replace("＃", "#", 1)
     # 避免机器人发送的弹幕被检测到
     if danmu_dict["id"] == str(config.BILI_USER_UID) and (
-            config.TEXT_IGNORE_DANMAKU in danmu_dict["text"] or config.TEXT_DANMAKU_SAVED in danmu_dict["text"] or config.TEXT_THINKING in
+            config.TEXT_IGNORE_DANMAKU in danmu_dict["text"] or config.TEXT_DANMAKU_SAVED in danmu_dict[
+        "text"] or config.TEXT_THINKING in
             danmu_dict["text"]):
         print(config.TEXT_IGNORE_DANMAKU + "(" + config.TEXT_IGNORE_ROBOT + "): text=" + danmu_dict["text"] + " id=" +
               danmu_dict[
@@ -159,30 +160,93 @@ async def on_danmaku(event):
         send_danmaku(config.TEXT_QUEUE_SAME_MSG_ALERT)
 
 
-def keep_alive_danmaku():
-    """
-    保证弹幕库不会断开连接
-    :return:
-    """
-    while True:
-        try:
-            time.sleep(config.BILI_KEEP_ALIVE_SECONDS)
-            print("Schedule reload danmaku library.")
-            sync(value.room.disconnect())
-        except:
-            continue
+def disconnect():
+    try:
+        sync(value.room.disconnect())
+    except:
+        pass
+
+
+def connect():
+    try:
+        sync(value.room.connect())
+    except:
+        pass
 
 
 def init_danmaku():
     """
-    初始化弹幕库
+    初始化弹幕库并保活
     :return:
     """
-    threading.Thread(target=keep_alive_danmaku).start()
+    print("Init danmaku library.")
+    threading.Thread(target=connect).start()
+    isOutput = True
     while True:
+        time.sleep(1)
         try:
-            sync(value.room.connect())
-            print("Danmaku library alert, reconnecting...")
+            if value.room.get_status() == 2:
+                if isOutput:
+                    print("Danmaku library status: Connected.")
+                isOutput = False
+                continue
+            isOutput = True
+            print("Danmaku library status: " + str(value.room.get_status()) + ", we'll check the connection...")
+            if value.room.get_status() == 0:
+                # 重新初始化
+                print("Danmaku library status: 0, reconnecting...")
+                threading.Thread(target=init_danmaku).start()
+                return
+            if value.room.get_status() == 1:
+                # 连接建立中
+                print("Danmaku library status: 1, waiting for connection to be established...")
+                i = 0
+                while True:
+                    i += 1
+                    if value.room.get_status() == 2:
+                        break
+                    if value.room.get_status() == 5 or i > 10:
+                        if value.room.get_status() == 5:
+                            print("Danmaku library appears to error, status: 5, please pay attention.")
+                        # 断开连接
+                        threading.Thread(target=disconnect).start()
+                        # 重新初始化
+                        threading.Thread(target=init_danmaku).start()
+                        return
+                    time.sleep(1)
+                continue
+            if value.room.get_status() == 3:
+                # 断开连接中
+                print("Danmaku library status: 3, waiting for disconnection...")
+                i = 0
+                while True:
+                    i += 1
+                    if value.room.get_status() == 4:
+                        # 重新初始化
+                        print("Danmaku library status: 4, disconnect, now reinitializing...")
+                        threading.Thread(target=init_danmaku).start()
+                        return
+                    if value.room.get_status() == 5 or i > 10:
+                        if value.room.get_status() == 5:
+                            print("Danmaku library appears to error, status: 5, please pay attention.")
+                        # 断开连接
+                        threading.Thread(target=disconnect).start()
+                        # 重新初始化
+                        threading.Thread(target=init_danmaku).start()
+                        return
+                    time.sleep(1)
+            if value.room.get_status() == 4:
+                # 重新初始化
+                print("Danmaku library status: 4, disconnect, now reinitializing...")
+                threading.Thread(target=init_danmaku).start()
+                return
+            if value.room.get_status() == 5:
+                print("Danmaku library appears to error, status: 5, please pay attention.")
+                # 断开连接
+                threading.Thread(target=disconnect).start()
+                # 重新初始化
+                threading.Thread(target=init_danmaku).start()
+                return
         except:
             traceback.print_exc()
-            print("Danmaku library error, reconnecting...")
+            continue

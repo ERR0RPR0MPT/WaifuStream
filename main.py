@@ -58,6 +58,8 @@ if __name__ == '__main__':
                 utils.start_stream()
             elif inp == "stop":
                 utils.stop_stream()
+            elif inp == "danmaku_status":
+                print(f"Danmaku status: {value.room.get_status()}")
             elif inp.startswith("chat:"):
                 if inp[5:] == "":
                     print("Please enter the content of the chat.")

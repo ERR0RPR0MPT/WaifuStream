@@ -222,10 +222,18 @@ def clear_console():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 
+def auto_restart():
+    if config.AUTO_RESTART_ENABLE:
+        time.sleep(config.AUTO_RESTART_MINUTES * 60)
+        print("Auto restart...")
+        restart()
+
+
 def main_init():
     init_ws()
     threading.Thread(target=process.execute).start()
     threading.Thread(target=multiprocess.multiprocess).start()
     threading.Thread(target=server.start_http_server).start()
     threading.Thread(target=danmaku.init_danmaku).start()
+    threading.Thread(target=auto_restart).start()
     threading.Thread(target=schedule.schedule).start()

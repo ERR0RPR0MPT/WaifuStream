@@ -1,3 +1,4 @@
+import asyncio
 import random
 import threading
 import time
@@ -21,6 +22,7 @@ def send_danmaku_origin(msg):
             print("Empty danmaku msg, ignore.")
             return
         sync(value.roomOp.send_danmaku(Danmaku(msg)))
+        print("成功发送弹幕")
     except:
         print("Failed to send danmaku.")
 
@@ -54,6 +56,7 @@ async def on_danmaku(ctx: BLiverCtx):
         "steps": "-1",
         "timestamp": str(time.time()),
     }
+    print("收到弹幕：" + str(danmu_dict))
     # 替换中文符号
     danmu_dict["text"] = danmu_dict["text"].replace("：", ":", 1).replace("＃", "#", 1)
     # 避免机器人发送的弹幕被检测到
@@ -111,33 +114,34 @@ async def on_enter(ctx: BLiverCtx):
     :return:
     """
     danmu = DanMuMsg(ctx.body)
-    # 随机概率执行
-    if random.random() > config.INTERACT_MESSAGES_RANDOM:
-        print("Interact message random rate limit reached, ignore this message, id=" + str(
-            danmu.sender.id) + " name=" + danmu.sender.name)
-        return
-    # 判断条件
-    current_time = time.time()
-    if current_time - value.interact_last_append_time <= 60 and value.interact_messages_appended >= config.MAX_INTERACT_MESSAGES_PER_MINUTE:
-        print("Interact message rate limit reached, ignore this message, id=" + str(
-            danmu.sender.id) + " name=" + danmu.sender.name)
-        return
-    else:
-        value.interact_last_append_time = current_time
-        value.interact_messages_appended = 1
-
     danmu_dict = {
         "multi": "false",
         "type": "enter",
         "modelId": config.MULTI_ID,
         "modelName": config.MULTI_NAME,
-        "text": config.WELCOME_PROMPT.replace("{user}", danmu.sender.name),
-        "id": str(danmu.sender.id),
-        "name": danmu.sender.name,
+        # "text": config.WELCOME_PROMPT.replace("{user}", danmu.sender.name),
+        "text": config.WELCOME_PROMPT.replace("{user}", "观众"),
+        "id": "99999",
+        "name": "观众",
         "msgId": ''.join(random.choice("123456789") for _ in range(8)),
         "steps": "-1",
         "timestamp": str(time.time())
     }
+    print("收到入场消息：" + str(danmu_dict))
+    # 随机概率执行
+    if random.random() > config.INTERACT_MESSAGES_RANDOM:
+        print("Interact message random rate limit reached, ignore this message, id=" + str(
+            "99999") + " name=" + "观众")
+        return
+    # 判断条件
+    current_time = time.time()
+    if current_time - value.interact_last_append_time <= 60 and value.interact_messages_appended >= config.MAX_INTERACT_MESSAGES_PER_MINUTE:
+        print("Interact message rate limit reached, ignore this message, id=" + str(
+            "99999") + " name=" + "观众")
+        return
+    else:
+        value.interact_last_append_time = current_time
+        value.interact_messages_appended = 1
     value.msg_queue.append(danmu_dict)
 
 
@@ -161,23 +165,25 @@ async def on_gift(ctx: BLiverCtx):
         "steps": "-1",
         "timestamp": str(time.time()),
     }
+    print("收到礼物：" + str(danmu_dict))
     value.msg_queue.append(danmu_dict)
 
 
-def init_danmaku():
+def init_danmaku(loop):
     """
     初始化弹幕库并保活
     :return:
     """
     print("Init danmaku library.")
-    # while True:
-    #     try:
-    #         sync(value.room.run())
-    #         print("弹幕库出现了奇怪的错误")
-    #     except:
-    #         traceback.print_exc()
-    #         print("弹幕库出现了奇怪的错误")
-    #     time.sleep(5)
+    while True:
+        try:
+            loop.create_task(value.room.listen())
+            loop.run_forever()
+            print("弹幕库退出，等待5s运行")
+        except:
+            traceback.print_exc()
+            print("弹幕库出现了奇怪的错误，等待5s运行")
+        time.sleep(5)
 
 
 # @value.room.on('INTERACT_WORD')

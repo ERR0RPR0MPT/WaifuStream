@@ -234,11 +234,19 @@ def auto_restart():
         threading.Thread(target=restart).start()
 
 
+def sys_flush():
+    while True:
+        sys.stdout.flush()
+        time.sleep(1)
+
+
 def main_init():
+    loop = asyncio.get_event_loop()
     init_ws()
+    threading.Thread(target=sys_flush).start()
     threading.Thread(target=process.execute).start()
     threading.Thread(target=multiprocess.multiprocess).start()
     threading.Thread(target=server.start_http_server).start()
-    threading.Thread(target=danmaku.init_danmaku).start()
+    threading.Thread(target=danmaku.init_danmaku, args=(loop,)).start()
     threading.Thread(target=auto_restart).start()
     threading.Thread(target=schedule.schedule).start()

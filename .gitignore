@@ -12,13 +12,16 @@ assets/yinli/vits
 cfg/config_atri_secret.yml
 cfg/config_yinli_secret.yml
 cfg/config_noir_secret.yml
+cfg/config_atri_long_secret.yml
 cookies.json
 WaifuStreamGit
 logs.txt
 test.py
 start_atri.bat
+start_atri_long.bat
 start_noir.bat
 start_yinli.bat
 start_atri.sh
 start_noir.sh
 start_yinli.sh
+/test2.py

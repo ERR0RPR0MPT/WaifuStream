@@ -1,0 +1,14 @@
+ID=-10000 Name=终端
+Question: hello
+GPT Original Output: 嘿嘿~ 夏生先生，你好呀！有什么我可以帮到你的吗？
+GPT Emotional Output: {开心} {害羞}
+Original = 嘿嘿~ 夏生先生，你好呀！有什么我可以帮到你的吗？
+Target = やあ〜なつき先生，こんにちは！何か私にできることはありますか？
+
+ID=-10000 Name=终端
+Question: sure!
+GPT Original Output: 哇~太棒了！请尽管吩咐我吧，夏生先生！无论是什么问题，我都会全力以赴来帮助你的~♪
+GPT Emotional Output: {兴奋}
+Original = 哇~太棒了！请尽管吩咐我吧，夏生先生！无论是什么问题，我都会全力以赴来帮助你的~♪
+Target = うわぁ～素晴らしい！教えてください、なつき先生！たとえどんな問題があっても、全力でお手伝いさせていただきます~
+

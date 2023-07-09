@@ -59,12 +59,6 @@ def is_cmd_or_msg(danmu_dict):
     return False
 
 
-def restart():
-    # 检查权限
-    python = sys.executable
-    os.execl(python, python, *sys.argv)
-
-
 def get_dialog_today():
     return f"{config.CONFIG_NAME}_" + datetime.today().strftime('%Y%m%d') + '.txt'
 
@@ -148,9 +142,6 @@ def set_trans_image_url(url):
     print(f"Set emotion: {url.split('/')[-1]}")
 
 
-
-
-
 def get_html_template():
     with open(f"./assets/{config.CONFIG_NAME}/templates/index.html", "r", encoding="utf-8") as f:
         return f.read()
@@ -179,14 +170,18 @@ def send_keys(lista):
 
 
 def send_images(lista):
+    j = 0
     while True:
-        for i in lista:
-            if value.stop_event:
-                set_trans_image_url(config.EMOTION_IMAGE_URL + config.EMOTION_IMAGE_DEFAULT)
-                return
-            # print("Send Images: " + i)
-            set_trans_image_url(config.EMOTION_IMAGE_URL + i)
-            time.sleep(random.randint(6000, 10000) / 1000)
+        j += 1
+        if j >= 4:
+            return
+        if value.stop_event:
+            set_trans_image_url(config.EMOTION_IMAGE_URL + config.EMOTION_IMAGE_DEFAULT)
+            return
+        i = random.choice(lista)
+        # print("Send Images: " + i)
+        set_trans_image_url(config.EMOTION_IMAGE_URL + i)
+        time.sleep(random.randint(6000, 10000) / 1000)
 
 
 def init_ws():
@@ -222,11 +217,21 @@ def clear_console():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 
+def restart():
+    while True:
+        try:
+            python = sys.executable
+            os.execl(python, python, *sys.argv)
+        except:
+            print("重启失败，正在重试")
+            continue
+
+
 def auto_restart():
     if config.AUTO_RESTART_ENABLE:
         time.sleep(config.AUTO_RESTART_MINUTES * 60)
         print("Auto restart...")
-        restart()
+        threading.Thread(target=restart).start()
 
 
 def main_init():

@@ -28,7 +28,7 @@ class ChatGPT:
         :return:
         """
         rsp = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
+            model="gpt-3.5-turbo-16k",
             messages=self.messages,
             stream=True
         )
@@ -40,7 +40,7 @@ class ChatGPT:
         :return:
         """
         rsp = openai.ChatCompletion.create(
-            model="gpt-3.5-turbo",
+            model="gpt-3.5-turbo-16k",
             messages=self.messages,
         )
         return rsp.get("choices")[0]["message"]["content"]

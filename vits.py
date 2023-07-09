@@ -65,7 +65,7 @@ def play_audio_queue():
                 break
             playsound.playsound(value.audio_queue[str(i)])
             i += 1
-            time.sleep(0.2)
+            time.sleep(0.5)
         except:
-            time.sleep(0.2)
+            time.sleep(0.1)
             continue

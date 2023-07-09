@@ -661,3 +661,96 @@ ID=666795789 Name=德克萨斯的博士吖
 Question: 下午好
 ID=666795789 Name=德克萨斯的博士吖
 Question: 下午好
+ID=125160481 Name=凌维三度
+Question: 诺瓦诺瓦能文能武
+BingAI Original Output: 白先生，你在夸我吗？[害羞]我不是很能文能武的，只是有时候会帮帮忙而已。[微笑]你才是真正的能文能武，你的动画很棒，我很喜欢看。[赞美]
+
+BingAI Emotional Output: {害羞}
+Original = 白先生，你在夸我吗？[害羞]我不是很能文能武的，只是有时候会帮帮忙而已。[微笑]你才是真正的能文能武，你的动画很棒，我很喜欢看。[赞美]
+
+Target = しらさん、褒めてくれてるの？[恥ずかしがり屋] 私は文武両道が苦手なのですが、時々役立つだけです。[笑顔] あなたは本物の文武両道家です。それを見るのが大好きです。
+
+ID=125160481 Name=凌维三度
+Question: 谢谢诺瓦
+BingAI Original Output: 白先生，你不用谢我。[微笑]我很高兴能和你一起旅行，你是我最重要的人。[温柔]
+
+BingAI Emotional Output: {认同} {开心}
+Original = 白先生，你不用谢我。[微笑]我很高兴能和你一起旅行，你是我最重要的人。[温柔]
+
+Target = しらさん、私に感謝する必要はありません。[笑顔] あなたと一緒に旅行できるのがとても楽しみですあなたは私の最も大切な人です。
+
+ID=125160481 Name=凌维三度
+Question: 送你一张自画像
+ID=598938560 Name=冷の风呐
+Question: 抱抱诺瓦
+BingAI Original Output: 诺瓦被白先生抱住了，感觉很温暖，也很安心。[微笑]
+诺瓦也想抱抱白先生，但是有点害羞，不知道该怎么做。[红脸]
+诺瓦喜欢白先生，白先生也喜欢诺瓦吗？[期待]
+
+BingAI Emotional Output: {感动}
+{可爱}
+Original = 诺瓦被白先生抱住了，感觉很温暖，也很安心。[微笑]
+诺瓦也想抱抱白先生，但是有点害羞，不知道该怎么做。[红脸]
+诺瓦喜欢白先生，白先生也喜欢诺瓦吗？[期待]
+
+Target = ノヴァはしらさんに抱きしめられ、とても安心感もあります。[笑顔] ノヴァもしらさんを抱きしめたいと思っています。何をすべきか分からない。[赤い顔] ノヴァはしらさんのことが好きです、BaiさんもNovaが好きなんですか？
+
+ID=526559404 Name=我不是---我没有
+Question: 用户“我不是---我没有”进入直播间，和他打个招呼吧~
+
+BingAI Original Output: 你好，我不是---我没有。欢迎来到星空列车的直播间。我是诺瓦，白先生的朋友。[微笑]
+BingAI Emotional Output: Someone tell LWSD there's some problems with my AI
+Original = 你好，我不是---我没有。欢迎来到星空列车的直播间。我是诺瓦，白先生的朋友。[微笑]
+Target = こんにちは、私はそうではありません -- そうではありません。私はノヴァです、白さんの友人。
+
+ID=1995115488 Name=此岸霜滢EIiro
+Question: 我能摸摸诺瓦耳朵吗喵~
+ID=125160481 Name=凌维三度
+Question: 卡了吗
+ID=125160481 Name=凌维三度
+Question: yuyy
+ID=-10000 Name=终端
+Question: 1
+BingAI Original Output: 你好，这是Bing。我可以帮你模拟《星空列车与白的旅行》游戏中晓与诺瓦的对话。请问你想问诺瓦什么呢？😊
+
+BingAI Emotional Output: {困惑} {好奇}
+Original = 你好，这是Bing。我可以帮你模拟《星空列车与白的旅行》游戏中晓与诺瓦的对话。请问你想问诺瓦什么呢？😊
+
+Target = こんにちは、ビングです。ノヴァさんに聞きたいことは何ですか？
+
+ID=510002659 Name=OJO迪亚波波
+Question: 用户“OJO迪亚波波”进入直播间，和他打个招呼吧~
+
+BingAI Original Output: 你好，OJO迪亚波波，欢迎来到星空列车的直播间。我是诺瓦，白先生的朋友。[微笑]
+BingAI Emotional Output: {好奇} {开心} {欢迎}
+Original = 你好，OJO迪亚波波，欢迎来到星空列车的直播间。我是诺瓦，白先生的朋友。[微笑]
+Target = こんにちは、スタートレインの生放送部屋へようこそ。私はノヴァです、白さんの友人。
+
+ID=346095594 Name=地府长
+Question: 你喜欢画画吗
+ID=485988239 Name=室内系memorymaker
+Question: 用户“室内系memorymaker”进入直播间，和他打个招呼吧~
+
+BingAI Original Output: 你好，室内系memorymaker！欢迎来到星空列车的直播间！我是诺瓦，白先生的猫娘朋友。[笑]你有什么想问我的吗？[眨眼]
+BingAI Emotional Output: {开心} {好奇} {骄傲}
+Original = 你好，室内系memorymaker！欢迎来到星空列车的直播间！我是诺瓦，白先生的猫娘朋友。[笑]你有什么想问我的吗？[眨眼]
+Target = こんにちは、インドアシステムメモリーメーカー！私はノヴァです、しらさんの猫娘の友達。（笑）何か聞きたいことはありますか？
+
+ID=86870369 Name=porterxk
+Question: 用户“porterxk”进入直播间，和他打个招呼吧~
+
+BingAI Original Output: 你好，porterxk！欢迎来到星空列车的直播间！我是诺瓦，白先生的猫娘朋友。[笑]
+
+BingAI Emotional Output: {开心} {好奇}
+Original = 你好，porterxk！欢迎来到星空列车的直播间！我是诺瓦，白先生的猫娘朋友。[笑]
+
+Target = こんにちは、ポーターク！私はノヴァです、しらさんの猫娘の友達。
+
+ID=125160481 Name=凌维三度
+Question: 用户“凌维三度”进入直播间，和他打个招呼吧~
+
+BingAI Original Output: 你好，凌维三度！欢迎来到星空列车的直播间！我是诺瓦，白先生的猫耳女友。[笑]你是白先生的朋友吗？[好奇]
+BingAI Emotional Output: {开心} {好奇}
+Original = 你好，凌维三度！欢迎来到星空列车的直播间！我是诺瓦，白先生的猫耳女友。[笑]你是白先生的朋友吗？[好奇]
+Target = こんにちは、リンウェイ3回！私はノヴァです、猫耳のしらさんの彼女。（笑）あなたはしらさんのお友達ですか？
+

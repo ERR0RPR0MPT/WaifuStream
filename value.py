@@ -1,6 +1,8 @@
 
 from bilibili_api import live
 from bilibili_api import Credential
+from blive import BLiver, Events, BLiverCtx
+from blive.msg import DanMuMsg
 from pygtrans import Translate
 import obsws_python as obs
 import config
@@ -31,4 +33,5 @@ except:
     exit(1)
 credential = Credential(sessdata=config.BILI_SESSDATA, bili_jct=config.BILI_JCT, buvid3=config.BILI_BUVID3, dedeuserid=config.BILI_DEDEUSERID)
 roomOp = live.LiveRoom(config.BILI_ROOM_ID, credential=credential)
-room = live.LiveDanmaku(config.BILI_ROOM_ID, credential=credential, max_retry=999999999)
+# room = live.LiveDanmaku(config.BILI_ROOM_ID, credential=credential, max_retry=999999999)
+room = BLiver(config.BILI_ROOM_ID)

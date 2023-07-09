@@ -298,7 +298,6 @@ def emotion_analysis(msg):
     return ask_once(generate_prompt(system_prompt=config.EMOTION_PROMPT, user_prompt=msg))
 
 
-
 def emotion_analysis_init(answer):
     """
     情感分析初始化

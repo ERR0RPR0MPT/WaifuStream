@@ -18,7 +18,7 @@ if __name__ == '__main__':
     utils.clear_console()
     utils.main_init()
     time.sleep(0.75)
-    print(f"Server started at http://localhost:{str(config.SERVER_PORT)}\n")
+    print(f"\nServer started at http://localhost:{str(config.SERVER_PORT)}\n")
     print(f"If you want to display model images on a web page in OBS Studio or somewhere:")
     print(f"  1. Use http://localhost:{str(config.SERVER_PORT)} to access the translation page.")
     print(f"  2. Use http://localhost:{str(config.SERVER_PORT)}/image/ to access the model image page.\n")

@@ -31,6 +31,13 @@ def execute():
                     ide = danmu["id"]
                     name = danmu["name"]
                     timestamp = danmu["timestamp"]
+                    delay_seconds = time.time() - float(timestamp)
+                    if delay_seconds > 5.0 and danmu["type"] == "enter":
+                        print(f"Message \"Enter\" timeout for {str(delay_seconds)}, select next message.")
+                        continue
+                    if delay_seconds > 18.0:
+                        print(f"Message \"Normal\" timeout for {str(delay_seconds)}, select next message.")
+                        continue
                 else:
                     if config.AUTO_ANSWER_ENABLE:
                         choice_flag = 0

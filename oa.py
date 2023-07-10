@@ -129,9 +129,9 @@ def on_msg(danmu):
 
     try:
         # 发送弹幕
-        if ide != "0" or ide != "-10000":
-            danmaku.send_danmaku(f"@{name} {config.TEXT_THINKING}")
-
+        if ide == "0" or ide == "-10000" or ide == "99999":
+            return "Danmaku Message"
+        danmaku.send_danmaku(f"@{name} {config.TEXT_THINKING}")
         value.sender_str = f"{name} -> Inferencing..."
         value.stop_event = False
 
